@@ -1,2 +1,21 @@
 @media (min-width: 993px) and (max-width: 1200px) {
+  .hide-m {
+    display: none !important;
+  }
+
+  .show-m {
+    display: block;
+  }
+  
+  .service-feature {
+    padding: 8px 18px 0;
+  }
+
+  .gallery-item {
+    width: 300px;
+  }
+
+  .gallery-item .overlay {
+    height: 200px;
+  }
 }

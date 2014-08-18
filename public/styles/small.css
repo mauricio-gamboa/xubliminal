@@ -1,2 +1,43 @@
 @media (min-width: 768px) and (max-width: 992px) {
+  .hide-s {
+    display: none !important;
+  }
+
+  .show-s {
+    display: block;
+  }
+
+  #page-phrase h1 {
+    font-size: 49px;
+  }
+
+  .service > .service-text {
+    padding-bottom: 38px;
+    padding-left: 15px;
+  }
+
+  .service-feature {
+    border-right: 1px solid #f4f4f4 !important;
+    border-top: 1px solid #f4f4f4 !important;
+    height: 405px;
+    padding: 35px 35px 0 35px !important;
+    width: 50%;
+  }
+
+  .service-feature:nth-child(2n+2) {
+    border-right: none !important;
+  }
+
+  .service-feature:nth-child(-n+2) {
+    padding-top: 8px !important;
+    border-top: none !important;
+  }
+
+  .gallery-item {
+    width: 226px;
+  }
+
+  .gallery-item .overlay {
+    height: 151px;
+  }
 }

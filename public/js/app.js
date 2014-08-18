@@ -1,12 +1,12 @@
 'use strict';
 
-angular.module('xublime', ['xublime.services', 'ngRoute']).
+angular.module('xublime', ['ngRoute']).
 
 config(function ($routeProvider) {
   
   $routeProvider.
 
-  when('/', {
+  when('/services', {
     templateUrl: 'partials/services.html'
   }).
 

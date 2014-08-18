@@ -109,6 +109,13 @@ strong {
   font-weight: normal;
 }
 
+.show-xs,
+.show-s,
+.show-m,
+.show-xl {
+  display: none;
+}
+
 /***************************
 ****************************
 Bottons Styles
@@ -328,10 +335,11 @@ Services Tabs Styles
 }
 
 #services-links ul li a span {
+  display: inline-block;
   line-height: 17px;
+  padding-top: 3px;
   text-align: left;
   vertical-align: middle;
-  display: inline-block;
 }
 
 #services-links ul li a span.tab-icon-1 {
@@ -375,7 +383,7 @@ Services Tabs Styles
 }
 
 .service {
-  padding-top: 62px;
+  padding-top: 61px;
   border-bottom: 1px solid #f4f4f4;
 }
 
@@ -402,18 +410,18 @@ Services Tabs Styles
 }
 
 .service-features {
-  padding: 50px 0;
+  padding: 53px 0 70px;
 }
 
 .service-features > h2 {
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   text-align: center;
 }
 
 .service-feature {
   border-right: 1px solid #f4f4f4;
   float: left;
-  height: 430px;
+  height: 428px;
   padding: 8px 35px 0;
   text-align: center;
   width: 33.33%;
@@ -429,7 +437,7 @@ Services Tabs Styles
 }
 
 .service-feature img {
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 }
 
 .service-feature h4 {
@@ -451,14 +459,14 @@ Services Galleries Styles
 ****************************
 ***************************/
 
-#service-gallery {
+#services-gallery {
   background-color: #f3f6f8;
-  padding: 45px 0 35px 0;
+  padding: 45px 0 38px;
 }
 
-#service-gallery h2 {
+#services-gallery h2 {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
 }
 
 .gallery-item {
@@ -491,13 +499,13 @@ Services Galleries Styles
 }
 
 .gallery-item img {
-  margin-bottom: 18px;
+  margin-bottom: 19px;
   display: inline-block;
   width: 100%;
 }
 
-#service-gallery .gallery .carousel-indicators {
-  margin-top: 50px;
+#services-gallery .gallery .carousel-indicators {
+  margin-top: 53px;
 }
 
 .gallery .carousel-indicators {
@@ -563,7 +571,7 @@ What to expect Styles
 ***************************/
 
 #expect {
-  padding: 50px 0;
+  padding: 57px 0 63px;
 }
 
 #expect h2 {
@@ -591,11 +599,11 @@ What to expect Styles
 }
 
 .expect-item h4 {
+  color: #362f2d;
   font-family: 'open_sanssemibold';
   font-size: 13px;
-  color: #362f2d;
+  margin-bottom: 21px;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .expect-item p {
@@ -615,9 +623,9 @@ footer {
 }
 
 #tell-us-more {
-  padding: 40px 0;
-  text-align: center;
   color: #47565f;
+  padding: 43px 0 40px;
+  text-align: center;
 }
 
 #tell-us-more h3 {
@@ -630,24 +638,23 @@ footer {
 #tell-us-more p {
   font-size: 15px;
   line-height: 24px;
-  margin: 0 0 34px;
+  margin: 0 0 32px;
 }
 
 #footer-social {
   background-color: #e7edf1;
-  padding-top: 19px;
 }
 
 #footer-social ul {
-  margin: 0;
-  text-align: center;
   border-bottom: 1px solid #dfe5e9;
-  padding-bottom: 17px;
+  margin: 0;
+  padding: 18px 0;
+  text-align: center;
 }
 
 #footer-social ul li {
   display: inline-block;
-  margin: 9px;
+  margin: 0 9px;
 }
 
 #footer-social ul li a {
