@@ -18,4 +18,18 @@
   .gallery-item .overlay {
     height: 200px;
   }
+
+  #work-gallery .gallery-item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  #work-gallery .gallery-item:nth-child(4),
+  #work-gallery .gallery-item:nth-child(7),
+  #work-gallery .gallery-item:nth-child(10) {
+    margin-left: 0;
+  }
+
+  #work-gallery .gallery-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
 }

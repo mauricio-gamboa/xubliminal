@@ -121,6 +121,14 @@ strong {
   z-index: 97;
 }
 
+.top-gray-border {
+  border-top: 1px solid #efefef;
+}
+
+.bottom-gray-border {
+  border-bottom: 1px solid #efefef;
+}
+
 /***************************
 ****************************
 Bottons Styles
@@ -721,4 +729,65 @@ footer {
   height: 40px;
   text-indent: -9999px;
   width: 302px;
+}
+
+/***************************
+****************************
+Works Page Styles
+****************************
+***************************/
+
+#work-gallery {
+  padding-bottom: 31px;
+}
+
+#page-subtitle {
+  color: #636363;
+  font-family: 'open_sanslight';
+  font-size: 20px;
+  line-height: 30px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+#page-subtitle p {
+  margin: 0;
+}
+
+#gallery-nav {
+  margin: 0;
+  text-align: center;
+  padding: 31px 0;
+}
+
+#gallery-nav li {
+  display: inline-block;
+}
+
+#gallery-nav li a {
+  border-radius: 20px;
+  color: #707070;
+  display: block;
+  font-family: 'open_sanssemibold';
+  font-size: 13px;
+  line-height: 31px;
+  padding: 0 17px;
+  text-transform: uppercase;
+}
+
+#gallery-nav li a:hover {
+  color: #fa634f;
+}
+
+#gallery-nav li.active a {
+  background-color: #fa634f;
+  color: #FFFFFF;
+}
+
+#work-gallery .gallery-item {
+  margin-bottom: 31px;
+}
+
+#work-gallery .gallery-row:last-child {
+  margin-bottom: 0;
 }

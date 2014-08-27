@@ -117,4 +117,18 @@
   #expect-gallery .carousel-indicators {
     margin-top: 34px;
   }
+
+  #work-gallery .gallery-item {
+    display: block;
+    margin: 0 auto 31px;
+  }
+
+  #work-gallery .gallery-item:last-child {
+    margin: 0 auto;
+  }
+
+  #page-subtitle {
+    font-size: 16px;
+    line-height: 27px;
+  }
 }
