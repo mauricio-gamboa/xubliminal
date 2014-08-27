@@ -116,6 +116,11 @@ strong {
   display: none;
 }
 
+.sticky-cover {
+  position: relative;
+  z-index: 97;
+}
+
 /***************************
 ****************************
 Bottons Styles
@@ -168,7 +173,13 @@ Header Styles
 ***************************/
 
 header {
-  height: 64px;
+  background: url("../images/nav-bg.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+  height: 66px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header .logo {
@@ -288,18 +299,28 @@ Page Phrase Styles
 ****************************
 ***************************/
 
-#page-phrase {
-  background: 
-  url("../images/shadow-1.png") repeat-x 0 0,
-  url("../images/texture-1.png") repeat 0 0;
-  height: 157px;
+.page-phrase {
+  background-image: url("../images/texture-1.png");
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-repeat: repeat;
+  height: 221px;
+  padding-top: 64px;
 }
 
-#page-phrase h1 {
+.page-phrase h1 {
   color: #ffffff;
   font-size: 53px;
+  left: 0;
   line-height: 157px;
+  position: fixed;
+  right: 0;
   text-align: center;
+}
+
+#services-page .page-phrase {
+  height: 298px;
+  margin-bottom: -77px;
 }
 
 /***************************
@@ -311,7 +332,7 @@ Services Tabs Styles
 #services-links {
   background: 
   url("../images/t-1.png") repeat-x 0 0,
-  url("../images/texture-1.png") repeat-x 0 0;
+  url("../images/texture-1.png") repeat-x 0 6px;
 }
 
 #services-links ul li {

@@ -7,14 +7,20 @@
     display: block;
   }
 
-  #page-phrase {
-    height: 164px;
-    padding-top: 35px;
+  .page-phrase {
+    height: 228px;
+    padding-top: 99px;
   }
 
-  #page-phrase h1 {
+  .page-phrase h1 {
     font-size: 35px;
     line-height: normal;
+  }
+
+  #services-page .page-phrase {
+    height: 228px;
+    padding-top: 99px;
+    margin-bottom: 0;
   }
 
   .service {
