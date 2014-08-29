@@ -84,6 +84,7 @@ body {
   background-color: #FFFFFF;
   color: #2b363d;
   font-family: 'open_sansregular';
+  padding-bottom: 406px;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -336,6 +337,10 @@ Page Phrase Styles
 Services Tabs Styles
 ****************************
 ***************************/
+
+#service-tabs {
+  background-color: #FFFFFF;
+}
 
 #services-links {
   background: 
@@ -600,6 +605,7 @@ What to expect Styles
 ***************************/
 
 #expect {
+  background-color: #ffffff;
   padding: 57px 0 63px;
 }
 
@@ -649,6 +655,12 @@ Footer Styles
 
 footer {
   background: url("../images/g-1.png") repeat-x 0 0 #f3f6f8;
+  bottom: 0;
+  height: 406px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 95;
 }
 
 #tell-us-more {
@@ -738,10 +750,12 @@ Works Page Styles
 ***************************/
 
 #work-gallery {
+  background-color: #fff;
   padding-bottom: 31px;
 }
 
 #page-subtitle {
+  background-color: #fff;
   color: #636363;
   font-family: 'open_sanslight';
   font-size: 20px;

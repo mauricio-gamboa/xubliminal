@@ -7,6 +7,10 @@
     display: block;
   }
 
+  body {
+    padding-bottom: 489px;
+  }
+
   .page-phrase {
     height: 228px;
     padding-top: 99px;
@@ -130,5 +134,16 @@
   #page-subtitle {
     font-size: 16px;
     line-height: 27px;
+  }
+
+  footer {
+    height: 489px;
+  }
+
+  #footer-social {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
   }
 }
