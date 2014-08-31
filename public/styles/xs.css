@@ -146,4 +146,14 @@
     bottom: 0;
     left: 0;
   }
+
+  #page-subtitle h2 {
+    font-size: 30px;
+  }
+
+  #detail-carousel {
+    height: auto;
+    padding-bottom: 120px;
+    padding-top: 166px;
+  }
 }

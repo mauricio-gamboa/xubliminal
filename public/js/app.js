@@ -14,6 +14,10 @@ config(function ($routeProvider) {
     templateUrl: 'partials/work.html'
   }).
 
+  when('/work-detail', {
+    templateUrl: 'partials/work-detail.html'
+  }).
+
   otherwise({
     redirectTo: '/services',
   });
