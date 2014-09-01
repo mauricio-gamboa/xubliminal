@@ -21,7 +21,7 @@
     line-height: normal;
   }
 
-  #services-page .page-phrase {
+  .services-page .page-phrase {
     height: 228px;
     padding-top: 99px;
     margin-bottom: 0;
@@ -155,5 +155,28 @@
     height: auto;
     padding-bottom: 120px;
     padding-top: 166px;
+  }
+
+  #quote-form {
+    margin: 0;
+    width: 100%;
+  }
+
+  #quote-form div fieldset:nth-child(1), 
+  #quote-form div fieldset:nth-child(2) {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  #contact-links ul {
+    border-bottom: 1px solid #f3f3f3;
+    padding-bottom: 23px;
+    margin-bottom: 23px;
+  }
+
+  #contact-links .row > div:last-child ul {
+    margin-bottom: 0;
+    border-bottom: none;
   }
 }

@@ -1,15 +1,30 @@
-<div id="services-page">
+<!DOCTYPE html>
+<html lang="en" ng-app="xublime">
+<head>
+  <title>Xublime New Site - Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="public/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="public/styles/styles.css">
+  <link rel="stylesheet" href="public/styles/large.css">
+  <link rel="stylesheet" href="public/styles/medium.css">
+  <link rel="stylesheet" href="public/styles/small.css">
+  <link rel="stylesheet" href="public/styles/xs.css">
+</head>
+<body class="services-page">
   <header>
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h1 class="logo pull-left"><a href="">Xubliminal</a></h1>
+          <a href="" class="pull-right mobile-trigger show-xs"></a>
           <nav class="main-nav pull-left hide-xs">
             <ul class="xub-nav">
-              <li><a href="#/work">Work</a></li>
-              <li class="active"><a href="#/services">Services</a></li>
-              <li><a href="#/freebies">Freebies</a></li>
-              <li><a href="">Get A Quote</a></li>
+              <li><a href="work.html">Work</a></li>
+              <li class="active"><a href="services.html">Services</a></li>
+              <li><a href="freebies.html">Freebies</a></li>
+              <li><a href="get-quote.html">Get A Quote</a></li>
             </ul>
           </nav>
           <div class="pull-right clearfix hide-xs">
@@ -406,5 +421,36 @@
       </div>
     </div>
   </section>
-  <footer ng-include src="'partials/includes/footer.html'"></footer>
-</div>
+  <footer>
+    <section id="tell-us-more">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h3>Tell us more about your project ideas</h3>
+            <p>Do you have a cool idea for a new project and need some design aces to make it happen?</p>
+            <a href="" class="btn-2">Get a Free Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer-social">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <ul class="list-unstyled">
+              <li class="social-item-1"><a href="">Twitter</a></li>
+              <li class="social-item-2"><a href="">Facebook</a></li>
+              <li class="social-item-3"><a href="">Behance</a></li>
+            </ul>
+            <div id="handcrafted">
+              <h6>Handcrafted in lovely Costa Rica</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="public/js/lib/jquery.min.js"></script>
+  <script src="public/js/lib/bootstrap.min.js"></script>
+</body>
+</html>

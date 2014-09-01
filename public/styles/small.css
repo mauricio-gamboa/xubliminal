@@ -58,4 +58,9 @@
   .share-list li {
     margin-right: 7px;
   }
+
+  #quote-form {
+    margin: 0;
+    width: 100%;
+  }
 }
