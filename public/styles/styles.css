@@ -139,6 +139,28 @@ strong {
   box-shadow: 0 6px 6px -6px #cfd1d3;
 }
 
+.select-wrapper {
+  background: url("../images/arrow-2.jpg") no-repeat scroll 100% 50% #FFFFFF;
+  border-radius: 5px;
+  box-shadow: -1px 2px 3px -3px #000000;
+  height: 37px;
+  width: 100%;
+}
+
+.select-wrapper select {
+  -moz-appearance: menulist-text;
+  -webkit-appearance: menulist-text;
+  appearance: menulist-text;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: medium none;
+  box-shadow: none;
+  height: 100%;
+  outline: medium none;
+  padding-left: 21px;
+  padding-right: 39px;
+  width: 100%;
+}
+
 /***************************
 ****************************
 Bottons Styles
@@ -173,6 +195,7 @@ Bottons Styles
 
 .btn-2 {
   background-color: #f97261;
+  border: medium none;
   border-radius: 50px;
   color: #ffffff;
   display: inline-block;
@@ -182,6 +205,7 @@ Bottons Styles
 }
 
 .btn-2:hover {
+  background-color: #e55b4a;
   color: #FFFFFF;
 }
 
@@ -215,6 +239,18 @@ header .logo {
   height: 29px;
   text-indent: -9999px;
   width: 155px;
+}
+
+.mobile-trigger {
+  background: url("../images/mobile-trigger.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 39px;
+  margin-top: 13px;
+  width: 39px;
+}
+
+.mobile-trigger:hover {
+  background-position: 0 -39px;
 }
 
 .xub-nav {
@@ -341,7 +377,7 @@ Page Phrase Styles
   text-align: center;
 }
 
-#services-page .page-phrase {
+.services-page .page-phrase {
   height: 298px;
   margin-bottom: -77px;
 }
@@ -995,7 +1031,7 @@ Works Detail Page Styles
   font-size: 15px;
 }
 
-#work-page #services-gallery {
+.work-page #services-gallery {
   background-color: #FFFFFF;
   padding: 40px 0;
 }
@@ -1083,4 +1119,190 @@ Freebies Page Styles
   line-height: 26px;
   padding: 0 14px;
   background-color: #FFFFFF;
+}
+
+/***************************
+****************************
+Get Quote Styles
+****************************
+***************************/
+
+#get-quote,
+.get-quote-page #page-subtitle {
+  background-color: #f3f6f8;
+}
+
+#quote-form {
+  padding: 38px 0;
+  width: 770px;
+  margin: 0 auto;
+}
+
+#quote-form label {
+  color: #424d54;
+  line-height: 40px;
+  margin: 0;
+  font-weight: normal;
+  display: block;
+}
+
+#quote-form input[type="text"],
+#quote-form input[type="email"],
+#quote-form textarea {
+  border: medium none;
+  border-radius: 5px;
+  box-shadow: -1px 2px 3px -3px #000000;
+  color: #303030;
+  font-family: 'open_sanssemibold';
+  height: 37px;
+  margin: 0;
+  padding: 0 20px;
+  resize: none;
+  width: 100%;
+}
+
+#quote-form input[type="text"]:focus,
+#quote-form input[type="email"]:focus,
+#quote-form textarea:focus {
+  border: 1px solid #8eddf4;
+  box-shadow: 0 0 10px 0 #8eddf4;
+}
+
+#quote-form textarea {
+  padding: 20px;
+  height: 115px;
+}
+
+#quote-form div fieldset:nth-child(1),
+#quote-form div fieldset:nth-child(2) {
+  float: left;
+  width: 50%;
+}
+
+#quote-form div fieldset:nth-child(1) {
+  padding-right: 15px;
+}
+
+#quote-form div fieldset:nth-child(2) {
+  padding-left: 15px;
+}
+
+#quote-form div fieldset > div {
+  margin-bottom: 10px;
+}
+
+#map {
+  height: 382px;
+}
+
+#contact-links {
+  background-color: #FFFFFF;
+  padding: 34px 0;
+}
+
+#contact-links ul {
+  margin-bottom: 0;
+}
+
+#contact-links h5 {
+  font-family: 'open_sanssemibold';
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#contact-links a {
+  color: #464646;
+}
+
+#contact-links li {
+  margin-bottom: 8px;
+}
+
+#contact-links li:last-child {
+  margin-bottom: 0;
+}
+
+#contact-links li a {
+  background: url("../images/contact-links-icons.png") no-repeat 0 0;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 41px;
+  display: block;
+}
+
+#contact-links .contact-links-1 a {
+  background-position: 0 0;
+}
+
+#contact-links .contact-links-1 a:hover {
+  background-position: 0 -32px;
+}
+
+#contact-links .contact-links-2 a {
+  background-position: 0 -64px;
+}
+
+#contact-links .contact-links-2 a:hover {
+  background-position: 0 -96px;
+}
+
+#contact-links .contact-links-3 a {
+  background-position: 0 -128px;
+}
+
+#contact-links .contact-links-3 a:hover {
+  background-position: 0 -160px;
+}
+
+#contact-links .contact-links-4 {
+  position: relative;
+  padding-left: 41px;
+  line-height: 23px;
+}
+
+#contact-links .contact-links-4 span {
+  background: url("../images/contact-links-icons.png") no-repeat 0 -192px;
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#contact-links .contact-links-4:hover span {
+  background: url("../images/contact-links-icons.png") no-repeat 0 -224px;
+}
+
+#contact-links .contact-links-5 a {
+  background-position: 0 -256px;
+}
+
+#contact-links .contact-links-5 a:hover {
+  background-position: 0 -288px;
+}
+
+#contact-links .contact-links-6 a {
+  background-position: 0 -320px;
+}
+
+#contact-links .contact-links-6 a:hover {
+  background-position: 0 -352px;
+}
+
+#contact-links .contact-links-7 a {
+  background-position: 0 -384px;
+}
+
+#contact-links .contact-links-7 a:hover {
+  background-position: 0 -416px;
+}
+
+#quote-form .btn-2 {
+  margin: 22px auto 0 auto;
+  display: block;
+  height: 54px;
+  width: 240px;
+  font-size: 17px;
 }
