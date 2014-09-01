@@ -621,17 +621,18 @@ Services Galleries Styles
 
 .gallery-item .overlay {
   background: url("../images/t-2.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-  display: none;
   height: 180px;
   position: absolute;
   top: 0;
   width: 100%;
   left: 0;
   top: 0;
+  transition: opacity 0.2s ease 0.2s;
+  opacity: 0;
 }
 
 .gallery-item:hover .overlay {
-  display: inline-block;
+  opacity: 1;
 }
 
 .gallery-item .overlay .btn-1,
