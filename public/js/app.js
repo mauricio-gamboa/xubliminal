@@ -18,6 +18,10 @@ config(function ($routeProvider) {
     templateUrl: 'partials/work-detail.html'
   }).
 
+  when('/freebies', {
+    templateUrl: 'partials/freebies.html'
+  }).
+
   otherwise({
     redirectTo: '/services',
   });

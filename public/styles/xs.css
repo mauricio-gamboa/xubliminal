@@ -78,9 +78,18 @@
   }
 
   .gallery-item {
-    display: inline-block;
+    display: block;
     float: none;
     width: 290px;
+    margin: 0 auto 31px;
+  }
+
+  .gallery-item:first-child {
+    margin: 0 auto 31px auto;
+  }
+
+  .gallery-item:last-child {
+    margin: 0 auto;
   }
 
   .gallery-item .overlay {
@@ -120,15 +129,6 @@
 
   #expect-gallery .carousel-indicators {
     margin-top: 34px;
-  }
-
-  #work-gallery .gallery-item {
-    display: block;
-    margin: 0 auto 31px;
-  }
-
-  #work-gallery .gallery-item:last-child {
-    margin: 0 auto;
   }
 
   #page-subtitle {

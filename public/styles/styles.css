@@ -135,12 +135,17 @@ strong {
   border-bottom: 1px solid #efefef;
 }
 
+.shadow {
+  box-shadow: 0 6px 6px -6px #cfd1d3;
+}
+
 /***************************
 ****************************
 Bottons Styles
 ****************************
 ***************************/
-.btn-1 {
+.btn-1,
+.btn-3 {
   background: url("../images/btn-1-image.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   display: block;
   height: 54px;
@@ -149,7 +154,8 @@ Bottons Styles
   z-index: 3;
 }
 
-.btn-1 + .btn-1-border {
+.btn-1 + .btn-1-border,
+.btn-3 + .btn-3-border {
   background: url("../images/btn-1-border.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   display: block;
   height: 102px;
@@ -177,6 +183,10 @@ Bottons Styles
 
 .btn-2:hover {
   color: #FFFFFF;
+}
+
+.btn-3 {
+  background: url("../images/btn-3-image.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 /***************************
@@ -589,14 +599,16 @@ Services Galleries Styles
   display: inline-block;
 }
 
-.gallery-item .overlay .btn-1 {
+.gallery-item .overlay .btn-1,
+.gallery-item .overlay .btn-3 {
   left: 50%;
   margin-left: -27px;
   margin-top: -27px;
   top: 50%;
 }
 
-.gallery-item .overlay .btn-1 + .btn-1-border {
+.gallery-item .overlay .btn-1 + .btn-1-border,
+.gallery-item .overlay .btn-3 + .btn-3-border {
   left: 50%;
   margin-left: -51px;
   margin-top: -51px;
@@ -659,7 +671,8 @@ Footer Styles
 ***************************/
 
 footer {
-  background: url("../images/g-1.png") repeat-x 0 0 #f3f6f8;
+  /*background: url("../images/g-1.png") repeat-x 0 0 #f3f6f8;*/
+  background-color: #f3f6f8;
   bottom: 0;
   height: 406px;
   left: 0;
@@ -819,11 +832,11 @@ Works Page Styles
   color: #FFFFFF;
 }
 
-#work-gallery .gallery-item {
+.gallery-item {
   margin-bottom: 31px;
 }
 
-#work-gallery .gallery-row:last-child {
+.gallery-row:last-child {
   margin-bottom: 0;
 }
 
@@ -985,4 +998,89 @@ Works Detail Page Styles
 #work-page #services-gallery {
   background-color: #FFFFFF;
   padding: 40px 0;
+}
+
+/***************************
+****************************
+Freebies Page Styles
+****************************
+***************************/
+
+#freebies-gallery {
+  background-color: #FFFFFF;
+}
+
+#freebies-gallery .gallery-row {
+  padding: 52px 0 0 0;
+}
+
+.gallery-item.freebie-gallery img {
+  margin-bottom: 0;
+}
+
+.gallery-item.freebie-gallery h5 {
+  height: 30px;
+  line-height: 30px;
+  margin: 18px 0;
+  text-align: left;
+  padding-left: 38px;
+}
+
+.gallery-item.freebie-gallery.ps h5 {
+  background: url("../images/freebie-icon-1.png") no-repeat 0 0;
+}
+
+.gallery-item.freebie-gallery.ai h5 {
+  background: url("../images/freebie-icon-2.png") no-repeat 0 0;
+}
+
+.gallery-item.freebie-gallery p {
+  text-align: left;
+  line-height: 26px;
+  margin: 0;
+}
+
+#freebies-gallery .gallery-page {
+  margin: 60px 0;
+}
+
+.gallery-page {
+  background: url("../images/dot-1.png") repeat-x 0 50%;
+  overflow: hidden;
+  text-align: center;
+  line-height: 48px;
+}
+
+.gallery-page a {
+  background: url("../images/arrow-1.png") no-repeat 0 0 #FFFFFF;
+  width: 56px;
+  height: 48px;
+  text-indent: -9999px;
+}
+
+.gallery-page .prev {
+  float: left;
+  background-position: 0 0;
+  padding-right: 8px;
+}
+
+.gallery-page .prev:hover {
+  background-position: 0 -48px;
+}
+
+.gallery-page .next {
+  float: right;
+  background-position: 100% -96px;
+  padding-left: 8px;
+}
+
+.gallery-page .next:hover {
+  background-position: 100% -144px;
+}
+
+.gallery-page span {
+  display: inline-block;
+  line-height: 26px;
+  padding: 0 14px;
+  background-color: #FFFFFF;
 }
