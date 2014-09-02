@@ -287,7 +287,7 @@ header .logo {
 
 .lang-nav .xub-nav li a,
 .main-nav .xub-nav li a {
-  border-bottom: 4px solid #ffffff;
+  border-bottom: 4px solid transparent;
   display: block;
   height: 64px;
   line-height: 68px;
