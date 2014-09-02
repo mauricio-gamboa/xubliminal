@@ -16,38 +16,12 @@
     position: relative;
   }
 
-  #wrapper {
-    padding-right: 0;
-    /*transition: all 0.5s ease 0s;*/
+  header .logo {
+    float: none;
   }
 
-  #sidebar-wrapper {
-    background: url("../images/mobile-nav-bg.png") repeat-y 0 0;
-    height: 100%;
-    right: 273px;
-    margin-right: -273px;
-    overflow-y: auto;
-    position: fixed;
-    /*transition: all 0.5s ease 0s;*/
-    width: 0;
-    z-index: 1000;
-  }
-
-  #page-content-wrapper {
-    width: 100%;
-  }
-
-  #wrapper.toggled {
-    padding-right: 273px;
-  }
-
-  #wrapper.toggled #sidebar-wrapper {
-    width: 273px;
-  }
-
-  #wrapper.toggled #page-content-wrapper {
-    margin-left: -273px;
-    position: absolute;
+  header .logo a {
+    margin: 0 auto;
   }
 
   .page-phrase,
