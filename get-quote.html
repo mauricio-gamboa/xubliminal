@@ -12,182 +12,219 @@
   <link rel="stylesheet" href="public/styles/xs.css">
 </head>
 <body class="get-quote-page">
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h1 class="logo pull-left"><a href="">Xubliminal</a></h1>
-          <a href="" class="pull-right mobile-trigger show-xs"></a>
-          <nav class="main-nav pull-left hide-xs">
-            <ul class="xub-nav">
-              <li><a href="work.html">Work</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="freebies.html">Freebies</a></li>
-              <li class="active"><a href="get-quote.html">Get A Quote</a></li>
-            </ul>
-          </nav>
-          <div class="pull-right clearfix hide-xs">
-            <nav class="contact-nav pull-left hide-s">
-              <ul class="xub-nav">
-                <li class="contact-menu-item-1"><a href="">Skype</a></li>
-                <li class="contact-menu-item-2"><a href="">Email</a></li>
-                <li class="contact-menu-item-3"><a href="">Phone</a></li>
-              </ul>
-            </nav>
-            <nav class="lang-nav pull-left">
-              <ul class="xub-nav">
-                <li class="active"><a href="">ENG</a></li>
-                <li><a href="">ESP</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+  <div id="wrapper">
+    <div id="sidebar-wrapper" class="show-xs">
+      <h1 class="logo"><a href="">Xubliminal</a></h1>
+      <ul class="list-unstyled">
+        <li class="active"><a href="">Home</a></li>
+        <li class="has-children">
+          <a href="">Work</a>
+          <ul class="list-unstyled">
+            <li><a href="">Web Design</a></li>
+            <li><a href="">App Development</a></li>
+            <li><a href="">Creative Design</a></li>
+            <li><a href="">Digital Strategy</a></li>
+          </ul>
+        </li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Get a Quote</a></li>
+        <li class="mobile-link mobile-link-1"><a href=""><span></span> +506.2591.5492</a></li>
+        <li class="mobile-link mobile-link-2"><a href=""><span></span> hello@xubliminal.com</a></li>
+        <li class="mobile-link mobile-link-3"><a href=""><span></span> Xubliminal</a></li>
+      </ul>
+      <div>
+        <img src="public/images/mobile-menu-img.png" alt="">
       </div>
     </div>
-  </header>
-  <section class="page-phrase">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h1>Let's talk business</h1>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="page-subtitle" class="sticky-cover">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <p>We would like to get to know you better and help you <br class="hide-xs">with any project you might have.  Just let us know.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="get-quote" class="sticky-cover">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 top-gray-border">
-          <div id="quote-form">
-            <form action="">
-              <div class="clearfix">
-                <fieldset>
-                  <div>
-                    <label for="">Your Name</label>
-                    <input type="text">
-                  </div>
-                  <div>
-                    <label for="">Phone</label>
-                    <input type="text">
-                  </div>
-                  <div>
-                    <label for="">Service Interested</label>
-                    <div class="select-wrapper">
-                      <select id="" name="country">
-                        <option value="">Choose Service</option>
-                        <option value="">Choose Service</option>
-                        <option value="">Choose Service</option>
-                      </select>
-                    </div>
-                  </div>
-                </fieldset>
-                <fieldset>
-                  <div>
-                    <label for="">Email</label>
-                    <input type="email">
-                  </div>
-                  <div>
-                    <label for="">Company</label>
-                    <input type="text">
-                  </div>
-                  <div>
-                    <label for="">Your Budget</label>
-                    <div class="select-wrapper">
-                      <select id="" name="country">
-                        <option value="">$1000 or less</option>
-                        <option value="">$1000 or less</option>
-                        <option value="">$1000 or less</option>
-                      </select>
-                    </div>
-                  </div>
-                </fieldset>
+    <div id="page-content-wrapper">
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h1 class="logo pull-left"><a href="">Xubliminal</a></h1>
+              <a id="mobile-trigger" href="" class="pull-right mobile-trigger show-xs"></a>
+              <nav class="main-nav pull-left hide-xs">
+                <ul class="xub-nav">
+                  <li><a href="work.html">Work</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="freebies.html">Freebies</a></li>
+                  <li class="active"><a href="get-quote.html">Get A Quote</a></li>
+                </ul>
+              </nav>
+              <div class="pull-right clearfix hide-xs">
+                <nav class="contact-nav pull-left hide-s">
+                  <ul class="xub-nav">
+                    <li class="contact-menu-item-1"><a href="">Skype</a></li>
+                    <li class="contact-menu-item-2"><a href="">Email</a></li>
+                    <li class="contact-menu-item-3"><a href="">Phone</a></li>
+                  </ul>
+                </nav>
+                <nav class="lang-nav pull-left">
+                  <ul class="xub-nav">
+                    <li class="active"><a href="">ENG</a></li>
+                    <li><a href="">ESP</a></li>
+                  </ul>
+                </nav>
               </div>
-              <fieldset>
-                <label for="">Project Details</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-              </fieldset>
-              <input type="submit" class="btn-2" value="Request A Quote">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="contact-links" class="sticky-cover">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <h5>Contact Information</h5>
-          <ul class="list-unstyled">
-            <li class="contact-links-1"><a href="">+(506) 2591-5492</a></li>
-            <li class="contact-links-2"><a href="">hello@xubliminal.com</a></li>
-            <li class="contact-links-3"><a href="">Xubliminal</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <h5>Main Offices</h5>
-          <ul class="list-unstyled">
-            <li class="contact-links-4">
-              <span></span>
-              2nd avenue, 15th St.<br>
-              Los Angeles, Cartago<br>
-              Costa Rica
-            </li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <h5>Social Networks</h5>
-          <ul class="list-unstyled">
-            <li class="contact-links-5"><a href="">Become a Fan</a></li>
-            <li class="contact-links-6"><a href="">Follow Us</a></li>
-            <li class="contact-links-7"><a href="">Check our Artworks</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="map" class="sticky-cover shadow"></section>
-  <footer>
-    <section id="tell-us-more">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h3>Tell us more about your project ideas</h3>
-            <p>Do you have a cool idea for a new project and need some design aces to make it happen?</p>
-            <a href="" class="btn-2">Get a Free Quote</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="footer-social">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <ul class="list-unstyled">
-              <li class="social-item-1"><a href="">Twitter</a></li>
-              <li class="social-item-2"><a href="">Facebook</a></li>
-              <li class="social-item-3"><a href="">Behance</a></li>
-            </ul>
-            <div id="handcrafted">
-              <h6>Handcrafted in lovely Costa Rica</h6>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </footer>
+      </header>
+      <section class="page-phrase">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h1>Let's talk business</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="page-subtitle" class="sticky-cover">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <p>We would like to get to know you better and help you <br class="hide-xs">with any project you might have.  Just let us know.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="get-quote" class="sticky-cover">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 top-gray-border">
+              <div id="quote-form">
+                <form action="">
+                  <div class="clearfix">
+                    <fieldset>
+                      <div>
+                        <label for="">Your Name</label>
+                        <input type="text">
+                      </div>
+                      <div>
+                        <label for="">Phone</label>
+                        <input type="text">
+                      </div>
+                      <div>
+                        <label for="">Service Interested</label>
+                        <div class="select-wrapper">
+                          <select id="" name="country">
+                            <option value="">Choose Service</option>
+                            <option value="">Choose Service</option>
+                            <option value="">Choose Service</option>
+                          </select>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <div>
+                        <label for="">Email</label>
+                        <input type="email">
+                      </div>
+                      <div>
+                        <label for="">Company</label>
+                        <input type="text">
+                      </div>
+                      <div>
+                        <label for="">Your Budget</label>
+                        <div class="select-wrapper">
+                          <select id="" name="country">
+                            <option value="">$1000 or less</option>
+                            <option value="">$1000 or less</option>
+                            <option value="">$1000 or less</option>
+                          </select>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <fieldset>
+                    <label for="">Project Details</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                  </fieldset>
+                  <input type="submit" class="btn-2" value="Request A Quote">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-links" class="sticky-cover">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <h5>Contact Information</h5>
+              <ul class="list-unstyled">
+                <li class="contact-links-1"><a href="">+(506) 2591-5492</a></li>
+                <li class="contact-links-2"><a href="">hello@xubliminal.com</a></li>
+                <li class="contact-links-3"><a href="">Xubliminal</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <h5>Main Offices</h5>
+              <ul class="list-unstyled">
+                <li class="contact-links-4">
+                  <span></span>
+                  2nd avenue, 15th St.<br>
+                  Los Angeles, Cartago<br>
+                  Costa Rica
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <h5>Social Networks</h5>
+              <ul class="list-unstyled">
+                <li class="contact-links-5"><a href="">Become a Fan</a></li>
+                <li class="contact-links-6"><a href="">Follow Us</a></li>
+                <li class="contact-links-7"><a href="">Check our Artworks</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="map" class="sticky-cover shadow"></section>
+      <footer>
+        <section id="tell-us-more">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h3>Tell us more about your project ideas</h3>
+                <p>Do you have a cool idea for a new project and need some design aces to make it happen?</p>
+                <a href="" class="btn-2">Get a Free Quote</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="footer-social">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-unstyled">
+                  <li class="social-item-1"><a href="">Twitter</a></li>
+                  <li class="social-item-2"><a href="">Facebook</a></li>
+                  <li class="social-item-3"><a href="">Behance</a></li>
+                </ul>
+                <div id="handcrafted">
+                  <h6>Handcrafted in lovely Costa Rica</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </div>
   <script src="https://maps.googleapis.com/maps/api/js"></script>
   <script src="public/js/lib/jquery.min.js"></script>
   <script src="public/js/contact-map.js"></script>
   <script src="public/js/lib/bootstrap.min.js"></script>
+  <script>
+  $("#mobile-trigger").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+  $(".has-children a").click(function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass("open");
+  });
+  </script>
 </body>
 </html>
