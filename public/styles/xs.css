@@ -8,23 +8,61 @@
   }
 
   body {
-    padding-bottom: 489px;
+    padding-bottom: 0;
+    overflow-x: hidden;
   }
 
-  .page-phrase {
-    height: 228px;
-    padding-top: 99px;
+  header {
+    position: relative;
+  }
+
+  #wrapper {
+    padding-right: 0;
+    /*transition: all 0.5s ease 0s;*/
+  }
+
+  #sidebar-wrapper {
+    background: url("../images/mobile-nav-bg.png") repeat-y 0 0;
+    height: 100%;
+    right: 273px;
+    margin-right: -273px;
+    overflow-y: auto;
+    position: fixed;
+    /*transition: all 0.5s ease 0s;*/
+    width: 0;
+    z-index: 1000;
+  }
+
+  #page-content-wrapper {
+    width: 100%;
+  }
+
+  #wrapper.toggled {
+    padding-right: 273px;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    width: 273px;
+  }
+
+  #wrapper.toggled #page-content-wrapper {
+    margin-left: -273px;
+    position: absolute;
+  }
+
+  .page-phrase,
+  .services-page .page-phrase {
+    height: 164px;
+    margin-bottom: 0;
+    padding-top: 35px;
+    position: relative;
+    top: -2px;
   }
 
   .page-phrase h1 {
     font-size: 35px;
     line-height: normal;
-  }
-
-  .services-page .page-phrase {
-    height: 228px;
-    padding-top: 99px;
-    margin-bottom: 0;
+    position: static;
   }
 
   .service {
@@ -137,14 +175,8 @@
   }
 
   footer {
-    height: 489px;
-  }
-
-  #footer-social {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+    height: auto;
+    position: static;
   }
 
   #page-subtitle h2 {
@@ -154,7 +186,9 @@
   #detail-carousel {
     height: auto;
     padding-bottom: 120px;
-    padding-top: 166px;
+    padding-top: 100px;
+    position: relative;
+    top: -2px;
   }
 
   #quote-form {
