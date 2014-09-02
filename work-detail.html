@@ -10,39 +10,17 @@
   <link rel="stylesheet" href="public/styles/medium.css">
   <link rel="stylesheet" href="public/styles/small.css">
   <link rel="stylesheet" href="public/styles/xs.css">
+  <link rel="stylesheet" href="public/styles/jquery.mmenu.all.css">
 </head>
 <body class="work-page">
-  <div id="wrapper">
-    <div id="sidebar-wrapper" class="show-xs">
-      <h1 class="logo"><a href="">Xubliminal</a></h1>
-      <ul class="list-unstyled">
-        <li class="active"><a href="">Home</a></li>
-        <li class="has-children">
-          <a href="">Work</a>
-          <ul class="list-unstyled">
-            <li><a href="">Web Design</a></li>
-            <li><a href="">App Development</a></li>
-            <li><a href="">Creative Design</a></li>
-            <li><a href="">Digital Strategy</a></li>
-          </ul>
-        </li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Get a Quote</a></li>
-        <li class="mobile-link mobile-link-1"><a href=""><span></span> +506.2591.5492</a></li>
-        <li class="mobile-link mobile-link-2"><a href=""><span></span> hello@xubliminal.com</a></li>
-        <li class="mobile-link mobile-link-3"><a href=""><span></span> Xubliminal</a></li>
-      </ul>
-      <div>
-        <img src="public/images/mobile-menu-img.png" alt="">
-      </div>
-    </div>
-    <div id="page-content-wrapper">
+  <div>
+    <div id="content">
       <header>
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <h1 class="logo pull-left"><a href="">Xubliminal</a></h1>
-              <a id="mobile-trigger" href="" class="pull-right mobile-trigger show-xs"></a>
+              <a id="mobile-trigger" href="#mobile-menu" class="pull-left mobile-trigger show-xs"></a>
+              <h1 class="logo"><a href="">Xubliminal</a></h1>
               <nav class="main-nav pull-left hide-xs">
                 <ul class="xub-nav">
                   <li class="active"><a href="work.html">Work</a></li>
@@ -427,17 +405,32 @@
         </section>
       </footer>
     </div>
+    <nav id="mobile-menu">
+      <ul class="list-unstyled">
+        <li><a href="">Home</a></li>
+        <li>
+          <a href="">Work</a>
+          <ul class="list-unstyled">
+            <li><a href="">Web Design</a></li>
+            <li><a href="">App Development</a></li>
+            <li><a href="">Creative Design</a></li>
+            <li><a href="">Digital Strategy</a></li>
+          </ul>
+        </li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Get a Quote</a></li>
+        <li class="mobile-link mobile-link-1"><a href=""><span></span> +506.2591.5492</a></li>
+        <li class="mobile-link mobile-link-2"><a href=""><span></span> hello@xubliminal.com</a></li>
+        <li class="mobile-link mobile-link-3"><a href=""><span></span> Xubliminal</a></li>
+      </ul>
+    </nav>
   </div>
   <script src="public/js/lib/jquery.min.js"></script>
   <script src="public/js/lib/bootstrap.min.js"></script>
-  <script>
-  $("#mobile-trigger").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-  });
-  $(".has-children a").click(function(e) {
-    e.preventDefault();
-    $(this).parent().toggleClass("open");
+  <script src="public/js/lib/jquery.mmenu.min.all.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $('nav#mobile-menu').mmenu();
   });
   </script>
 </body>
