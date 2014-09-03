@@ -27,6 +27,14 @@
         element.mmenu({
           onClick: {
             preventDefault: false
+          },
+          header: {
+            add: true,
+            content: '<h1 class="logo">Xublime</h1>'
+          },
+          footer: {
+            add: true,
+            content: '<img src="public/images/mobile-menu-img.png" alt="Xublime" />'
           }
         });
       }

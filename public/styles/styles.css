@@ -352,29 +352,29 @@ header .logo {
   margin-left: 0;
 }
 
-#mobile-menu {
-  background: url("../images/mobile-menu-img.png") no-repeat 50% 100% #333333;
+#mobile-menu .mm-header {
+  height: 65px;
 }
 
-#mobile-menu #mm-0 {
-  background: url("../images/logo-mobile.png") no-repeat scroll 20px 21px rgba(0, 0, 0, 0);
-  padding-top: 64px;
+#mobile-menu .mm-header h1 {
+  background: url("../images/logo-mobile.png") no-repeat scroll 50% 50% rgba(0, 0, 0, 0);
+  height: 100%;
+  margin: 0;
+  text-indent: -9999px;
 }
 
-#mobile-menu #mm-0 > li:first-child:not(.mm-subtitle):not(.mm-label):not(.mm-search):not(.mm-noresults):after {
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-color: rgba(0, 0, 0, 0.15);
-  top: 0;
-  content: "";
+#mobile-menu.mm-menu.mm-hasheader > .mm-panel.mm-list {
+  padding-top: 66px;
+}
+
+#mobile-menu.mm-menu.mm-hasheader li.mm-subtitle {
   display: block;
-  left: 0;
-  position: absolute;
-  width: 100%;
 }
 
-#mobile-menu .mm-list a.mm-subclose {
-  padding-top: 35px;
+#mobile-menu .mm-footer {
+  height: 72px;
+  padding: 0;
+  border: none;
 }
 
 #mobile-menu .mobile-link a span {
@@ -795,7 +795,6 @@ Footer Styles
 ***************************/
 
 footer {
-  /*background: url("../images/g-1.png") repeat-x 0 0 #f3f6f8;*/
   background-color: #f3f6f8;
   bottom: 0;
   height: 406px;
