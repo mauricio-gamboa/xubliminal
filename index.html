@@ -16,7 +16,7 @@
   <div>
     <div id="content">
       <header ng-include src="'partials/includes/header.html'"></header>
-      <div ng-view></div>
+      <div ng-view autoscroll="true"></div>
       <footer ng-include src="'partials/includes/footer.html'"></footer>
     </div>
     <nav id="mobile-menu" ng-include src="'partials/includes/mobile-nav.html'" mmenu></nav>
@@ -30,6 +30,7 @@
   
   <script src="public/js/lib/angular.min.js"></script>
   <script src="public/js/lib/angular-route.js"></script>
+  <script src="public/js/lib/angular-animate.min.js"></script>
   <script src="public/js/app.js"></script>
 
   <script src="public/js/controllers/headerCtrl.js"></script>
