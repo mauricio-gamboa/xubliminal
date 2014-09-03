@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="xubliminalApp">
+<head>
+  <title ng-bind="pageTitle"></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Styles -->
+  <link rel="stylesheet" href="public/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="public/styles/styles.css">
+  <link rel="stylesheet" href="public/styles/large.css">
+  <link rel="stylesheet" href="public/styles/medium.css">
+  <link rel="stylesheet" href="public/styles/small.css">
+  <link rel="stylesheet" href="public/styles/xs.css">
+  <link rel="stylesheet" href="public/styles/jquery.mmenu.all.css">
+</head>
+<body>
+  <div>
+    <div id="content">
+      <header ng-include src="'partials/includes/header.html'"></header>
+      <div ng-view></div>
+      <footer ng-include src="'partials/includes/footer.html'"></footer>
+    </div>
+    <nav id="mobile-menu" ng-include src="'partials/includes/mobile-nav.html'" mmenu></nav>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  
+  <script src="public/js/lib/jquery.min.js"></script>
+  <script src="public/js/lib/bootstrap.min.js"></script>
+  <script src="public/js/lib/jquery.mmenu.min.all.js"></script>
+  
+  <script src="public/js/lib/angular.min.js"></script>
+  <script src="public/js/lib/angular-route.js"></script>
+  <script src="public/js/app.js"></script>
+
+  <script src="public/js/controllers/headerCtrl.js"></script>
+  <script src="public/js/controllers/servicesCtrl.js"></script>
+  <script src="public/js/controllers/workCtrl.js"></script>
+  <script src="public/js/controllers/workDetailCtrl.js"></script>
+  <script src="public/js/controllers/freebiesCtrl.js"></script>
+  <script src="public/js/controllers/getQuoteCtrl.js"></script>
+
+  <script src="public/js/directives/directives.js"></script>
+</body>
+</html>
