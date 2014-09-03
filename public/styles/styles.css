@@ -651,6 +651,7 @@ Services Galleries Styles
 }
 
 .gallery-item {
+  cursor: pointer;
   display: block;
   float: left;
   margin: 0 10px;
@@ -970,6 +971,11 @@ Works Page Styles
 
 .gallery-row:last-child {
   margin-bottom: 0;
+}
+
+.work-modal img {
+  margin-top: 2%;
+  width: 100%;
 }
 
 /***************************

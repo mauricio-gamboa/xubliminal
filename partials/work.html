@@ -29,14 +29,14 @@
             <li><a href="">Creatives</a></li>
           </ul>
           <div class="gallery-row clearfix">
-            <a href="#/work-detail" class="gallery-item">
+            <span class="gallery-item" data-toggle="modal" data-target="#work-modal-1">
               <span class="overlay">
                 <span class="btn-1"></span>
                 <span class="btn-1-border"></span>
               </span>
               <img src="public/images/gallery-item-1.png" alt="">
               <h5>Honey Tree</h5>
-            </a>
+            </span>
             <a href="#/work-detail" class="gallery-item">
               <span class="overlay">
                 <span class="btn-1"></span>
@@ -130,4 +130,14 @@
       </div>
     </div>
   </section>
+  <!-- Modal -->
+  <div class="work-modal modal fade" id="work-modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="public/images/work/big/work-1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
