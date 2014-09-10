@@ -689,10 +689,13 @@ Services Galleries Styles
   margin-bottom: 19px;
   display: inline-block;
   width: 100%;
+  -webkit-transition: transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
   transition: transform 0.2s linear;
 }
 
 .gallery-item:hover img {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
