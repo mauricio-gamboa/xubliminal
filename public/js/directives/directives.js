@@ -3,6 +3,21 @@
 
   angular.module('xubliminalApp.directives')
 
+  .directive('bodyClass', [function(){
+    return {
+
+      restrict: 'A',
+
+      link: function(scope, element, attrs) {
+        scope.$on('$routeChangeSuccess', function (event, current, previous) {
+          var route = current.originalPath + '-page';
+          var klass = route.replace('/', '');
+          element.removeClass().addClass(klass);
+        });
+      }
+    };
+  }])
+
   .directive('activeLink', ['$location', function(location) {
     return {
       restrict: 'A',
@@ -41,7 +56,7 @@
     };
   }])
 
-  .directive('gmap', [ function () {
+  .directive('gmap', [function () {
     return {
       restrict: 'A',
 
@@ -74,4 +89,5 @@
       }
     };
   }]);
+
 }());

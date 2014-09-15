@@ -15,7 +15,8 @@
     width: 300px;
   }
 
-  .gallery-item .overlay {
+  .gallery-item .overlay,
+  .gallery-item .img-wrapper {
     height: 200px;
   }
 
