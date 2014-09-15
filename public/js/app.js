@@ -6,6 +6,11 @@
   .config(function ($routeProvider) {
     $routeProvider
 
+    .when('/', {
+      templateUrl: 'partials/home.html',
+      controller: 'HomeCtrl'
+    })
+
     .when('/services', {
       templateUrl: 'partials/services.html',
       controller: 'ServicesCtrl'
@@ -32,7 +37,7 @@
     })
 
     .otherwise({
-      redirectTo: '/work',
+      redirectTo: '/',
     });
   });
 

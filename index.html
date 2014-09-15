@@ -4,6 +4,7 @@
   <title ng-bind="pageTitle"></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Styles -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="public/styles/bootstrap.min.css">
   <link rel="stylesheet" href="public/styles/styles.css">
   <link rel="stylesheet" href="public/styles/large.css">
@@ -12,7 +13,7 @@
   <link rel="stylesheet" href="public/styles/xs.css">
   <link rel="stylesheet" href="public/styles/jquery.mmenu.all.css">
 </head>
-<body>
+<body body-class>
   <div>
     <div id="content">
       <header ng-include src="'partials/includes/header.html'"></header>
@@ -34,6 +35,7 @@
   <script src="public/js/app.js"></script>
 
   <script src="public/js/controllers/headerCtrl.js"></script>
+  <script src="public/js/controllers/homeCtrl.js"></script>
   <script src="public/js/controllers/servicesCtrl.js"></script>
   <script src="public/js/controllers/workCtrl.js"></script>
   <script src="public/js/controllers/workDetailCtrl.js"></script>

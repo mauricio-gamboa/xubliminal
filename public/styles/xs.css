@@ -104,7 +104,8 @@
     margin: 0 auto;
   }
 
-  .gallery-item .overlay {
+  .gallery-item .overlay,
+  .gallery-item .img-wrapper {
     height: 193px;
   }
 
@@ -114,10 +115,6 @@
 
   #services-gallery .gallery .carousel-indicators {
     margin-top: 34px;
-  }
-
-  .gallery-item img {
-    margin-bottom: 16px;
   }
 
   #expect {

@@ -37,7 +37,8 @@
     width: 226px;
   }
 
-  .gallery-item .overlay {
+  .gallery-item .overlay,
+  .gallery-item .img-wrapper {
     height: 151px;
   }
 
