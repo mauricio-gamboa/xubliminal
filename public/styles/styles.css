@@ -1457,7 +1457,10 @@ Home Page Styles
 }
 
 #recent-work {
-  background: url("../images/shadow-2.png") repeat-x scroll 0 0px, url("../images/pattern-1.jpg") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+  background: 
+  url("../images/shadow-3.png") repeat-x scroll 0 100%,
+  url("../images/shadow-2.png") repeat-x scroll 0 0, 
+  url("../images/pattern-1.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
   padding: 40px 0;
   text-align: center;
 }
@@ -1571,6 +1574,14 @@ Home Page Styles
   text-align: center;
 }
 
+.brand:first-child {
+  text-align: left;
+}
+
+.brand:last-child {
+  text-align: right;
+}
+
 .brand img {
   vertical-align: middle;
 }
@@ -1599,11 +1610,12 @@ Home Page Styles
 }
 
 #brands-bottom > div > span {
-  background: url("../images/brands-bottom-icons.png") no-repeat scroll 0 0;
+  background: url("../images/brands-bottom-icons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   display: inline-block;
-  padding-left: 54px;
   height: 43px;
+  padding-left: 54px;
   text-align: left;
+  vertical-align: middle;
 }
 
 #brands-bottom > div > span > * {
@@ -1619,4 +1631,20 @@ Home Page Styles
 
 #brands-bottom > div > span > span {
   font-size: 14px;
+}
+
+#brands-bottom > .brand-bottom-1 > span {
+  background-position: 0 0;
+}
+
+#brands-bottom > .brand-bottom-2 > span {
+  background-position: 0 -43px;
+}
+
+#brands-bottom > .brand-bottom-3 > span {
+  background-position: 0 -86px;
+}
+
+#brands-bottom > .brand-bottom-4 > span {
+  background-position: 0 -129px;
 }
