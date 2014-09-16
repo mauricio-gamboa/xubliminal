@@ -184,4 +184,119 @@
     margin-bottom: 0;
     border-bottom: none;
   }
+
+  #home-services {
+    padding: 80px 0;
+  }
+
+  #home-services h2 {
+    font-size: 36px;
+  }
+
+  #home-services h2 + p {
+    font-size: 16px;
+  }
+
+  .home-services-wrapper {
+    margin: 0;
+  }
+
+  .home-services {
+    padding: 29px 0;
+    float: none;
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .home-services:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .home-carousel h2 {
+    font-size: 36px;
+  }
+
+  .home-carousel .item {
+    margin: 0;
+    width: 100%;
+  }
+
+  #clients .item {
+    margin: 0;
+    width: 100%;
+  }
+
+  .brand {
+    width: 50%;
+    height: 110px;
+    line-height: 110px;
+  }
+
+  .brand:first-child,
+  .brand:last-child {
+    text-align: center;
+  }
+
+  #brands-bottom > div {
+    width: 50%;
+    height: auto;
+    line-height: normal;
+  }
+
+  #brands-bottom > div:first-child,
+  #brands-bottom > div:last-child {
+    text-align: center;
+  }
+
+  #brands-bottom > div:first-child,
+  #brands-bottom > div:nth-child(2) {
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 37px;
+  }
+
+  #brands-bottom > div:nth-child(2) {
+    border-right: none;
+  }
+
+  #brands-bottom > div:last-child,
+  #brands-bottom > div:nth-child(3) {
+    padding-top: 37px;
+  }
+
+  #brands-bottom > div > span {
+    background: no-repeat;
+    text-align: center;
+    height: auto;
+    padding: 0;
+  }
+
+  #brands-bottom > div > span > .icon {
+    background: url("../images/brands-bottom-icons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 43px;
+    width: 43px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  #brands-bottom > .brand-bottom-1 > span > .icon {
+    background-position: 0 0;
+  }
+
+  #brands-bottom > .brand-bottom-2 > span > .icon {
+    background-position: 0 -43px;
+  }
+
+  #brands-bottom > .brand-bottom-3 > span > .icon {
+    background-position: 0 -86px;
+  }
+
+  #brands-bottom > .brand-bottom-4 > span > .icon {
+    background-position: 0 -129px;
+  }
+
+  #brands-bottom > div > span > strong {
+    font-size: 18px;
+  }
 }
