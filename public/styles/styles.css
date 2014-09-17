@@ -1648,3 +1648,7 @@ Home Page Styles
 #brands-bottom > .brand-bottom-4 > span {
   background-position: 0 -129px;
 }
+
+#home-top {
+  background: url("../images/home-bg-1.png") repeat-x 0 50%;
+}

@@ -10,9 +10,16 @@
 
       link: function(scope, element, attrs) {
         scope.$on('$routeChangeSuccess', function (event, current, previous) {
-          var route = current.originalPath + '-page';
-          var klass = route.replace('/', '');
-          element.removeClass().addClass(klass);
+          var path = current.originalPath,
+          klass = path + '-page',
+          cleanedClass = '';
+
+          if (path == '/')
+            cleanedClass = 'home-page';
+          else
+            cleanedClass = klass.replace('/', '');
+          
+          element.removeClass().addClass(cleanedClass);
         });
       }
     };
@@ -51,6 +58,25 @@
             add: true,
             content: '<img src="public/images/mobile-menu-img.png" alt="Xublime" />'
           }
+        });
+      }
+    };
+  }])
+
+  .directive('fullHeight', ['$window', function() {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs, controller) {
+        var height = window.innerHeight;
+        element.css({
+          'height': height
+        });
+        
+        $(window).resize(function() {
+          var newHeight = window.innerHeight;
+          element.css({
+            'height': newHeight
+          });
         });
       }
     };
