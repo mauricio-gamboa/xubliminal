@@ -149,10 +149,18 @@
         var $body = $(document.body);
         var $html = $('html');
         var $both = $html.add($body);
-        var $use = $html;
-        var $toggle = $('#home-top a');
+        var $use = ((bowser.firefox || bowser.msie) ? $html : $body);
+        var $toggle = $('.scroll-down');
         var $content = $('#home-services');
         var previousScrollPosition = 0;
+
+        $window.scroll(function() {
+          if ($use.scrollTop() > 0) {
+            $toggle.fadeOut();
+          } else {
+            $toggle.fadeIn();
+          }
+        });
         
         var toggleActive = false;
 
