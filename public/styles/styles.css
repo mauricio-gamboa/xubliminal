@@ -201,6 +201,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
+  transition: all 150ms ease-in-out 0s;
 }
 
 header .logo {
@@ -214,6 +215,7 @@ header .logo {
   height: 29px;
   text-indent: -9999px;
   width: 155px;
+  transition: all 150ms ease-in-out 0s;
 }
 
 .mobile-trigger {
@@ -221,6 +223,7 @@ header .logo {
   height: 39px;
   margin-top: 13px;
   width: 39px;
+  transition: all 150ms ease-in-out 0s;
 }
 
 .mobile-trigger:hover {
@@ -242,6 +245,7 @@ header .logo {
   color: #47565f;
   font-size: 14px;
   text-transform: uppercase;
+  transition: all 150ms ease-in-out 0s;
 }
 
 .xub-nav li a:hover,
@@ -264,10 +268,12 @@ header .logo {
   display: block;
   height: 64px;
   line-height: 68px;
+  transition: all 150ms ease-in-out 0s;
 }
 
 .main-nav .xub-nav li.active a {
   border-bottom: 4px solid #3dc0e6;
+  transition: all 150ms ease-in-out 0s;
 }
 
 .contact-nav {
@@ -286,6 +292,7 @@ header .logo {
   text-indent: -9999px;
   vertical-align: middle;
   width: 28px;
+  transition: all 150ms ease-in-out 0s;
 }
 
 .contact-nav .xub-nav li.contact-menu-item-1 a {
@@ -315,6 +322,7 @@ header .logo {
 .lang-nav {
   border-left: 1px solid #ebf3f6;
   padding-left: 20px;
+  transition: all 150ms ease-in-out 0s;
 }
 
 .lang-nav .xub-nav li {
@@ -1445,79 +1453,79 @@ Home Page Styles
 ****************************
 ***************************/
 
-.home-page header {
+.transparent header {
   background: none;
 }
 
-.home-page .logo a {
+.transparent .logo a {
   background-position: 0 -29px;
 }
 
-.home-page .main-nav .xub-nav li a {
+.transparent .main-nav .xub-nav li a {
   color: rgba(255, 255, 255, 0.8);
   height: 66px;
   line-height: 66px;
   border: none;
 }
 
-.home-page .lang-nav .xub-nav li,
-.home-page .contact-nav .xub-nav li,
-.home-page .lang-nav .xub-nav li a,
-.home-page .contact-nav .xub-nav li a {
+.transparent .lang-nav .xub-nav li,
+.transparent .contact-nav .xub-nav li,
+.transparent .lang-nav .xub-nav li a,
+.transparent .contact-nav .xub-nav li a {
   line-height: 46px;
   height: 46px;
   color: rgba(255, 255, 255, 0.8);
 }
 
-.home-page .main-nav .xub-nav li a:hover,
-.home-page .lang-nav .xub-nav li:hover,
-.home-page .contact-nav .xub-nav li:hover,
-.home-page .lang-nav .xub-nav li a:hover,
-.home-page .contact-nav .xub-nav li a:hover {
+.transparent .main-nav .xub-nav li a:hover,
+.transparent .lang-nav .xub-nav li:hover,
+.transparent .contact-nav .xub-nav li:hover,
+.transparent .lang-nav .xub-nav li a:hover,
+.transparent .contact-nav .xub-nav li a:hover {
   color: #FFFFFF;
 }
 
-.home-page .contact-nav .xub-nav li a {
+.transparent .contact-nav .xub-nav li a {
   height: 28px;
 }
 
-.home-page .contact-nav .xub-nav li.contact-menu-item-1 a {
+.transparent .contact-nav .xub-nav li.contact-menu-item-1 a {
   background-position: 0 -168px;
 }
 
-.home-page .contact-nav .xub-nav li.contact-menu-item-1 a:hover {
+.transparent .contact-nav .xub-nav li.contact-menu-item-1 a:hover {
   background-position: 0 -196px;
 }
 
-.home-page .contact-nav .xub-nav li.contact-menu-item-2 a {
+.transparent .contact-nav .xub-nav li.contact-menu-item-2 a {
   background-position: 0 -224px;
 }
 
-.home-page .contact-nav .xub-nav li.contact-menu-item-2 a:hover {
+.transparent .contact-nav .xub-nav li.contact-menu-item-2 a:hover {
   background-position: 0 -252px;
 }
 
-.home-page .contact-nav .xub-nav li.contact-menu-item-3 a {
+.transparent .contact-nav .xub-nav li.contact-menu-item-3 a {
   background-position: 0 -280px;
 }
 
-.home-page .contact-nav .xub-nav li.contact-menu-item-3 a:hover {
+.transparent .contact-nav .xub-nav li.contact-menu-item-3 a:hover {
   background-position: 0 -308px;
 }
 
-.home-page header .main-nav + div {
+.transparent header .main-nav + div {
   padding: 10px 0;
 }
 
-.home-page .lang-nav {
+.transparent .lang-nav {
   border-left: 1px solid rgba(235, 243, 246, 0.2);
 }
 
-.home-page .mobile-trigger {
+.transparent .mobile-trigger {
   background-position: 0 -78px;
 }
 
-.home-page .mobile-trigger:hover {
+.transparent .mobile-trigger:hover {
   background-position: 0 -117px;
 }
 
