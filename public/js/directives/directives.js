@@ -114,6 +114,91 @@
         });
       }
     };
+  }])
+
+  .directive('goto', [function () {
+    return {
+      restrict: 'A',
+
+      link: function (scope, element, attrs, controller) {
+        element.on('click', function() {
+          if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')&&location.hostname==this.hostname) { 
+            var target=$(this.hash);
+            target=target.length?target:$('[name='+ this.hash.slice(1)+']');
+            var headerHeight = $('header').css('height').replace('px', '') * 1;
+
+            if (isNaN(headerHeight)) headerHeight = 0;
+
+            if(target.length) {
+              $('html,body').animate({scrollTop:target.offset().top - headerHeight},1000);
+              return false;
+            }
+          }
+        });
+      }
+    }
+  }])
+
+  // @TODO: make this directive angular friendly
+  .directive('scroll', [function () {
+    return {
+      restrict: 'A',
+
+      link: function (scope, element, attrs, controller) {
+        var $window = $(window);
+        var $body = $(document.body);
+        var $html = $('html');
+        var $both = $html.add($body);
+        var $use = $html;
+        var $toggle = $('#home-top a');
+        var $content = $('#home-services');
+        var previousScrollPosition = 0;
+        
+        var toggleActive = false;
+
+        $toggle.click(function() {
+
+          toggleActive = true;
+
+          $both.animate({
+            scrollTop: $content.offset().top - 64
+          }, {
+            duration: 800,
+            easing: 'linear',
+            complete: function() {
+              toggleActive = false;
+            }
+          });
+        });
+
+        if (! ('ontouchstart' in window) && ! ('onmsgesturechange' in window)) {
+          var animating = false;
+
+          $window.scroll(function (e) {
+            var currentScrollPosition = $use.scrollTop();
+
+            if (animating) {
+              e.preventDefault();
+              return;
+            }
+
+            if (! toggleActive && previousScrollPosition === 0 && currentScrollPosition >= 0) {
+              $both.animate({
+                scrollTop: $content.offset().top - 64
+              }, {
+                duration: 800,
+                easing: 'linear',
+                complete: function() {
+                  animating = false;
+                }
+              });
+            }
+
+            previousScrollPosition = currentScrollPosition;
+          });
+        }
+      }
+    }
   }]);
 
 }());
