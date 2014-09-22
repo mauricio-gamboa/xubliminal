@@ -122,7 +122,7 @@
 
       link: function (scope, element, attrs, controller) {
         element.on('click', function() {
-          if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')&&location.hostname==this.hostname) { 
+          if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')&&location.hostname==this.hostname) {
             var target=$(this.hash);
             target=target.length?target:$('[name='+ this.hash.slice(1)+']');
             var headerHeight = $('header').css('height').replace('px', '') * 1;
@@ -136,13 +136,14 @@
           }
         });
       }
-    }
+    };
   }])
 
   // @TODO: make this directive angular friendly
   .directive('scroll', [function () {
     return {
       restrict: 'A',
+      scope : false,
 
       link: function (scope, element, attrs, controller) {
         var $window = $(window);
@@ -150,17 +151,23 @@
         var $html = $('html');
         var $both = $html.add($body);
         var $use = ((bowser.firefox || bowser.msie) ? $html : $body);
-        var $toggle = $('.scroll-down');
-        var $content = $('#home-services');
+        var $toggle = element.find('.scroll-down');
+        var $content = element.next();
         var previousScrollPosition = 0;
 
-        $window.scroll(function() {
-          if ($use.scrollTop() > 0) {
-            $toggle.fadeOut();
-          } else {
-            $toggle.fadeIn();
-          }
-        });
+        try {
+          $window.scroll(function() {
+            if ($use) {
+              if ($use.scrollTop() > 0) {
+                $toggle.fadeOut();
+              } else {
+                $toggle.fadeIn();
+              }
+            }
+          });
+        } catch (e) {
+          console.log(e);
+        }
         
         var toggleActive = false;
 
@@ -183,30 +190,45 @@
           var animating = false;
 
           $window.scroll(function (e) {
-            var currentScrollPosition = $use.scrollTop();
 
-            if (animating) {
-              e.preventDefault();
-              return;
+            if ($use) {
+              var currentScrollPosition = $use.scrollTop();
+
+              if (animating) {
+                e.preventDefault();
+                return;
+              }
+
+              if (! toggleActive && previousScrollPosition === 0 && currentScrollPosition >= 0) {
+                $both.animate({
+                  scrollTop: $content.offset().top - 64
+                }, {
+                  duration: 800,
+                  easing: 'linear',
+                  complete: function() {
+                    animating = false;
+                  }
+                });
+              }
+
+              previousScrollPosition = currentScrollPosition;
             }
-
-            if (! toggleActive && previousScrollPosition === 0 && currentScrollPosition >= 0) {
-              $both.animate({
-                scrollTop: $content.offset().top - 64
-              }, {
-                duration: 800,
-                easing: 'linear',
-                complete: function() {
-                  animating = false;
-                }
-              });
-            }
-
-            previousScrollPosition = currentScrollPosition;
           });
         }
+
+        scope.$on('$destroy', function() {
+          $window = null;
+          $body = null;
+          $html = null;
+          $both = null;
+          $use = null;
+          $toggle = null;
+          $content = null;
+          previousScrollPosition = null;
+          toggleActive = null;
+        });
       }
-    }
+    };
   }]);
 
 }());
