@@ -15,7 +15,7 @@
           cleanedClass = '';
 
           if (path == '/')
-            cleanedClass = 'home-page';
+            cleanedClass = 'home-page transparent';
           else
             cleanedClass = klass.replace('/', '');
           
@@ -151,6 +151,7 @@
         var $html = $('html');
         var $both = $html.add($body);
         var $use = ((bowser.firefox || bowser.msie) ? $html : $body);
+        var $header = $('header');
         var $toggle = element.find('.scroll-down');
         var $content = element.next();
         var previousScrollPosition = 0;
@@ -162,6 +163,14 @@
                 $toggle.fadeOut();
               } else {
                 $toggle.fadeIn();
+              }
+
+              var height = element.height() - 64;
+
+              if ($use.scrollTop() > height) {
+                $body.removeClass('transparent');
+              } else {
+                $body.addClass('transparent');
               }
             }
           });
