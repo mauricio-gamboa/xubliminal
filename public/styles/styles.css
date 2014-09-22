@@ -4,17 +4,6 @@ General Styles
 ****************************
 ***************************/
 
-@font-face {
-  font-family: 'proxima_novasemibold';
-  src: url('../fonts/proximanova-sbold-webfont.eot');
-  src: url('../fonts/proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/proximanova-sbold-webfont.woff') format('woff'),
-  url('../fonts/proximanova-sbold-webfont.ttf') format('truetype'),
-  url('../fonts/proximanova-sbold-webfont.svg#proxima_novasemibold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 @keyframes play-pulse {
   0%{-webkit-transform:scale(0.8);transform:scale(0.8);opacity:1}
   60%{opacity:1}
@@ -247,7 +236,6 @@ header .logo {
 
 .xub-nav li a {
   color: #47565f;
-  font-family: 'proxima_novasemibold';
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -394,7 +382,6 @@ header .logo {
 #mobile-menu .mm-list > li > a, 
 #mobile-menu .mm-list > li > span,
 #mobile-menu #mm-1.mm-list > li > a.mm-subclose {
-  font-family: 'proxima_novasemibold';
   color: #ffffff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1403,6 +1390,66 @@ Home Page Styles
 ****************************
 ***************************/
 
+.home-page header {
+  background: none;
+}
+
+.home-page .logo a {
+  background-position: 0 -29px;
+}
+
+.home-page .main-nav .xub-nav li a {
+  color: #FFFFFF;
+  height: 66px;
+  line-height: 66px;
+  border: none;
+}
+
+.home-page .lang-nav .xub-nav li,
+.home-page .contact-nav .xub-nav li,
+.home-page .lang-nav .xub-nav li a,
+.home-page .contact-nav .xub-nav li a {
+  line-height: 46px;
+  height: 46px;
+  color: #FFFFFF;
+}
+
+.home-page .contact-nav .xub-nav li a {
+  height: 28px;
+}
+
+.home-page .contact-nav .xub-nav li.contact-menu-item-1 a {
+  background-position: 0 -168px;
+}
+
+.home-page .contact-nav .xub-nav li.contact-menu-item-1 a:hover {
+  background-position: 0 -196px;
+}
+
+.home-page .contact-nav .xub-nav li.contact-menu-item-2 a {
+  background-position: 0 -224px;
+}
+
+.home-page .contact-nav .xub-nav li.contact-menu-item-2 a:hover {
+  background-position: 0 -252px;
+}
+
+.home-page .contact-nav .xub-nav li.contact-menu-item-3 a {
+  background-position: 0 -280px;
+}
+
+.home-page .contact-nav .xub-nav li.contact-menu-item-3 a:hover {
+  background-position: 0 -308px;
+}
+
+.home-page header .main-nav + div {
+  padding: 10px 0;
+}
+
+.home-page .lang-nav {
+  border-left: 1px solid rgba(235, 243, 246, 0.2);
+}
+
 #home-services {
   background-color: #ffffff;
   padding: 90px 0;
@@ -1651,4 +1698,22 @@ Home Page Styles
 
 #home-top {
   background: url("../images/home-bg-1.png") repeat-x 0 50%;
+}
+
+#home-top div {
+  height: 100%;
+}
+
+.scroll-down {
+  background: url("../images/scroll-down.png") no-repeat scroll 50% 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 46px;
+  width: 100%;
+  text-indent: -9999px;
+}
+
+#home-top .scroll-down {
+  position: absolute;
+  bottom: 46px;
+  left: 0;
 }
