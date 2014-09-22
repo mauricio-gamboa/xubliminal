@@ -12,10 +12,6 @@
     overflow-x: hidden;
   }
 
-  header {
-    position: relative;
-  }
-
   header .logo {
     float: none;
   }
@@ -26,17 +22,12 @@
 
   .page-phrase,
   .services-page .page-phrase {
-    height: 164px;
-    margin-bottom: 0;
-    padding-top: 35px;
-    position: relative;
-    top: -2px;
+    padding-top: 90px;
   }
 
   .page-phrase h1 {
     font-size: 35px;
     line-height: normal;
-    position: static;
   }
 
   .service {
