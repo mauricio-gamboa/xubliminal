@@ -1508,12 +1508,29 @@ Home Page Styles
   background-position: 0 -140px;
 }
 
-.transparent header .main-nav + div {
-  padding: 10px 0;
-}
-
 .dark .lang-nav {
   opacity: 0;
+}
+
+.dark .main-nav {
+  height: 65px;
+  margin: -18px 24px -18px 0;
+}
+
+.dark .main-nav li a {
+  border-bottom: 4px solid transparent;
+  height: 65px;
+  line-height: 65px;
+  color: #969fa4;
+}
+
+.dark .main-nav li a:hover {
+  color: #ffffff;
+}
+
+.dark .main-nav li.active a {
+  border-bottom: 4px solid #3dc0e6;
+  color: #3dc0e6;
 }
 
 #home-services {
