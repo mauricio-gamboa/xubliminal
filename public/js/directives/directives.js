@@ -170,6 +170,18 @@
     };
   }])
 
+  .directive('bounce', [function () {
+    return {
+      restrict: 'A',
+
+      link: function (scope, element, attrs, controller) {
+        setInterval(function() {
+          element.toggleClass('bounce');
+        }, 1200);
+      }
+    };
+  }])
+
   .directive('homeCarousel', [function() {
     return {
       restrict: 'A',
@@ -215,7 +227,7 @@
         var $both = $html.add($body);
         var $use = ((bowser.firefox || bowser.msie) ? $html : $body);
         var $header = $('header');
-        var $toggle = element.find('.scroll-down');
+        var $toggle = element.find('.scroll-down a');
         var $content = element.next();
         var previousScrollPosition = 0;
 

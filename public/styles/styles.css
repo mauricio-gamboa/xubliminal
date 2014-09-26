@@ -1,14 +1,14 @@
 /***************************
 ****************************
-General Styles
+Key Frames
 ****************************
 ***************************/
 
-@keyframes play-pulse {
-  0%{-webkit-transform:scale(0.8);transform:scale(0.8);opacity:1}
+@-moz-keyframes play-pulse {
+  0%{-moz-transform:scale(0.8);transform:scale(0.8);opacity:1}
   60%{opacity:1}
   80%{opacity:0}
-  100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}
+  100%{-moz-transform:scale(1);transform:scale(1);opacity:0}
 }
 
 @-webkit-keyframes play-pulse {
@@ -18,12 +18,82 @@ General Styles
   100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}
 }
 
-@-ms-keyframes play-pulse {
-  0%{-webkit-transform:scale(0.8);transform:scale(0.8);opacity:1}
+@-o-keyframes bounce {
+  0%{-o-transform:scale(0.8);transform:scale(0.8);opacity:1}
   60%{opacity:1}
   80%{opacity:0}
-  100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}
+  100%{-o-transform:scale(1);transform:scale(1);opacity:0}
 }
+
+@-ms-keyframes play-pulse {
+  0%{-ms-transform:scale(0.8);transform:scale(0.8);opacity:1}
+  60%{opacity:1}
+  80%{opacity:0}
+  100%{-ms-transform:scale(1);transform:scale(1);opacity:0}
+}
+
+@keyframes play-pulse {
+  0%{transform:scale(0.8);transform:scale(0.8);opacity:1}
+  60%{opacity:1}
+  80%{opacity:0}
+  100%{transform:scale(1);transform:scale(1);opacity:0}
+}
+
+@-moz-keyframes bounce {
+  0% {-moz-transform: translateY(0);transform: translateY(0);}
+  20% {-moz-transform: translateY(0); transform: translateY(0);}
+  40% {-moz-transform: translateY(-30px);transform: translateY(-30px); }
+  50% {-moz-transform: translateY(0);transform: translateY(0); }
+  60% { -moz-transform: translateY(-15px); transform: translateY(-15px); }
+  80% { -moz-transform: translateY(0); transform: translateY(0); }
+  100% {-moz-transform: translateY(0); transform: translateY(0); } 
+}
+
+@-webkit-keyframes bounce {
+  0% {-webkit-transform: translateY(0);transform: translateY(0); }
+  20% {-webkit-transform: translateY(0);transform: translateY(0); }
+  40% {-webkit-transform: translateY(-30px); transform: translateY(-30px); }
+  50% {-webkit-transform: translateY(0); transform: translateY(0); }
+  60% { -webkit-transform: translateY(-15px); transform: translateY(-15px); }
+  80% {-webkit-transform: translateY(0); transform: translateY(0); }
+  100% { -webkit-transform: translateY(0);transform: translateY(0); } 
+}
+
+@-o-keyframes bounce {
+  0% { -o-transform: translateY(0);transform: translateY(0); }
+  20% {-o-transform: translateY(0);transform: translateY(0); }
+  40% {-o-transform: translateY(-30px);transform: translateY(-30px); }
+  50% {-o-transform: translateY(0);transform: translateY(0); }
+  60% {-o-transform: translateY(-15px);transform: translateY(-15px); }
+  80% {-o-transform: translateY(0);transform: translateY(0); }
+  100% {-o-transform: translateY(0);transform: translateY(0); } 
+}
+
+@-ms-keyframes bounce {
+  0% {-ms-transform: translateY(0);transform: translateY(0); }
+  20% {-ms-transform: translateY(0);transform: translateY(0); }
+  40% {-ms-transform: translateY(-30px);transform: translateY(-30px); }
+  50% {-ms-transform: translateY(0);transform: translateY(0); }
+  60% {-ms-transform: translateY(-15px);transform: translateY(-15px); }
+  80% {-ms-transform: translateY(0);transform: translateY(0); }
+  100% {-ms-transform: translateY(0);transform: translateY(0); } 
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0); }
+  20% {transform: translateY(0); }
+  40% {transform: translateY(-30px); }
+  50% {transform: translateY(0); }
+  60% {transform: translateY(-15px); }
+  80% {transform: translateY(0); }
+  100% {transform: translateY(0); } 
+}
+
+/***************************
+****************************
+General Styles
+****************************
+***************************/  
 
 body {
   background-color: #FFFFFF;
@@ -116,6 +186,22 @@ strong {
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
+}
+
+.animated {
+  -webkit-animation: 1s ease both;
+  -moz-animation: 1s ease both;
+  -ms-animation: 1s ease both;
+  -o-animation: 1s ease both;
+  animation: 1s ease both; 
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -ms-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce; 
 }
 
 /***************************
@@ -230,14 +316,13 @@ header .logo {
 }
 
 .mobile-trigger {
-  background: url("../images/mobile-trigger.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-  height: 39px;
-  margin-top: 13px;
-  width: 39px;
+  background: url("../images/mobile-trigger.png") no-repeat scroll 0 -58px / 29px auto rgba(0, 0, 0, 0);
+  height: 29px;
+  width: 29px;
 }
 
 .mobile-trigger:hover {
-  background-position: 0 -39px;
+  background-position: 0 -px;
 }
 
 .xub-nav {
@@ -274,8 +359,10 @@ header .logo {
 .lang-nav .xub-nav li a,
 .main-nav .xub-nav li a {
   display: block;
+  font-weight: 600;
   height: 29px;
   line-height: 29px;
+  transition: color 0.4s ease 0s;
 }
 
 .main-nav .xub-nav li.active a {
@@ -1830,14 +1917,28 @@ Home Page Styles
   text-indent: -9999px;
 }
 
+.scroll-down a {
+  background: url("../images/arrow-4.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 46px;
+  width: 46px;
+  margin: 0 auto;
+  -webkit-transition-property: scale;
+  -moz-transition-property: scale;
+  -o-transition-property: scale;
+  transition-property: scale;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+
 #home-top .scroll-down {
   position: absolute;
   bottom: 46px;
+  height: auto;
   left: 0;
-}
-
-#home-carousel .item {
-
 }
 
 #home-carousel .item > div {
