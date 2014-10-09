@@ -3,8 +3,18 @@
 
   angular.module('xubliminalApp.controllers')
 
-  .controller('ServicesCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
-    // Sets the page title
-    $rootScope.pageTitle = 'Xublime - Services';
+  .controller('ServicesCtrl', ['xubServices', function (xubServices) {
+
+    this.servicesData = angular.bind(this, function (services) {
+      if (!services.length) return;
+      this.services = services;
+      console.log(this.services);
+    });
+
+    this.errorServices = function (error) {
+      console.log(error);
+    };
+    
+    xubServices.getServices(this.servicesData, this.errorServices);
   }]);
 }());

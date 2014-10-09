@@ -7,72 +7,55 @@
     </div>
   </div>
 </section>
-<section id="services-links" class="hide-xs sticky-cover">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <ul class="xub-nav">
-          <li class="active"><a href=""><span class="tab-icon-1">Web <br>Design</span></a></li>
-          <li><a href=""><span class="tab-icon-2">Mobile App <br>Design</span></a></li>
-          <li><a href=""><span class="tab-icon-3">Creative <br>Design</span></a></li>
-        </ul>
+<div ng-controller="ServicesCtrl as services">
+  <section id="services-links" class="hide-xs sticky-cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="xub-nav" role="tablist">
+            <li ng-repeat="service in services.services" ng-class="{active: $index == 0}">
+              <a data-target="#service-tab-{{$index + 1}}" role="tab" data-toggle="tab">
+                <span class="tab-icon-{{$index + 1}}">{{service.title}}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section id="service-tabs" class="sticky-cover">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div class="service service-1 clearfix">
-          <h2 class="show-xs">Web Design</h2>
-          <div class="service-image">
-            <img src="public/images/service-1.png" alt="">
-          </div>
-          <div class="service-text">
-            <h2 class="hide-xs">Web Design</h2>
-            <p><strong>If you are looking for the best and you look at design as an investment, we are the guys for you.</strong> In everything we do we believe in exceeding our clients expectations. The way we do it is by delivering the fastest, highest quality, top notch and professional web design services in the world. Our custom designs will get your products and services across better than anyone else and will make you money - it's that simple. Period.</p>
-          </div>
-        </div>
-        <div class="service-features">
-          <h2>Strategic thinking &amp; digital innovation</h2>
-          <div class="service-features-container clearfix">
-            <div class="service-feature">
-              <img src="public/images/service-1-feature-1.png" alt="">
-              <h4>mobile RESPONSIVE <br>DESIGN</h4>
-              <p>We create unique, interactive mobile experiences that empower your customers, create new sales channels, and generate clear ROI.</p>
-            </div>
-            <div class="service-feature">
-              <img src="public/images/service-1-feature-2.png" alt="">
-              <h4>Ecommerce <br>Website Design</h4>
-              <p>We create inspiring and credible online shops that take customers seamlessly from search engine to website and finally, to the checkout. We work as your trusted partner, delivering great web design.</p>
-            </div>
-            <div class="service-feature">
-              <img src="public/images/service-1-feature-3.png" alt="">
-              <h4>custom CMS <br>PLATFORMS</h4>
-              <p>We create customized content management systems that match your business objectives and deliver unique features that enhance and support your brand.</p>
-            </div>
-            <div class="service-feature">
-              <img src="public/images/service-1-feature-4.png" alt="">
-              <h4>user interface <br>design</h4>
-              <p>Using extensive research on user behavior we build easy, clean and effective layouts that increase conversion rates and deliver optimal user experiences.</p>
-            </div>
-            <div class="service-feature">
-              <img src="public/images/service-1-feature-5.png" alt="">
-              <h4>affiliate <br>MARKETING</h4>
-              <p>We are passionate about online marketing and how it can contribute to the growth of your business. We’ll help engage your customers across all digital touch-points to manage and grow relationships.</p>
-            </div>
-            <div class="service-feature">
-              <img src="public/images/service-1-feature-6.png" alt="">
-              <h4>social media <br>management</h4>
-              <p>Our team can create your social media pages, integrate each media into your website, create content, schedule your posts and manage responses.</p>
+  </section>
+  <section id="service-tabs" class="sticky-cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="tab-content">
+            <div ng-repeat="service in services.services" ng-class="{active: $index == 0}" class="tab-pane" id="service-tab-{{$index + 1}}">
+              <div class="service service-1 clearfix">
+                <h2 class="show-xs">{{service.title}}</h2>
+                <div class="service-image">
+                  <img src="public/images/service-1.png" alt="">
+                </div>
+                <div class="service-text">
+                  <h2 class="hide-xs">{{service.title}}</h2>
+                  <p>{{service.description}}</p>
+                </div>
+              </div>
+              <div class="service-features">
+                <h2>{{service.featuresTitle}}</h2>
+                <div class="service-features-container clearfix">
+                  <div ng-repeat="feature in service.features" class="service-feature">
+                    <img src="public/images/service-{{$parent.$index + 1}}-feature-{{$index + 1}}.png" alt="">
+                    <h4>{{feature.title}}</h4>
+                    <p>{{feature.description}}</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 <section id="services-gallery" class="sticky-cover">
   <div class="container">
     <div class="row">
@@ -309,7 +292,7 @@
     </div>
   </div>
 </section>
-<section id="expect" class="sticky-cover">
+<section id="expect" class="sticky-cover pikes">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
