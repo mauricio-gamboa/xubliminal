@@ -204,6 +204,11 @@ strong {
   animation-name: bounce; 
 }
 
+.pikes {
+  background: url("../images/pike.png") repeat-x 0 100%;
+  /*box-shadow: 0 10px 20px -10px #23292c;*/
+}
+
 /***************************
 ****************************
 Bottons Styles
@@ -939,8 +944,7 @@ Footer Styles
 ***************************/
 
 footer {
-  background: 
-  url("../images/footer-bg.png") repeat-x 0 0 #373e42;
+  background-color: #373e42;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -1425,8 +1429,13 @@ Get Quote Styles
   margin-bottom: 10px;
 }
 
-#map {
+#map > div {
   height: 382px;
+}
+
+#map.pikes {
+  background: url("../images/pike.png") repeat-x 0 100% #FFFFFF;
+  padding-bottom: 6px;
 }
 
 #contact-links {
@@ -1775,7 +1784,9 @@ Home Page Styles
 }
 
 #brands {
-  background: url("../images/pattern-2.jpg") repeat-x scroll 0 0 #FFFFFF;
+  background: 
+  url("../images/pike.png") repeat-x 0 100%,
+  url("../images/pattern-2.jpg") repeat-x scroll 0 0 #FFFFFF;
   border-top: 1px solid #f1f1f1;
 }
 
