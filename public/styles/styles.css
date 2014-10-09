@@ -631,6 +631,7 @@ Services Tabs Styles
   height: 77px;
   line-height: 83px;
   text-align: center;
+  cursor: pointer;
 }
 
 #services-links ul li.active a {

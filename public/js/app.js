@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('xubliminalApp', ['xubliminalApp.controllers', 'xubliminalApp.directives', 'ngRoute', 'ngAnimate'])
+  angular.module('xubliminalApp', ['xubliminalApp.controllers', 'xubliminalApp.directives', 'xubliminalApp.services', 'ngRoute', 'ngAnimate'])
 
   .config(function ($routeProvider) {
     $routeProvider
@@ -12,8 +12,7 @@
     })
 
     .when('/services', {
-      templateUrl: 'partials/services.html',
-      controller: 'ServicesCtrl'
+      templateUrl: 'partials/services.html'
     })
 
     .when('/work', {
@@ -43,4 +42,5 @@
 
   angular.module('xubliminalApp.controllers', []);
   angular.module('xubliminalApp.directives', []);
+  angular.module('xubliminalApp.services', []);
 }());
