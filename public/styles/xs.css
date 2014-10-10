@@ -78,26 +78,15 @@
 
   .gallery-row {
     text-align: center;
+    margin: 0;
   }
 
   .gallery-item {
     display: block;
     float: none;
-    width: 290px;
+    width: 228px;
     margin: 0 auto 31px;
-  }
-
-  .gallery-item:first-child {
-    margin: 0 auto 31px auto;
-  }
-
-  .gallery-item:last-child {
-    margin: 0 auto;
-  }
-
-  .gallery-item .overlay,
-  .gallery-item .img-wrapper {
-    height: 193px;
+    padding: 0;
   }
 
   #services-gallery h2 {

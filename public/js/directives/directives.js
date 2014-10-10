@@ -79,7 +79,8 @@
       link: function(scope, element, attrs, controller) {
         element.mmenu({
           onClick: {
-            preventDefault: false
+            preventDefault: false,
+            close: true
           },
           header: {
             add: true,

@@ -11,30 +11,11 @@
     padding: 8px 18px 0;
   }
 
-  .gallery-item {
-    width: 300px;
-  }
-
-  .gallery-item .overlay,
-  .gallery-item .img-wrapper {
-    height: 200px;
-  }
-
-  .gallery-item:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  .gallery-item:nth-child(4),
-  .gallery-item:nth-child(7),
-  .gallery-item:nth-child(10) {
-    margin-left: 0;
-  }
-
-  .gallery-item:nth-last-child(-n+3) {
-    margin-bottom: 0;
-  }
-
   #quote-form {
     width: 620px;
+  }
+
+  .gallery-item {
+    width: 33.33%;
   }
 }
