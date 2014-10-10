@@ -7,8 +7,7 @@
     $routeProvider
 
     .when('/', {
-      templateUrl: 'partials/home.html',
-      controller: 'HomeCtrl'
+      templateUrl: 'partials/home.html'
     })
 
     .when('/services', {
@@ -16,23 +15,19 @@
     })
 
     .when('/work', {
-      templateUrl: 'partials/work.html',
-      controller: 'WorkCtrl'
+      templateUrl: 'partials/work.html'
     })
 
     .when('/work-detail', {
-      templateUrl: 'partials/work-detail.html',
-      controller: 'WorkDetailCtrl'
+      templateUrl: 'partials/work-detail.html'
     })
 
     .when('/freebies', {
-      templateUrl: 'partials/freebies.html',
-      controller: 'FreebiesCtrl'
+      templateUrl: 'partials/freebies.html'
     })
 
     .when('/get-quote', {
-      templateUrl: 'partials/get-quote.html',
-      controller: 'GetQuoteCtrl'
+      templateUrl: 'partials/get-quote.html'
     })
 
     .otherwise({

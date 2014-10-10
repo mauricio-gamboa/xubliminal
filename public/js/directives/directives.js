@@ -314,13 +314,38 @@
       link: function (scope, element, attrs, controller) {
         element.owlCarousel({
           autoPlay: 3000,
-          items: 7,
+          items: 6,
           itemsDesktop: [1199,5],
           itemsDesktopSmall: [979,4],
           pagination: false,
           stopOnHover: true,
           lazyLoad: true
         });
+      }
+    };
+  }])
+
+  .directive('increase', [function () {
+    return {
+      restrict: 'A',
+
+      scope: {
+        val: "=",
+        interval: "="
+      },
+
+      link: function (scope, element, attrs, controller) {
+        var value = scope.val * 1;
+        element.text(numberWithCommas(value));
+
+        setInterval(function () {
+          value += 1;
+          element.text(numberWithCommas(value));
+        }, scope.interval);
+
+        function numberWithCommas(x) {
+          return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
       }
     };
   }]);
