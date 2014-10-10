@@ -8,7 +8,6 @@
     this.servicesData = angular.bind(this, function (services) {
       if (!services.length) return;
       this.services = services;
-      console.log(this.services);
     });
 
     this.errorServices = function (error) {

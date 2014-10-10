@@ -219,17 +219,6 @@
     width: 100%;
   }
 
-  .brand {
-    width: 50%;
-    height: 110px;
-    line-height: 110px;
-  }
-
-  .brand:first-child,
-  .brand:last-child {
-    text-align: center;
-  }
-
   #brands-bottom > div {
     width: 50%;
     height: auto;

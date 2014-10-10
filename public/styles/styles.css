@@ -1795,24 +1795,224 @@ Home Page Styles
   padding: 40px 0;
 }
 
-.brand {
-  float: left;
-  width: 14.28%;
-  height: 64px;
-  line-height: 64px;
+.single-brand {
   text-align: center;
+  line-height: 76px;
+  height: 76px;
 }
 
-.brand:first-child {
-  text-align: left;
+.single-brand img {
+  display: inline-block;
 }
 
-.brand:last-child {
-  text-align: right;
+.brand-1 img {
+  background: url("../images/brand-1.png") no-repeat 0 0;
+  width: 143px;
+  height: 17px;
 }
 
-.brand img {
-  vertical-align: middle;
+.brand-1:hover img {
+  background-position: 0 -17px;
+}
+
+.brand-2 img {
+  background: url("../images/brand-2.png") no-repeat 0 0;
+  width: 89px;
+  height: 57px;
+}
+
+.brand-2:hover img {
+  background-position: 0 -57px;
+}
+
+.brand-3 img {
+  background: url("../images/brand-3.png") no-repeat 0 0;
+  width: 151px;
+  height: 27px;
+}
+
+.brand-3:hover img {
+  background-position: 0 -27px;
+}
+
+.brand-4 img {
+  background: url("../images/brand-4.png") no-repeat 0 0;
+  width: 137px;
+  height: 56px;
+}
+
+.brand-4:hover img {
+  background-position: 0 -56px;
+}
+
+.brand-5 img {
+  background: url("../images/brand-5.png") no-repeat 0 0;
+  width: 113px;
+  height: 73px;
+}
+
+.brand-5:hover img {
+  background-position: 0 -73px;
+}
+
+.brand-6 img {
+  background: url("../images/brand-6.png") no-repeat 0 0;
+  width: 76px;
+  height: 76px;
+}
+
+.brand-6:hover img {
+  background-position: 0 -76px;
+}
+
+.brand-7 img {
+  background: url("../images/brand-7.png") no-repeat 0 0;
+  width: 135px;
+  height: 21px;
+}
+
+.brand-7:hover img {
+  background-position: 0 -21px;
+}
+
+.brand-8 img {
+  background: url("../images/brand-8.png") no-repeat 0 0;
+  width: 106px;
+  height: 51px;
+}
+
+.brand-8:hover img {
+  background-position: 0 -51px;
+}
+
+.brand-9 img {
+  background: url("../images/brand-9.png") no-repeat 0 0;
+  width: 142px;
+  height: 20px;
+}
+
+.brand-9:hover img {
+  background-position: 0 -20px;
+}
+
+.brand-10 img {
+  background: url("../images/brand-10.png") no-repeat 0 0;
+  width: 66px;
+  height: 64px;
+}
+
+.brand-10:hover img {
+  background-position: 0 -64px;
+}
+
+.brand-11 img {
+  background: url("../images/brand-11.png") no-repeat 0 0;
+  width: 117px;
+  height: 42px;
+}
+
+.brand-11:hover img {
+  background-position: 0 -42px;
+}
+
+.brand-12 img {
+  background: url("../images/brand-12.png") no-repeat 0 0;
+  width: 111px;
+  height: 33px;
+}
+
+.brand-12:hover img {
+  background-position: 0 -33px;
+}
+
+.brand-13 img {
+  background: url("../images/brand-13.png") no-repeat 0 0;
+  width: 148px;
+  height: 69px;
+}
+
+.brand-13:hover img {
+  background-position: 0 -69px;
+}
+
+.brand-14 img {
+  background: url("../images/brand-14.png") no-repeat 0 0;
+  width: 100px;
+  height: 42px;
+}
+
+.brand-14:hover img {
+  background-position: 0 -42px;
+}
+
+.brand-15 img {
+  background: url("../images/brand-15.png") no-repeat 0 0;
+  width: 139px;
+  height: 40px;
+}
+
+.brand-15:hover img {
+  background-position: 0 -40px;
+}
+
+.brand-16 img {
+  background: url("../images/brand-16.png") no-repeat 0 0;
+  width: 118px;
+  height: 47px;
+}
+
+.brand-16:hover img {
+  background-position: 0 -47px;
+}
+
+.brand-17 img {
+  background: url("../images/brand-17.png") no-repeat 0 0;
+  width: 103px;
+  height: 72px;
+}
+
+.brand-17:hover img {
+  background-position: 0 -72px;
+}
+
+.brand-18 img {
+  background: url("../images/brand-18.png") no-repeat 0 0;
+  width: 166px;
+  height: 20px;
+}
+
+.brand-18:hover img {
+  background-position: 0 -20px;
+}
+
+.brand-19 img {
+  background: url("../images/brand-19.png") no-repeat 0 0;
+  width: 168px;
+  height: 28px;
+}
+
+.brand-19:hover img {
+  background-position: 0 -28px;
+}
+
+.brand-20 img {
+  background: url("../images/brand-20.png") no-repeat 0 0;
+  width: 100px;
+  height: 64px;
+}
+
+.brand-20:hover img {
+  background-position: 0 -64px;
+}
+
+.brand-21 img {
+  background: url("../images/brand-21.png") no-repeat 0 0;
+  width: 104px;
+  height: 54px;
+}
+
+.brand-21:hover img {
+  background-position: 0 -54px;
 }
 
 #brands-bottom {

@@ -43,7 +43,7 @@
                 <h2>{{service.featuresTitle}}</h2>
                 <div class="service-features-container clearfix">
                   <div ng-repeat="feature in service.features" class="service-feature">
-                    <img src="public/images/service-{{$parent.$index + 1}}-feature-{{$index + 1}}.png" alt="">
+                    <img ng-src="public/images/service-{{$parent.$index + 1}}-feature-{{$index + 1}}.png" alt="">
                     <h4>{{feature.title}}</h4>
                     <p>{{feature.description}}</p>
                   </div>
