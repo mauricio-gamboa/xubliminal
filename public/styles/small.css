@@ -69,14 +69,6 @@
     padding: 0 10px;
   }
 
-  .brand {
-    width: 25%;
-  }
-
-  .brand:nth-child(4) {
-    text-align: right;
-  }
-
   #brands-bottom > div > span > strong {
     font-size: 16px;
   }

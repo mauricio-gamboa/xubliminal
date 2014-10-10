@@ -305,6 +305,24 @@
         });
       }
     };
+  }])
+
+  .directive('owlCarouselHome', [function () {
+    return {
+      restrict: 'A',
+
+      link: function (scope, element, attrs, controller) {
+        element.owlCarousel({
+          autoPlay: 3000,
+          items: 7,
+          itemsDesktop: [1199,5],
+          itemsDesktopSmall: [979,4],
+          pagination: false,
+          stopOnHover: true,
+          lazyLoad: true
+        });
+      }
+    };
   }]);
 
 }());
