@@ -1,14 +1,1 @@
-@media (min-width: 1201px) {
-  .gallery-item:nth-child(4n) {
-    margin-right: 0;
-  }
-
-  .gallery-item:nth-child(5),
-  .gallery-item:nth-child(9) {
-    margin-left: 0;
-  }
-
-  .gallery-item:nth-last-child(-n+4) {
-    margin-bottom: 0;
-  }
-}
+@media (min-width: 1201px) {}

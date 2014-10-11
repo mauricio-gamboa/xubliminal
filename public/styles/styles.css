@@ -209,6 +209,10 @@ strong {
   /*box-shadow: 0 10px 20px -10px #23292c;*/
 }
 
+.modal-backdrop.in {
+  opacity: 0.8;
+}
+
 /***************************
 ****************************
 Bottons Styles
@@ -302,7 +306,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
   transition: background-color 0.4s ease 0s;
   padding: 18px 0;
 }
@@ -374,12 +378,6 @@ header .logo {
   color: #FFFFFF;
 }
 
-.contact-nav {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.4s ease 0s;
-}
-
 .contact-nav .xub-nav li {
   margin-left: 14px;
   line-height: 29px;
@@ -395,30 +393,31 @@ header .logo {
 }
 
 .contact-nav .xub-nav li.contact-menu-item-1 a {
-  background-position: 0 0;
+  background-position: 0 -168px;
 }
 
 .contact-nav .xub-nav li.contact-menu-item-1 a:hover {
-  background-position: 0 -28px;
+  background-position: 0 -196px;
 }
 
 .contact-nav .xub-nav li.contact-menu-item-2 a {
-  background-position: 0 -56px;
+  background-position: 0 -224px;
 }
 
 .contact-nav .xub-nav li.contact-menu-item-2 a:hover {
-  background-position: 0 -84px;
+  background-position: 0 -252px;
 }
 
 .contact-nav .xub-nav li.contact-menu-item-3 a {
-  background-position: 0 -112px;
+  background-position: 0 -280px;
 }
 
 .contact-nav .xub-nav li.contact-menu-item-3 a:hover {
-  background-position: 0 -140px;
+  background-position: 0 -308px;
 }
 
 .lang-nav {
+  display: none;
   border-left: 1px solid rgba(255, 255, 255, 0.1);;
   padding-left: 20px;
   transition: opacity 0.4s ease 0s;
@@ -772,27 +771,27 @@ Services Galleries Styles
   text-align: center;
 }
 
+.gallery-big img {
+  width: 100%;
+}
+
 .gallery-item {
   display: block;
   float: left;
-  margin: 0 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   position: relative;
   text-align: center;
-  width: 270px;
+  width: 25%;
+  margin-bottom: 31px;
+  cursor: pointer;
 }
 
 .gallery-item .img-wrapper {
+  background-color: #3dc0e6;
   display: block;
-  height: 180px;
   overflow: hidden;
-}
-
-.gallery-item:first-child {
-  margin-left: 0;
-}
-
-.gallery-item:last-child {
-  margin-right: 0;
+  position: relative;
 }
 
 .gallery-item h5 {
@@ -813,7 +812,6 @@ Services Galleries Styles
 }
 
 .gallery-item img {
-  margin-bottom: 19px;
   display: inline-block;
   width: 100%;
   -webkit-transition: transform 0.2s linear;
@@ -859,7 +857,7 @@ Services Galleries Styles
 
 .gallery-item .overlay {
   background: url("../images/t-2.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-  height: 180px;
+  height: 100%;
   position: absolute;
   top: 0;
   width: 100%;
@@ -1106,12 +1104,9 @@ Works Page Styles
   color: #FFFFFF;
 }
 
-.gallery-item {
-  margin-bottom: 31px;
-}
-
-.gallery-row:last-child {
-  margin-bottom: 0;
+.gallery-row {
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 /***************************

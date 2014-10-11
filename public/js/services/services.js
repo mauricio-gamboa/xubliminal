@@ -16,6 +16,19 @@
         error(function(data, status, headers, config) {
           errorCallback(data);
         });
+      },
+
+      getGallery: function(successCallback, errorCallback) {
+        $http({
+          method: 'GET',
+          url: 'public/data/gallery.json'
+        }).
+        success(function(data, status, headers, config) {
+          successCallback(data);
+        }).
+        error(function(data, status, headers, config) {
+          errorCallback(data);
+        });
       }
     };
   }]);

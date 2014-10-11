@@ -34,26 +34,7 @@
   }
 
   .gallery-item {
-    width: 226px;
-  }
-
-  .gallery-item .overlay,
-  .gallery-item .img-wrapper {
-    height: 151px;
-  }
-
-  .gallery-item:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  .gallery-item:nth-child(4),
-  .gallery-item:nth-child(7),
-  .gallery-item:nth-child(10) {
-    margin-left: 0;
-  }
-
-  .gallery-item:nth-last-child(-n+3) {
-    margin-bottom: 0;
+    width: 33.33%;
   }
 
   .share-list li {
