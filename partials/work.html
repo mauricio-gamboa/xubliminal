@@ -24,7 +24,7 @@
           <div class="gallery-row clearfix">
             <a ng-repeat="item in gallery.items" data-target="#gallery-item-{{$index + 1}}" class="gallery-item" data-toggle="modal">
               <span class="img-wrapper">
-                <img ng-src="public/images/gallery/thumbnails/gallery-item-{{$index + 1}}.png" alt="">
+                <img ng-src="public/images/gallery/thumbnails/gallery-item-{{$index + 1}}.jpg" alt="">
                 <span class="overlay"><span class="btn-1"></span><span class="btn-1-border"></span></span>
               </span>
               <h5 class="ng-cloak">{{item.title}}</h5>
@@ -37,7 +37,7 @@
   <div ng-repeat="item in gallery.items" class="modal fade" id="gallery-item-{{$index + 1}}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="gallery-big">
-        <img ng-src="public/images/gallery/big/{{$index + 1}}.png" alt="{{item.title}}">
+        <img ng-src="public/images/gallery/big/{{$index + 1}}.jpg" alt="{{item.title}}">
       </div>
     </div>
   </div>
