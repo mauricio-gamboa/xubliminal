@@ -40,6 +40,10 @@
     width: 33.33%;
   }
 
+  #services-gallery .gallery-item {
+    width: 100%;
+  }
+
   .share-list li {
     margin-right: 7px;
   }

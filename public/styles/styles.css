@@ -813,6 +813,11 @@ Services Galleries Styles
   text-align: center;
 }
 
+#services-gallery .gallery-item {
+  width: 100%;
+  float: none;
+}
+
 .gallery-big img {
   width: 100%;
 }
@@ -889,37 +894,6 @@ Services Galleries Styles
 
 .gallery-item:hover .overlay {
   opacity: 1;
-}
-
-#services-gallery .gallery .carousel-indicators {
-  margin-top: 53px;
-}
-
-.gallery .carousel-indicators {
-  bottom: auto;
-  left: auto;
-  list-style: none outside none;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: static;
-  text-align: center;
-  width: 100%;
-}
-
-.gallery .carousel-indicators li {
-  background-color: #afbec6;
-  border: medium none;
-  border-radius: 100%;
-  cursor: pointer;
-  display: inline-block;
-  height: 14px;
-  margin: 0 4px;
-  width: 14px;
-}
-
-.gallery .carousel-indicators li.active {
-  background-color: #fa7362;
 }
 
 /***************************

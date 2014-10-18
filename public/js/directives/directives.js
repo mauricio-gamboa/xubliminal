@@ -351,7 +351,7 @@
     };
   }])
 
-  .directive('owlCarouselRepeat', ['$timeout', function ($timeout) {
+  .directive('owlCarouselRepeat', [function () {
     return {
       restrict: 'A',
 
@@ -364,6 +364,24 @@
             singleItem: true,
             stopOnHover: true,
             lazyLoad: true
+          })
+        }
+      }
+    };
+  }])
+
+  .directive('owlCarouselServices', [function () {
+    return {
+      restrict: 'A',
+
+      link: function (scope, element, attrs) {
+        if (scope.$last === true) {
+          var carousel = element.parent();
+          
+          carousel.owlCarousel({
+            autoPlay: 5000,
+            items: 4,
+            stopOnHover: true
           })
         }
       }

@@ -18,4 +18,8 @@
   .gallery-item {
     width: 33.33%;
   }
+
+  #services-gallery .gallery-item {
+    width: 100%;
+  }
 }
