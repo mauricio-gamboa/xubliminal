@@ -612,106 +612,128 @@ Services Tabs Styles
   background-color: #FFFFFF;
 }
 
-#services-links {
-  background: 
-  url("../images/t-1.png") repeat-x 0 0,
-  url("../images/texture-1.png") repeat-x 0 6px;
-}
-
-#services-links ul li {
+#service-tabs .xub-nav li {
   width: 33.33%;
 }
 
-#services-links ul li a {
-  color: #ffffff;
+#service-tabs .xub-nav li a {
+  color: #8f9397;
   display: block;
   font-weight: 600;
   font-size: 14px;
-  height: 77px;
-  line-height: 83px;
+  height: 133px;
   text-align: center;
   cursor: pointer;
+  border-bottom: 2px solid #d7dbde;
+  position: relative;
 }
 
-#services-links ul li.active a {
+#service-tabs .xub-nav li a:hover {
+  color: #696d71;
+}
+
+#service-tabs .xub-nav li.active a {
   background-color: #FFFFFF;
   color: #303030;
-  line-height: 77px;
+  border-bottom: 2px solid #fa6451;
 }
 
-#services-links ul li a span {
-  display: inline-block;
-  line-height: 17px;
-  padding-top: 3px;
-  text-align: left;
-  vertical-align: middle;
+#service-tabs .xub-nav li a span:not(.service-name) {
+  display: block;
+  margin: 0 auto;
+  position: relative;
 }
 
-#services-links ul li a span.tab-icon-1 {
+#service-tabs .xub-nav li a span.tab-icon-1 {
   background: url("../images/tab-icon-1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   height: 41px;
-  padding-left: 70px;
+  width: 51px;
+  top: 25px;
 }
 
-#services-links ul li.active a span.tab-icon-1 {
+#service-tabs .xub-nav li a:hover span.tab-icon-1 {
+  background-position: 0 -82px;
+}
+
+#service-tabs .xub-nav li.active a span.tab-icon-1 {
   background-position: 0 -41px;
 }
 
-#services-links ul li a span.tab-icon-2 {
+#service-tabs .xub-nav li a span.tab-icon-2 {
   background: url("../images/tab-icon-2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   height: 45px;
-  padding-left: 58px;
+  width: 39px;
+  top: 21px;
 }
 
-#services-links ul li.active a span.tab-icon-2 {
+#service-tabs .xub-nav li a:hover span.tab-icon-2 {
+  background-position: 0 -90px;
+}
+
+#service-tabs .xub-nav li.active a span.tab-icon-2 {
   background-position: 0 -45px;
 }
 
-#services-links ul li a span.tab-icon-3 {
+#service-tabs .xub-nav li a span.tab-icon-3 {
   background: url("../images/tab-icon-3.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   height: 35px;
-  padding-left: 53px;
+  width: 35px;
+  top: 31px;
 }
 
-#services-links ul li.active a span.tab-icon-3 {
+#service-tabs .xub-nav li a:hover span.tab-icon-3 {
+  background-position: 0 -70px;
+}
+
+#service-tabs .xub-nav li.active a span.tab-icon-3 {
   background-position: 0 -35px;
 }
 
-#services-links ul li a span.tab-icon-4 {
+#service-tabs .xub-nav li a span.tab-icon-4 {
   background: url("../images/tab-icon-4.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   height: 45px;
-  padding-left: 58px;
+}
+
+#service-tabs .xub-nav li a span.service-name {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  left: 0;
 }
 
 .service {
-  padding-top: 61px;
-  border-bottom: 1px solid #f4f4f4;
+  padding-top: 60px;
 }
 
-.service > * {
-  float: left;
+.service .subtitle {
+  background: url("../images/curl-2.png") no-repeat scroll 50% 100% rgba(0, 0, 0, 0);
+  text-align:  center;
+  padding-bottom: 50px;
 }
 
-.service > .service-image {
-  width: 25%;
-  text-align: right;
+.service .subtitle h2 {
+  color: #3dc0e6;
 }
 
 .service > .service-text {
-  width: 75%;
+  text-align: center;
+  width: 760px;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
-.service > .service-text h2 {
-  margin-bottom: 15px;
+.service > .service-text p:last-child {
+  margin-bottom: 0;
 }
 
 .service > .service-text p {
-  font-size: 14px;
+  color: #2b363d;
+  font-size: 16px;
   line-height: 26px;
 }
 
 .service-features {
-  padding: 53px 0 70px;
+  padding-bottom: 60px;
 }
 
 .service-features > h2 {
@@ -754,6 +776,21 @@ Services Tabs Styles
   margin: 0;
 }
 
+.second-description {
+  color: #3dc0e6;
+  font-size: 18px;
+  line-height: 31px;
+  text-align: center;
+  padding: 60px 0;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.second-description > div {
+  width: 760px;
+  margin: 0 auto;
+}
+
 /***************************
 ****************************
 Services Galleries Styles
@@ -761,13 +798,13 @@ Services Galleries Styles
 ***************************/
 
 #services-gallery {
-  background-color: #f3f6f8;
-  padding: 45px 0 38px;
+  background-color: #ffffff;
+  padding: 50px 0;
 }
 
 #services-gallery h2 {
   color: #47565f;
-  margin-bottom: 44px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -894,8 +931,11 @@ What to expect Styles
 ***************************/
 
 #expect {
-  background-color: #ffffff;
-  padding: 57px 0 63px;
+  background: 
+  url("../images/pike.png") repeat-x 0 100%,
+  url("../images/pattern-2.jpg") repeat-x scroll 0 0 #FFFFFF;
+  padding: 60px 0;
+  border-top: 1px solid #f1f1f1;
 }
 
 #expect h2 {

@@ -1,7 +1,8 @@
 [
   {
     "title": "Web Design",
-    "description": "Are you looking for the best web design services and recognize these as truly an investment? We are exactly what you need. We continuously thrive to excel and surpass every clients´ expectations.  We make sure our impress everyone by delivering the fastest, highest quality, top notch and professional web design services in the world, anything less just won´t cut it. Our custom designs will get your products and services across like any other. We know what we are doing, and it is that simple.",
+    "description": "Are you looking for the best web design services and recognize these as truly an investment? We are exactly what you need. We continuously thrive to excel and surpass every clients´ expectations. We know what we are doing, and it is that simple.",
+    "secondDescription": "We make sure our impress everyone by delivering the fastest, highest quality, top notch and professional web design services in the world, anything less just won´t cut it. Our custom designs will get your products and services across like any other.",
     "featuresTitle": "Strategic thinking & digital innovation",
     "features": [
       {
@@ -32,12 +33,13 @@
   },
   {
     "title": "Mobile App Design",
-    "description": "Whether you know your way around smartphones or you're just starting out with mobile devices, our team is always ready to help you in every step of the development process. We will work with you in the development of your new ideas, we will be with you all the way until your first client’s download, and it will be a wonderful and easy going process. We can be as accessible as your experience may require. We have what it takes to transform your ideas into profitable and success mobile device products, including smartphones and tablets.",
+    "description": "Whether you know your way around smartphones or you're just starting out with mobile devices, our team is always ready to help you in every step of the development process. We have what it takes to transform your ideas into profitable and success mobile device products.",
+    "secondDescription": "We will work with you in the development of your new ideas, we will be with you all the way until your first client’s download, and it will be a wonderful and easy going process. We can be as accessible as your experience may require.",
     "featuresTitle": "Stay ahead of the crowd",
     "features": [
       {
         "title": "iOS, windows & ANDROID",
-        "description": "Are you looking for an iOS app for iPad or iPhone? Or perhaps you are more interested in the Android, Blackberry or Windows Phone market? Either way, it´s perfectly fine by us, we can tackle any platform with expertise, knowledge and, of course, pixel perfect detail."
+        "description": "Are you looking for an iOS app for iPad or iPhone? Or perhaps you are more interested in the Android, Blackberry or Windows Phone market? Either way, it's perfectly fine by us, we can tackle any platform with expertise, knowledge and, of course, pixel perfect detail."
       },
       {
         "title": "iPad & other tablet screens",
@@ -53,18 +55,19 @@
       },
       {
         "title": "STRATEGY & CONCEPT",
-        "description": "From the initial phase of any app development process, it is important to know what the main purpose of the app is and how can it be successful, both for the company that offers it and the main user´s perspective."
+        "description": "From the initial phase of any app development process, it is important to know what the main purpose of the app is and how can it be successful, both for the company that offers it and the main user's perspective."
       },
       {
         "title": "latest design trends",
-        "description": "We are always improving and carefully studying the latest design and app trends to make sure you get nothing but the best, most reliable and user friendly end products. You won´t get what everyone has, you will get what everyone will wish they have."
+        "description": "We are always improving and carefully studying the latest design and app trends to make sure you get nothing but the best, most reliable and user friendly end products. You won't get what everyone has, you will get what everyone will wish they have."
       }
     ]
   },
   {
     "title": "Creative Designs",
-    "description": "Our web and app designers and developers, are truly one of a kind. They go beyond the norm and are extremely proud of their creativity and talent, and we are too. The work we do stands out for being more than what you expected and what we do is clever, beautiful, impressive and responsive. Wowing people is our motto.",
-    "featuresTitle": "Strategic Ideas & Cutting Edge Performance",
+    "description": "Our creative designers are truly one of a kind. They go beyond the norm and are extremely proud of their creativity and talent, and we are too. The work we do stands out for being more than what you expected and what we do is clever, beautiful, impressive and responsive. Wowing people is our motto.",
+    "secondDescription": "We will work with you in the development of your new ideas, we will be with you all the way until your first client’s download, and it will be a wonderful and easy going process. We can be as accessible as your experience may require.",
+    "featuresTitle": "Cool Ideas & Cutting Edge Performance",
     "features": [
       {
         "title": "Branding Development",
@@ -88,7 +91,7 @@
       },
       {
         "title": "Advertising & Campaigns",
-        "description": "Getting the word out and make your brand or product stand out is one of our favorite things to do, and we know how blow people´s minds in the best and most profitable ways: from advertising ideas you never heard of, to detail campaigns focused on your clients´ needs and expectations."
+        "description": "Getting the word out and make your brand or product stand out is one of our favorite things to do, and we know how blow people's minds in the best and most profitable ways: from advertising ideas you never heard of, to detail campaigns focused on your clients' needs and expectations."
       }
     ]
   }

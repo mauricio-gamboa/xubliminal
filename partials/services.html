@@ -8,39 +8,27 @@
   </div>
 </section>
 <div ng-controller="ServicesCtrl as services">
-  <section id="services-links" class="hide-xs sticky-cover">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <ul class="xub-nav" role="tablist">
-            <li ng-repeat="service in services.services" ng-class="{active: $index == 0}">
-              <a data-target="#service-tab-{{$index + 1}}" role="tab" data-toggle="tab">
-                <span class="tab-icon-{{$index + 1}}">{{service.title}}</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
   <section id="service-tabs" class="sticky-cover">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="xub-nav hide-xs" role="tablist">
+            <li ng-repeat="service in services.services" ng-class="{active: $index == 0}">
+              <a data-target="#service-tab-{{$index + 1}}" role="tab" data-toggle="tab">
+                <span class="tab-icon-{{$index + 1}}"></span>
+                <span class="service-name">{{service.title}}</span>
+              </a>
+            </li>
+          </ul>
           <div class="tab-content">
             <div ng-repeat="service in services.services" ng-class="{active: $index == 0}" class="tab-pane" id="service-tab-{{$index + 1}}">
               <div class="service service-1 clearfix">
-                <h2 class="show-xs">{{service.title}}</h2>
-                <div class="service-image">
-                  <img src="public/images/service-1.png" alt="">
-                </div>
+                <div class="subtitle"><h2>{{service.featuresTitle}}</h2></div>
                 <div class="service-text">
-                  <h2 class="hide-xs">{{service.title}}</h2>
                   <p>{{service.description}}</p>
                 </div>
               </div>
               <div class="service-features">
-                <h2>{{service.featuresTitle}}</h2>
                 <div class="service-features-container clearfix">
                   <div ng-repeat="feature in service.features" class="service-feature">
                     <img ng-src="public/images/service-{{$parent.$index + 1}}-feature-{{$index + 1}}.png" alt="">
@@ -48,6 +36,9 @@
                     <p>{{feature.description}}</p>
                   </div>
                 </div>
+              </div>
+              <div class="second-description">
+                <div><p>{{service.secondDescription}}</p></div>
               </div>
             </div>
           </div>

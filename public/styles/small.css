@@ -12,8 +12,11 @@
   }
 
   .service > .service-text {
-    padding-bottom: 38px;
-    padding-left: 15px;
+    width: 100%;
+  }
+
+  .second-description > div {
+    width: 100%;
   }
 
   .service-feature {
