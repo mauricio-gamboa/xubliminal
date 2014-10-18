@@ -30,15 +30,6 @@
     line-height: normal;
   }
 
-  .service {
-    padding-bottom: 41px;
-    padding-top: 29px;
-  }
-
-  .service > * {
-    float: none;
-  }
-
   .service > h2 {
     text-align: center;
     margin-bottom: 44px;
@@ -68,12 +59,12 @@
     padding-top: 0 !important;
   }
 
-  .service-features {
-    padding: 30px 0 44px 0;
-  }
-
   #services-gallery {
     padding: 32px 0 30px 0;
+  }
+
+  #the-services-gallery .owl-controls {
+    display: none !important;
   }
 
   .gallery-row {
@@ -89,16 +80,18 @@
     padding: 0;
   }
 
+  #services-gallery .gallery-item {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   #services-gallery h2 {
     margin-bottom: 30px;
   }
 
   #services-gallery .gallery .carousel-indicators {
     margin-top: 34px;
-  }
-
-  #expect {
-    padding: 45px 0 74px;
   }
 
   #expect h2 {
@@ -267,5 +260,9 @@
 
   #brands-bottom > div > span > strong {
     font-size: 18px;
+  }
+
+  .second-description > div {
+    width: 100%;
   }
 }

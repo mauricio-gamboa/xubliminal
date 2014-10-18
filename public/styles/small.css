@@ -12,8 +12,11 @@
   }
 
   .service > .service-text {
-    padding-bottom: 38px;
-    padding-left: 15px;
+    width: 100%;
+  }
+
+  .second-description > div {
+    width: 100%;
   }
 
   .service-feature {
@@ -35,6 +38,10 @@
 
   .gallery-item {
     width: 33.33%;
+  }
+
+  #services-gallery .gallery-item {
+    width: 100%;
   }
 
   .share-list li {
