@@ -25,7 +25,9 @@
             <a ng-repeat="item in gallery.items" data-target="#gallery-item-{{$index + 1}}" class="gallery-item" data-toggle="modal">
               <span class="img-wrapper">
                 <img ng-src="public/images/gallery/thumbnails/gallery-item-{{$index + 1}}.jpg" alt="">
-                <span class="overlay"><span class="btn-1"></span><span class="btn-1-border"></span></span>
+                <span class="overlay">
+                  <img ng-src="public/images/gallery/logos/gallery-item-{{$index + 1}}.png" alt="">
+                </span>
               </span>
               <h5 class="ng-cloak">{{item.title}}</h5>
             </a>
