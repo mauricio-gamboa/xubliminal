@@ -1693,16 +1693,7 @@ Home Page Styles
   margin-bottom: 15px;
 }
 
-.home-carousel .carousel-indicators {
-  bottom: auto;
-  left: auto;
-  margin: 0;
-  position: static;
-  text-align: center;
-  width: 100%;
-}
-
-.home-carousel .carousel-indicators li {
+.owl-pagination .owl-page span {
   width: 8px;
   height: 8px;
   background-color: #afb5b9;
@@ -1710,11 +1701,9 @@ Home Page Styles
   margin: 0 6px;
 }
 
-.home-carousel .carousel-indicators li.active {
+.owl-pagination .owl-page.active span {
   background-color: #fa634f;
   height: 14px;
-  position: relative;
-  top: 2px;
   width: 14px;
 }
 

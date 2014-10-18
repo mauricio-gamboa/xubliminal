@@ -308,7 +308,7 @@
     };
   }])
 
-  .directive('owlCarouselHome', [function () {
+  .directive('owlCarouselBrands', [function () {
     return {
       restrict: 'A',
 
@@ -346,6 +346,25 @@
 
         function numberWithCommas(x) {
           return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+      }
+    };
+  }])
+
+  .directive('owlCarouselRepeat', ['$timeout', function ($timeout) {
+    return {
+      restrict: 'A',
+
+      link: function (scope, element, attrs) {
+        if (scope.$last === true) {
+          var carousel = element.parent();
+          
+          carousel.owlCarousel({
+            autoPlay: 8000,
+            singleItem: true,
+            stopOnHover: true,
+            lazyLoad: true
+          })
         }
       }
     };
