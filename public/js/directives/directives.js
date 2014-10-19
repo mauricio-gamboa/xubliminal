@@ -308,84 +308,99 @@
     };
   }])
 
-  .directive('owlCarouselBrands', [function () {
-    return {
-      restrict: 'A',
+.directive('owlCarouselBrands', [function () {
+  return {
+    restrict: 'A',
 
-      link: function (scope, element, attrs, controller) {
-        element.owlCarousel({
-          autoPlay: 3000,
-          items: 6,
-          itemsDesktop: [1199,5],
-          itemsDesktopSmall: [979,4],
-          pagination: false,
+    link: function (scope, element, attrs, controller) {
+      element.owlCarousel({
+        autoPlay: 3000,
+        items: 6,
+        itemsDesktop: [1199,5],
+        itemsDesktopSmall: [979,4],
+        pagination: false,
+        stopOnHover: true,
+        lazyLoad: true
+      });
+    }
+  };
+}])
+
+.directive('increase', [function () {
+  return {
+    restrict: 'A',
+
+    scope: {
+      val: "=",
+      interval: "="
+    },
+
+    link: function (scope, element, attrs, controller) {
+      var value = scope.val * 1;
+      element.text(numberWithCommas(value));
+
+      setInterval(function () {
+        value += 1;
+        element.text(numberWithCommas(value));
+      }, scope.interval);
+
+      function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+    }
+  };
+}])
+
+.directive('owlCarouselRepeat', [function () {
+  return {
+    restrict: 'A',
+
+    link: function (scope, element, attrs) {
+      if (scope.$last === true) {
+        var carousel = element.parent();
+
+        carousel.owlCarousel({
+          autoPlay: 8000,
+          singleItem: true,
           stopOnHover: true,
           lazyLoad: true
-        });
+        })
       }
-    };
-  }])
+    }
+  };
+}])
 
-  .directive('increase', [function () {
-    return {
-      restrict: 'A',
+.directive('owlCarouselServices', [function () {
+  return {
+    restrict: 'A',
 
-      scope: {
-        val: "=",
-        interval: "="
-      },
+    link: function (scope, element, attrs) {
+      if (scope.$last === true) {
+        var carousel = element.parent();
 
-      link: function (scope, element, attrs, controller) {
-        var value = scope.val * 1;
-        element.text(numberWithCommas(value));
-
-        setInterval(function () {
-          value += 1;
-          element.text(numberWithCommas(value));
-        }, scope.interval);
-
-        function numberWithCommas(x) {
-          return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        }
+        carousel.owlCarousel({
+          autoPlay: 5000,
+          items: 4,
+          stopOnHover: true
+        })
       }
-    };
-  }])
+    }
+  };
+}])
 
-  .directive('owlCarouselRepeat', [function () {
-    return {
-      restrict: 'A',
+.directive('whatToExpectOwl', [function () {
+  return {
+    restrict: 'A',
 
-      link: function (scope, element, attrs) {
-        if (scope.$last === true) {
-          var carousel = element.parent();
-          
-          carousel.owlCarousel({
-            autoPlay: 8000,
-            singleItem: true,
-            stopOnHover: true,
-            lazyLoad: true
-          })
-        }
-      }
-    };
-  }])
-
-  .directive('owlCarouselServices', [function () {
-    return {
-      restrict: 'A',
-
-      link: function (scope, element, attrs) {
-        if (scope.$last === true) {
-          var carousel = element.parent();
-          
-          carousel.owlCarousel({
-            autoPlay: 5000,
-            items: 4,
-            stopOnHover: true
-          })
-        }
-      }
-    };
-  }]);
+    link: function (scope, element, attrs) {
+      element.owlCarousel({
+        autoPlay: 8000,
+        singleItem: true,
+        stopOnHover: true,
+        lazyLoad: true
+      })
+    }
+  };
+}]);
 
 }());
