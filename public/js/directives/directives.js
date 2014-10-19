@@ -359,6 +359,12 @@
 
       link: function (scope, element, attrs) {
         if (scope.$last === true) {
+
+          var showPagination = true;
+          
+          if (attrs.pagination) 
+            if (attrs.pagination == 'false') showPagination = false;
+          
           var carousel = element.parent();
 
           carousel.owlCarousel({
@@ -366,7 +372,7 @@
             singleItem: true,
             stopOnHover: true,
             lazyLoad: true,
-            pagination: false
+            pagination: showPagination
           })
         }
       }
