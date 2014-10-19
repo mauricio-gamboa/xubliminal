@@ -219,9 +219,9 @@ Bottons Styles
   border-radius: 25px;
   color: #ffffff;
   display: inline-block;
-  font-size: 20px;
+  font-size: 28px;
   height: 30px;
-  line-height: 30px;
+  line-height: 28px;
   text-align: center;
   width: 38px;
 }
@@ -250,16 +250,17 @@ Header Styles
 ***************************/
 
 header {
-  height: 65px;
+  height: 86px;
   left: 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
-  -webkit-transition-property: background-color;
-  -o-transition-property: background-color;
-  transition-property: background-color;
+  -webkit-transition-property: background-color, height;
+  -o-transition-property: background-color, height;
+  transition-property: background-color, height;
   
   -webkit-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;
@@ -272,12 +273,27 @@ header {
   -webkit-transition-delay: 0s;
   -o-transition-delay: 0s;
   transition-delay: 0s;
-
-  padding: 18px 0;
 }
 
 header .logo {
   float: left;
+  margin-top: 25px;
+
+  -webkit-transition-property: margin-top;
+  -o-transition-property: margin-top;
+  transition-property: margin-top;
+  
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 .logo a {
@@ -308,6 +324,27 @@ header .logo {
   background: url("../images/mobile-trigger.png") no-repeat scroll 0 -58px / 29px auto rgba(0, 0, 0, 0);
   height: 29px;
   width: 29px;
+  margin-top: 27px;
+
+  -webkit-transition-property: margin-top;
+  -o-transition-property: margin-top;
+  transition-property: margin-top;
+  
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.reduce .mobile-trigger {
+  margin-top: 22px;
 }
 
 .mobile-trigger:hover {
@@ -345,24 +382,24 @@ header .logo {
   color: #FFFFFF;
 }
 
-.main-nav {
-  margin-left: 24px;
-}
-
 .main-nav .xub-nav li {
-  margin: 0 20px;
+  margin: 0 32px;
 }
 
-.lang-nav .xub-nav li a,
+.main-nav .xub-nav li:last-child {
+  margin-right: 0;
+}
+
 .main-nav .xub-nav li a {
   display: block;
   font-weight: 600;
-  height: 29px;
-  line-height: 29px;
+  height: 85px;
+  line-height: 81px;
+  border-bottom: 4px solid transparent;
 
-  -webkit-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
+  -webkit-transition-property: color, height, line-height;
+  -o-transition-property: color, height, line-height;
+  transition-property: color, height, line-height;
   
   -webkit-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;
@@ -379,6 +416,7 @@ header .logo {
 
 .main-nav .xub-nav li.active a {
   color: #FFFFFF;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-nav .xub-nav li {
@@ -603,7 +641,7 @@ Page Phrase Styles
 .page-phrase {
   background: url("../images/g-3.png") repeat-x fixed 0 0 #46d9e2;
   height: 227px;
-  padding-top: 110px;
+  padding-top: 115px;
 }
 
 .page-phrase h1 {
@@ -1598,72 +1636,40 @@ Home Page Styles
 ****************************
 ***************************/
 
+header.reduce {
+  height: 75px;
+}
+
+header.reduce .logo {
+  margin-top: 22px;
+}
+
+header.reduce .main-nav .xub-nav li a {
+  height: 74px;
+  line-height: 70px;
+}
+
+header.reduce .main-nav .xub-nav li.active a {
+  height: 75px;
+  line-height: 71px;
+}
+
 .dark header {
-  background-color: #41484c;
-  box-shadow: 0 0 10px -3px #000000;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px -6px #000000;
+  border-bottom: none;
+  overflow: hidden;
 }
 
 .dark .logo a {
   background-position: 0 -29px;
-  width: 28px;
-}
-
-.dark .contact-nav {
-  display: block;
-  opacity: 1;
-}
-
-.dark .lang-nav {
-  opacity: 0;
-  display: none;
-}
-
-.dark .contact-nav .xub-nav li a {
-  height: 28px;
-}
-
-.dark .contact-nav .xub-nav li.contact-menu-item-1 a {
-  background-position: 0 -420px;
-}
-
-.dark .contact-nav .xub-nav li.contact-menu-item-1 a:hover {
-  background-position: 0 -28px;
-}
-
-.dark .contact-nav .xub-nav li.contact-menu-item-2 a {
-  background-position: 0 -448px;
-}
-
-.dark .contact-nav .xub-nav li.contact-menu-item-2 a:hover {
-  background-position: 0 -84px;
-}
-
-.dark .contact-nav .xub-nav li.contact-menu-item-3 a {
-  background-position: 0 -476px;
-}
-
-.dark .contact-nav .xub-nav li.contact-menu-item-3 a:hover {
-  background-position: 0 -140px;
-}
-
-.dark .lang-nav {
-  opacity: 0;
-}
-
-.dark .main-nav {
-  height: 65px;
-  margin: -18px 24px -18px 0;
 }
 
 .dark .main-nav li a {
   border-bottom: 4px solid transparent;
-  height: 65px;
-  line-height: 65px;
   color: #969fa4;
-}
-
-.dark .main-nav li a:hover {
-  color: #ffffff;
+  height: 86px;
+  line-height: 84px;
 }
 
 .dark .main-nav li.active a {
@@ -1694,9 +1700,11 @@ Home Page Styles
 }
 
 .home-services {
-  padding: 0 50px;
   float: left;
+  padding: 0 50px;
   width: 33.33%;
+  min-height: 322px;
+  position: relative;
 }
 
 .home-services img {
@@ -1721,7 +1729,10 @@ Home Page Styles
 }
 
 .home-services .btn-4 {
-  margin-top: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -19px;
 }
 
 #recent-work {
@@ -1731,6 +1742,10 @@ Home Page Styles
   url("../images/pattern-1.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
   padding: 40px 0;
   text-align: center;
+}
+
+#recent-work .owl-controls {
+  margin-top: 0;
 }
 
 .home-carousel h2 {
@@ -1767,7 +1782,7 @@ Home Page Styles
 }
 
 #recent-work .item .logo {
-  margin: 30px auto;
+  margin: 0 auto;
 }
 
 #clients {
@@ -1784,12 +1799,15 @@ Home Page Styles
   width: 600px;
 }
 
-#clients blockquote {
+#carousel-clients {
   background: url("../images/blockquote.png") no-repeat 50% 0;
+  padding: 90px 0 0 0;
+}
+
+#clients blockquote {
   border: none;
   font-size: 17px;
   line-height: 29px;
-  padding: 90px 0 0 0;
   margin: 0;
 }
 
@@ -1887,12 +1905,12 @@ Home Page Styles
 
 .brand-6 img {
   background: url("../images/brand-6.png") no-repeat 0 0;
-  width: 76px;
-  height: 76px;
+  width: 61px;
+  height: 62px;
 }
 
 .brand-6:hover img {
-  background-position: 0 -76px;
+  background-position: 0 -62px;
 }
 
 .brand-7 img {
@@ -1957,12 +1975,12 @@ Home Page Styles
 
 .brand-13 img {
   background: url("../images/brand-13.png") no-repeat 0 0;
-  width: 148px;
-  height: 69px;
+  width: 135px;
+  height: 26px;
 }
 
 .brand-13:hover img {
-  background-position: 0 -69px;
+  background-position: 0 -26px;
 }
 
 .brand-14 img {

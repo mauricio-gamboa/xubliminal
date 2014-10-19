@@ -22,7 +22,7 @@
 
   .page-phrase,
   .services-page .page-phrase {
-    padding-top: 90px;
+    padding-top: 105px;
   }
 
   .page-phrase h1 {
@@ -63,7 +63,9 @@
     padding: 32px 0 30px 0;
   }
 
-  #the-services-gallery .owl-controls {
+  #the-services-gallery .owl-controls,
+  #recent-work .owl-controls,
+  #clients .owl-controls {
     display: none !important;
   }
 
@@ -176,7 +178,7 @@
   }
 
   .home-services {
-    padding: 29px 0;
+    padding: 29px 0 68px 0;
     float: none;
     width: 100%;
     border-bottom: 1px solid #f1f1f1;
@@ -184,8 +186,16 @@
 
   .home-services:last-child {
     margin-bottom: 0;
-    padding-bottom: 0;
+    padding-bottom: 38px;
     border-bottom: none;
+  }
+
+  .home-services .btn-4 {
+    bottom: 29px;
+  }
+
+  .home-services:last-child .btn-4 {
+    bottom: 0;
   }
 
   .home-carousel h2 {

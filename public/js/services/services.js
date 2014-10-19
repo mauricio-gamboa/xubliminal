@@ -42,6 +42,19 @@
         error(function(data, status, headers, config) {
           errorCallback(data);
         });
+      },
+
+      getRecentWork: function(successCallback, errorCallback) {
+        $http({
+          method: 'GET',
+          url: 'public/data/recentWork.json'
+        }).
+        success(function(data, status, headers, config) {
+          successCallback(data);
+        }).
+        error(function(data, status, headers, config) {
+          errorCallback(data);
+        });
       }
     };
   }]);
