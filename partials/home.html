@@ -5,8 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-        <div id="home-carousel" class="carousel slide" data-ride="carousel" data-interval="10000" home-carousel>
+        <div id="home-carousel" class="carousel slide" data-ride="carousel" data-interval="8000" home-carousel>
           <ol class="carousel-indicators">
             <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#home-carousel" data-slide-to="1"></li>
@@ -14,46 +13,40 @@
             <li data-target="#home-carousel" data-slide-to="3"></li>
             <li data-target="#home-carousel" data-slide-to="4"></li>
           </ol>
-
           <div class="carousel-inner">
             <div class="item active">
               <div class="item-wrapper">
-                <img src="public/images/home/slide-1.png" alt="">
-                <h3>Blowmind iOS &amp; Android Apps</h3>
-                <h2>you should <br>be so lucky 0</h2>
-                <a class="btn-5">Get A Free Quote</a>
+                <img src="public/images/home-slider/1.png" alt="">
+                <h3>What others crave as perfect source of satisfaction</h3>
+                <a class="btn-5" href="">Get A Quote <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
             <div class="item">
               <div class="item-wrapper">
-                <img src="public/images/home/slide-1.png" alt="">
-                <h3>Blowmind iOS &amp; Android Apps</h3>
-                <h2>you should <br>be so lucky 1</h2>
-                <a class="btn-5">Get A Free Quote</a>
+                <img src="public/images/home-slider/2.png" alt="">
+                <h3>Uniqueness is what makes us tick</h3>
+                <a class="btn-5" href="">Design Creatives <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
             <div class="item">
               <div class="item-wrapper">
-                <img src="public/images/home/slide-1.png" alt="">
-                <h3>Blowmind iOS &amp; Android Apps</h3>
-                <h2>you should <br>be so lucky 2</h2>
-                <a class="btn-5">Get A Free Quote</a>
+                <img src="public/images/home-slider/3.png" alt="">
+                <h3>We provide the sugar, you the spice</h3>
+                <a class="btn-5" href="">Web Design <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
             <div class="item">
               <div class="item-wrapper">
-                <img src="public/images/home/slide-1.png" alt="">
-                <h3>Blowmind iOS &amp; Android Apps</h3>
-                <h2>you should <br>be so lucky 3</h2>
-                <a class="btn-5">Get A Free Quote</a>
+                <img src="public/images/home-slider/4.png" alt="">
+                <h3>Perfection is our key ingredient to shine!</h3>
+                <a class="btn-5" href="">Mobile App Design <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
             <div class="item">
               <div class="item-wrapper">
-                <img src="public/images/home/slide-1.png" alt="">
-                <h3>Blowmind iOS &amp; Android Apps</h3>
-                <h2>you should <br>be so lucky 4</h2>
-                <a class="btn-5">Get A Free Quote</a>
+                <img src="public/images/home-slider/5.png" alt="">
+                <h3>We mean more than just business</h3>
+                <a class="btn-5" href="">Mobile App Design <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
           </div>
@@ -65,47 +58,35 @@
     </div>
   </div>
 </section>
-<section id="home-services" class="sticky-cover">
+<section id="home-services" class="sticky-cover" ng-controller="ServicesCtrl as services">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <h2>We are a High-End Digital Agency</h2>
         <p>We are the very best professionals conceiving projects that make a difference</p>
         <div class="home-services-wrapper clearfix">
-          <div class="home-services">
-            <img src="public/images/services-1.jpg" alt="">
-            <h4>Web Design</h4>
-            <p>Fast, perfectly crafted and delightful web designs to satisfy your visual needs. Every single pixel will make your website shine.</p>
-            <a class="btn-4" href="">&gt;</a>
-          </div>
-          <div class="home-services">
-            <img src="public/images/services-2.jpg" alt="">
-            <h4>Mobile App design</h4>
-            <p>Every single thing you have to offer and tempt your target market with will be fulfilled in detail anytime and anywhere.</p>
-            <a class="btn-4" href="">&gt;</a>
-          </div>
-          <div class="home-services">
-            <img src="public/images/services-3.jpg" alt="">
-            <h4>Creative Design</h4>
-            <p>Original and fabulous designs, created to perfection. Trust us, you never thought you wanted this, but you won´t be able to live without it.</p>
-            <a class="btn-4" href="">&gt;</a>
+          <div class="home-services" ng-repeat="service in services.services">
+            <img ng-src="public/images/services-{{$index + 1}}.png" alt="">
+            <h4>{{service.title}}</h4>
+            <p>{{service.smallDescription}}</p>
+            <a class="btn-4" href=""><i class="fa fa-angle-right"></i></a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section id="recent-work" class="home-carousel sticky-cover" ng-controller="GalleryCtrl as recent">
+<section id="recent-work" class="home-carousel sticky-cover" ng-controller="RecentWorkCtrl as recent">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <h2>Recent Work</h2>
         <div id="carousel-recent-work">
-          <div class="item" ng-repeat="item in recent.items | limitTo:4" owl-carousel-repeat>
-            <img class="example" src="public/images/recent-work-1.png" alt="">
+          <div class="item" ng-repeat="item in recent.items" owl-carousel-repeat>
+            <img class="example" ng-src="public/images/recent-work/big/recent-{{$index + 1}}.png" alt="">
             <h4>{{item.title}}</h4>
             <p>{{item.description}}</p>
-            <img class="logo" src="public/images/recent-work-logo-1.png" alt="">
+            <img class="logo" ng-src="public/images/recent-work/logos/{{ $index + 1 }}.png" alt="">
           </div>
         </div>
       </div>
@@ -164,28 +145,28 @@
           <div class="brand-bottom-1">
             <span>
               <span class="icon show-xs"></span>
-              <strong val="6587" interval="20000" increase></strong>
+              <strong val="2365" interval="20000" increase></strong>
               <span>Projects Done</span>
             </span>
           </div>
           <div class="brand-bottom-2">
             <span>
               <span class="icon show-xs"></span>
-              <strong val="24586" interval="5000" increase></strong>
+              <strong val="24586" interval="8000" increase></strong>
               <span>Cups of Coffee</span>
             </span>
           </div>
           <div class="brand-bottom-3">
             <span>
               <span class="icon show-xs"></span>
-              <strong val="2457586" interval="500" increase></strong>
+              <strong val="2457586" interval="1500" increase></strong>
               <span>Lines of Code</span>
             </span>
           </div>
           <div class="brand-bottom-4">
             <span>
               <span class="icon show-xs"></span>
-              <strong val="2457586154" interval="200" increase></strong>
+              <strong val="2457586154" interval="1500" increase></strong>
               <span>Pixels Created</span>
             </span>
           </div>

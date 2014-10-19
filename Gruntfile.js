@@ -36,7 +36,8 @@ module.exports = function(grunt) {
           'bower_components/bootstrap/dist/css/bootstrap.css', 
           'bower_components/jQuery.mmenu/src/css/jquery.mmenu.all.css',
           'bower_components/OwlCarousel/owl-carousel/owl.carousel.css',
-          'bower_components/OwlCarousel/owl-carousel/owl.theme.css'
+          'bower_components/OwlCarousel/owl-carousel/owl.theme.css',
+          'bower_components/font-awesome/css/font-awesome.min.css'
           ]
         }
       }

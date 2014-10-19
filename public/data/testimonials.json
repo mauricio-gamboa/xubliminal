@@ -12,12 +12,6 @@
     "place": "New Smyrna Beach FL, USA"
   },
   {
-    "testimonial": "Our ongoing relationship over the years has moved through major company design and devleopment milestones. Xubliminal is currently responsible for helping us define our entire brand image, iOS app, web, and print material. As always, they are doing an incredible job, and we don’t even consider working with anyone else!",
-    "company": "Ryan Roberts",
-    "position": "Chief Marketing Officer, ISI Technology",
-    "place": "Charleston SC, USA"
-  },
-  {
     "testimonial": "Xubliminal understood my idea on a very deep level and delivered a superb design for EventsGLu.  They helped optimize the entire UI and offered great communication while quickly and efficiently delivering.",
     "company": "George Holevas",
     "position": "Co-Founder and CEO, Events Glu",
@@ -52,5 +46,11 @@
     "company": "Jay Schwarz",
     "position": "CEO, AdSpy",
     "place": "Los Ángeles, USA"
+  },
+  {
+    "testimonial": "Our ongoing relationship over the years has moved through major company design and devleopment milestones. Xubliminal is currently responsible for helping us define our entire brand image, iOS app, web, and print material. As always, they are doing an incredible job, and we don’t even consider working with anyone else!",
+    "company": "Ryan Roberts",
+    "position": "Chief Marketing Officer, ISI Technology",
+    "place": "Charleston SC, USA"
   }
 ]
