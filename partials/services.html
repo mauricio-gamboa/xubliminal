@@ -47,33 +47,37 @@
     </div>
   </section>
 </div>
-<section id="services-gallery" class="sticky-cover" ng-controller="GalleryCtrl as serviceGallery">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h2>Some projects we have worked on</h2>
-        <div class="gallery">
-          <div id="the-services-gallery">
-            <a 
-            ng-repeat="item in serviceGallery.items | limitTo:12" 
-            data-target="#gallery-item-{{$index + 1}}" 
-            class="gallery-item" 
-            data-toggle="modal"
-            owl-carousel-services>
-              <span class="img-wrapper">
-                <img ng-src="public/images/gallery/thumbnails/gallery-item-{{$index + 1}}.jpg" alt="">
-                <span class="overlay">
-                  <img ng-src="public/images/gallery/logos/gallery-item-{{$index + 1}}.png" alt="">
+<div ng-controller="GalleryCtrl as serviceGallery">
+  <section id="services-gallery" class="sticky-cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2>Some projects we have worked on</h2>
+          <div class="gallery">
+            <div id="the-services-gallery" class="owl-carousel">
+              <a ng-repeat="item in serviceGallery.items | limitTo:12" data-target="#gallery-item-{{$index + 1}}" class="gallery-item" data-toggle="modal" owl-carousel-services>
+                <span class="img-wrapper">
+                  <img ng-src="public/images/gallery/thumbnails/gallery-item-{{$index + 1}}.jpg" alt="">
+                  <span class="overlay">
+                    <img ng-src="public/images/gallery/logos/gallery-item-{{$index + 1}}.png" alt="">
+                  </span>
                 </span>
-              </span>
-              <h5 class="ng-cloak">{{item.title}}</h5>
-            </a>
+                <h5 class="ng-cloak">{{item.title}}</h5>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </section>
+  <div ng-repeat="item in serviceGallery.items | limitTo:12" class="modal fade" id="gallery-item-{{$index + 1}}"  tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="gallery-big">
+        <img ng-src="public/images/gallery/big/{{$index + 1}}.jpg" alt="{{item.title}}">
+      </div>
+    </div>
   </div>
-</section>
+</div>
 <section id="expect" class="sticky-cover pikes">
   <div class="container">
     <div class="row">
@@ -102,35 +106,27 @@
           </div>
         </div>
         <div class="gallery show-xs">
-          <div id="expect-gallery" class="carousel" data-ride="carousel" data-interval="false">
-            <div class="carousel-inner expect-items">
-              <div class="item active expect-item">
-                <img src="public/images/expect-item-1.png" alt="">
-                <h4>Superior Quality</h4>
-                <p>We only provide World-class design services that will Exceed your expectations, taking your projects to the next level.</p>
-              </div>
-              <div class="item expect-item">
-                <img src="public/images/expect-item-2.png" alt="">
-                <h4>Someone who really cares</h4>
-                <p>We believe in friendship, loyalty and building long lasting business relationships with our clients. You know how to reach us.</p>
-              </div>
-              <div class="item expect-item">
-                <img src="public/images/expect-item-3.png" alt="">
-                <h4>Guaranteed work</h4>
-                <p>Our clients' 100% satisfaction is our ultimate goal and we strive for excellence on each and every project we deliver.</p>
-              </div>
-              <div class="item expect-item">
-                <img src="public/images/expect-item-4.png" alt="">
-                <h4>Outstanding Support</h4>
-                <p>We pride ourselves in going beyond the normal scope of our responsibilities. We will work on your projects with our blood and sweat.</p>
-              </div>
+          <div id="expect-gallery" class="owl-carousel" what-to-expect-owl>
+            <div class="item expect-item">
+              <img src="public/images/expect-item-1.png" alt="">
+              <h4>Superior Quality</h4>
+              <p>We only provide World-class design services that will Exceed your expectations, taking your projects to the next level.</p>
             </div>
-            <ol class="carousel-indicators">
-              <li data-target="#expect-gallery" data-slide-to="0" class="active"></li>
-              <li data-target="#expect-gallery" data-slide-to="1"></li>
-              <li data-target="#expect-gallery" data-slide-to="2"></li>
-              <li data-target="#expect-gallery" data-slide-to="3"></li>
-            </ol>
+            <div class="item expect-item">
+              <img src="public/images/expect-item-2.png" alt="">
+              <h4>Someone who really cares</h4>
+              <p>We believe in friendship, loyalty and building long lasting business relationships with our clients. You know how to reach us.</p>
+            </div>
+            <div class="item expect-item">
+              <img src="public/images/expect-item-3.png" alt="">
+              <h4>Guaranteed work</h4>
+              <p>Our clients' 100% satisfaction is our ultimate goal and we strive for excellence on each and every project we deliver.</p>
+            </div>
+            <div class="item expect-item">
+              <img src="public/images/expect-item-4.png" alt="">
+              <h4>Outstanding Support</h4>
+              <p>We pride ourselves in going beyond the normal scope of our responsibilities. We will work on your projects with our blood and sweat.</p>
+            </div>
           </div>
         </div>
       </div>
