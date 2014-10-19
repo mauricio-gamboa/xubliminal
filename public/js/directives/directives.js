@@ -229,6 +229,7 @@
         var $header = $('header');
         var $toggle = element.find('.scroll-down a');
         var $content = element.next();
+        var $carousel = element.find('#home-carousel');
         var previousScrollPosition = 0;
 
         try {
@@ -236,8 +237,10 @@
             if ($use) {
               if ($use.scrollTop() > 0) {
                 $toggle.fadeOut();
+                $carousel.fadeOut();
               } else {
                 $toggle.fadeIn();
+                $carousel.fadeIn();
               }
             }
           });
@@ -362,7 +365,8 @@
             autoPlay: 8000,
             singleItem: true,
             stopOnHover: true,
-            lazyLoad: true
+            lazyLoad: true,
+            pagination: false
           })
         }
       }

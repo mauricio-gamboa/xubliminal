@@ -276,4 +276,12 @@
   .second-description > div {
     width: 100%;
   }
+
+  #home-carousel .carousel-indicators {
+    display: none !important;
+  }
+
+  #home-carousel .item h3 {
+    font-size: 13px;
+  }
 }
