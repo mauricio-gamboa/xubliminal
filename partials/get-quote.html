@@ -7,24 +7,29 @@
     </div>
   </div>
 </section>
-<section id="page-subtitle" class="sticky-cover">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <p>We would like to get to know you better and help you <br class="hide-xs">with any project you might have.  Just let us know.</p>
+<div ng-controller="GetQuoteCtrl as quote">
+  <section id="page-subtitle" class="sticky-cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p ng-hide="quote.showSuccess">We would like to get to know you better and help you <br class="hide-xs">with any project you might have.  Just let us know.</p>
+          <div class="successMessage" ng-show="quote.showSuccess">
+            <img src="public/images/success.png" alt="">
+            <p>MESSAGE SENT SUCCESSFULLY</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section id="get-quote" class="sticky-cover" ng-controller="GetQuoteCtrl as quote">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div id="quote-form">
-          <form name="getQuoteForm" 
-          ng-submit="quote.submitGetQuote(getQuoteForm.$valid)" 
-          ng-class="{ 'submitted': quote.submitted }" 
-          novalidate>
+  </section>
+  <section id="get-quote" class="sticky-cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div id="quote-form">
+            <form name="getQuoteForm" 
+            ng-submit="quote.submitGetQuote(getQuoteForm.$valid)" 
+            ng-class="{ 'submitted': quote.submitted }" 
+            novalidate>
             <div class="clearfix">
               <fieldset>
                 <div ng-class="{true: 'error'}[quote.submitted && getQuoteForm.name.$invalid]" >
@@ -64,10 +69,10 @@
                     <a data-toggle="dropdown" data-target="#" tabindex="6">{{quote.budgetText}}</a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
                       <li><a href="" ng-click="quote.setBudget('Still being worked out')">Still being worked out</a></li>
-                      <li><a href="" ng-click="quote.setBudget('Still being worked out')">$1,000 - $5,000</a></li>
-                      <li><a href="" ng-click="quote.setBudget('Still being worked out')">$5,000 - $10,000</a></li>
-                      <li><a href="" ng-click="quote.setBudget('Still being worked out')">$10,000 - $15,000</a></li>
-                      <li><a href="" ng-click="quote.setBudget('Still being worked out')">$15,000+</a></li>
+                      <li><a href="" ng-click="quote.setBudget('$1,000 - $5,000')">$1,000 - $5,000</a></li>
+                      <li><a href="" ng-click="quote.setBudget('$5,000 - $10,000')">$5,000 - $10,000</a></li>
+                      <li><a href="" ng-click="quote.setBudget('$10,000 - $15,000')">$10,000 - $15,000</a></li>
+                      <li><a href="" ng-click="quote.setBudget('$15,000+')">$15,000+</a></li>
                     </ul>
                   </div>
                 </div>
@@ -84,6 +89,7 @@
     </div>
   </div>
 </section>
+</div>
 <section id="contact-links" class="sticky-cover">
   <div class="container">
     <div class="row">

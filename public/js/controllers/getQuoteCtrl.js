@@ -3,27 +3,16 @@
 
   angular.module('xubliminalApp.controllers')
 
-  .controller('GetQuoteCtrl', ['xubServices', function (xubServices) {
+  .controller('GetQuoteCtrl', ['$log', 'xubServices', function ($log, xubServices) {
 
-    this.formData = {
-      name: '',
-      email: '',
-      phone: '',
-      company: '',
-      service: '',
-      budget: '',
-      message: ''
-    };
+    this.formData = {};
 
     this.budgetText = 'Select your budget';
     this.servicesText = 'Choose a service';
 
     this.submitGetQuote = angular.bind(this, function (isValid) {
       this.submitted = true;
-      
-      if (isValid) {
-        console.log(this.formData);
-      }
+      if (isValid) xubServices.submitGetQuote(this.formData, this.formSubmitted, this.formSubmittedError);
     });
 
     this.setService = angular.bind(this, function (service) {
@@ -35,6 +24,14 @@
       this.formData.budget = budget;
       this.budgetText = budget;
     });
+
+    this.formSubmitted = angular.bind(this, function (data) {
+      if (data.success) this.showSuccess = true;
+    });
+
+    this.formSubmittedError = function (data) {
+      $log.error('There was an error');
+    };
 
   }]);
 }());

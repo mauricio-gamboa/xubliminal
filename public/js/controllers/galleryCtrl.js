@@ -3,7 +3,7 @@
 
   angular.module('xubliminalApp.controllers')
 
-  .controller('GalleryCtrl', ['xubServices', function (xubServices) {
+  .controller('GalleryCtrl', ['$log', 'xubServices', function ($log, xubServices) {
 
     this.galleryItems = angular.bind(this, function (items) {
       if (!items.length) return;
@@ -11,7 +11,7 @@
     });
 
     this.errorGallery = function (error) {
-      console.log(error);
+      $log.error('There was an error');
     };
     
     xubServices.getGallery(this.galleryItems, this.errorGallery);
