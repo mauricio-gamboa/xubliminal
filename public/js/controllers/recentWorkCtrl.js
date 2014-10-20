@@ -3,7 +3,7 @@
 
   angular.module('xubliminalApp.controllers')
 
-  .controller('RecentWorkCtrl', ['xubServices', function (xubServices) {
+  .controller('RecentWorkCtrl', ['$log', 'xubServices', function ($log, xubServices) {
 
     this.recentWorkItems = angular.bind(this, function (items) {
       if (!items.length) return;
@@ -11,7 +11,7 @@
     });
 
     this.errorRecentWork = function (error) {
-      console.log(error);
+      $log.error('There was an error');
     };
     
     xubServices.getRecentWork(this.recentWorkItems, this.errorRecentWork);

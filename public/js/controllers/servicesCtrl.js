@@ -3,7 +3,7 @@
 
   angular.module('xubliminalApp.controllers')
 
-  .controller('ServicesCtrl', ['xubServices', function (xubServices) {
+  .controller('ServicesCtrl', ['$log', 'xubServices', function ($log, xubServices) {
 
     this.servicesData = angular.bind(this, function (services) {
       if (!services.length) return;
@@ -11,7 +11,7 @@
     });
 
     this.errorServices = function (error) {
-      console.log(error);
+      $log.error('There was an error');
     };
     
     xubServices.getServices(this.servicesData, this.errorServices);

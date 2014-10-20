@@ -55,6 +55,23 @@
         error(function(data, status, headers, config) {
           errorCallback(data);
         });
+      },
+
+      submitGetQuote: function(data, successCallback, errorCallback) {
+        $http({
+          method  : 'POST',
+          url     : 'process.php',
+          data    : $.param(data),
+          headers : { 
+            'Content-Type': 'application/x-www-form-urlencoded'
+          }
+        }).
+        success(function(data, status, headers, config) {
+          successCallback(data);
+        }).
+        error(function(data, status, headers, config) {
+          errorCallback(data);
+        });
       }
     };
   }]);
