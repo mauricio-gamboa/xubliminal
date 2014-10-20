@@ -1,5 +1,7 @@
 <?php
 
+  require "lib/phpmailer/PHPMailerAutoload.php";
+
   $errors = array();
   $data = array();
 
@@ -17,7 +19,6 @@
     $data['success'] = false;
     $data['errors']  = $errors;
   } else {
-
     $name = $_POST['name'];
     $email = $_POST['email'];
     $phone = isset($_POST['phone']) ? $_POST['phone'] : 'Phone not provided.';
@@ -26,16 +27,30 @@
     $budget = isset($_POST['budget']) ? $_POST['budget'] : 'Budget not provided.';
     $message = $_POST['message'];
 
-    $from = 'From: Xubliminal Contact Form';
-    $to = 'magalocr@gmail.com';
-    $subject = 'Hello';
-
     $body = "From: $name\n\n E-Mail: $email\n\n Phone: $phone\n\n Company: $company\n\n Service: $service\n\n Budget: $budget\n\n Message:\n $message";
 
-    if (mail ($to, $subject, $body, $from)) { 
+    $mail = new PHPMailer;
+    // SMTP Settings
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'cristian@xubliminal.com';
+    $mail->Password = 'caaj0789titi';
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
+
+    // Configure email
+    $mail->From = 'cristian@xubliminal.com';
+    $mail->FromName = "Xubliminal Contact Form";
+    $mail->addAddress('hello@xubliminal.com');
+    $mail->Subject = "New Quote Request from Xubliminal";
+    $mail->Body = $body;
+
+    if ($mail->send()) { 
       $data['success'] = true;
       $data['message'] = 'Success!';
     }
   }
 
-  echo json_encode($data);
+  header('Content-type: application/json');
+  echo json_encode($data); die;
