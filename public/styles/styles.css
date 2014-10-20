@@ -118,28 +118,6 @@ strong {
   box-shadow: 0 6px 6px -6px #cfd1d3;
 }
 
-.select-wrapper {
-  background: url("../images/arrow-2.jpg") no-repeat scroll 100% 50% #FFFFFF;
-  border-radius: 5px;
-  box-shadow: -1px 2px 3px -3px #000000;
-  height: 37px;
-  width: 100%;
-}
-
-.select-wrapper select {
-  -moz-appearance: menulist-text;
-  -webkit-appearance: menulist-text;
-  appearance: menulist-text;
-  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-  border: medium none;
-  box-shadow: none;
-  height: 100%;
-  outline: medium none;
-  padding-left: 21px;
-  padding-right: 39px;
-  width: 100%;
-}
-
 .ng-enter {
   -webkit-transition-property: all;
   -o-transition-property: all;
@@ -208,6 +186,12 @@ Bottons Styles
 .btn-2:hover {
   background-color: #e55b4a;
   color: #FFFFFF;
+}
+
+.btn-2:disabled,
+.btn-2:disabled:hover {
+  background-color: #f97261;
+  opacity: 0.7;
 }
 
 .btn-3 {
@@ -1475,9 +1459,8 @@ Get Quote Styles
 ****************************
 ***************************/
 
-#get-quote,
-.get-quote-page #page-subtitle {
-  background-color: #f3f6f8;
+#get-quote {
+  background-color: #FFFFFF;
 }
 
 #quote-form {
@@ -1492,33 +1475,73 @@ Get Quote Styles
   margin: 0;
   font-weight: normal;
   display: block;
+  overflow: hidden;
+}
+
+#quote-form label span {
+  color: #3dc0e6;
+  font-size: 12px;
+  float: right;
+}
+
+#quote-form .dropdown > a {
+  background: url("../images/arrow-6.png") no-repeat scroll 100% 50% #edf0f2;
+  border: 1px solid #edf0f2;
+  color: #303030;
+  display: block;
+  font-size: 14px;
+  height: 37px;
+  line-height: 37px;
+  margin: 0;
+  padding: 0 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#quote-form .dropdown .dropdown-menu {
+  width: 100%;
 }
 
 #quote-form input[type="text"],
 #quote-form input[type="email"],
 #quote-form textarea {
+  background-color: #edf0f2;
+  border: 1px solid #edf0f2;
   border: medium none;
-  border-radius: 5px;
-  box-shadow: -1px 2px 3px -3px #000000;
   color: #303030;
-  font-weight: 600;
   height: 37px;
   margin: 0;
   padding: 0 20px;
   resize: none;
   width: 100%;
+  font-size: 14px;
 }
 
 #quote-form input[type="text"]:focus,
 #quote-form input[type="email"]:focus,
-#quote-form textarea:focus {
+#quote-form textarea:focus,
+#quote-form .dropdown.open > a {
   border: 1px solid #8eddf4;
   box-shadow: 0 0 10px 0 #8eddf4;
+  background-color: #FFFFFF;
 }
 
 #quote-form textarea {
   padding: 20px;
   height: 115px;
+}
+
+#quote-form .submitted .error .ng-invalid {
+  background-color: #fde8e5;
+}
+
+#quote-form .submitted .error .ng-invalid:focus {
+  box-shadow: 0 0 10px 0 #fde8e5;
+  border: 1px solid #fde8e5;
+}
+
+#quote-form .submitted .error label span {
+  color: #fa634f;
 }
 
 #quote-form div fieldset:nth-child(1),

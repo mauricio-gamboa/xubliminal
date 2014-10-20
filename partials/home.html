@@ -82,7 +82,7 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <h2>Recent Work</h2>
         <div id="carousel-recent-work">
-          <div class="item" ng-repeat="item in recent.items" owl-carousel-repeat>
+          <div class="item" ng-repeat="item in recent.items" pagination="true" owl-carousel-repeat>
             <img class="example" ng-src="public/images/recent-work/big/recent-{{$index + 1}}.png" alt="">
             <h4>{{item.title}}</h4>
             <p>{{item.description}}</p>
@@ -99,7 +99,7 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <h2>Clients love us</h2>
         <div id="carousel-clients" class="owl-carousel">
-          <div ng-repeat="testimonial in testimonials.testimonials" class="item" owl-carousel-repeat>
+          <div ng-repeat="testimonial in testimonials.testimonials" class="item" pagination="false" owl-carousel-repeat>
             <blockquote>"{{testimonial.testimonial}}"</blockquote>
             <div>
               <p>{{testimonial.company}}</p>
