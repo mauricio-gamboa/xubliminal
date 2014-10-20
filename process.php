@@ -1,6 +1,6 @@
 <?php
 
-  require "lib/phpmailer/PHPMailerAutoload.php";
+  require "bower_components/PHPMailer/PHPMailerAutoload.php";
 
   $errors = array();
   $data = array();
