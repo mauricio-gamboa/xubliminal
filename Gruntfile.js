@@ -9,13 +9,15 @@ module.exports = function(grunt) {
       js: {
         src: [
         'bower_components/jquery/dist/jquery.js',
+        'bower_components/jquery-mousewheel/jquery.mousewheel.js',
         'bower_components/OwlCarousel/owl-carousel/owl.carousel.js',
         'bower_components/bowser/src/bowser.js',
         'bower_components/bootstrap/dist/js/bootstrap.js',
         'bower_components/jQuery.mmenu/src/js/jquery.mmenu.min.all.js',
         'bower_components/angular/angular.js',
         'bower_components/angular-route/angular-route.js',
-        'bower_components/angular-animate/angular-animate.js'
+        'bower_components/angular-animate/angular-animate.js',
+        'bower_components/angular-scroll/angular-scroll.js'
         ],
         dest: 'public/js/libs.js'
       }
