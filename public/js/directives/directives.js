@@ -66,8 +66,12 @@
         scope.location = location;
         
         scope.$watch('location.path()', function(newPath) {
-          if (path === newPath) element.parent().addClass('active');
-          else element.parent().removeClass('active');
+          if (path === newPath)
+            element.parent().addClass('active');
+          else if (path == '/services' && newPath.indexOf('/services/') != -1)
+            element.parent().addClass('active');
+          else
+            element.parent().removeClass('active');
         });
       }
     };
