@@ -12,25 +12,25 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <ul class="xub-nav hide-xs" role="tablist">
-            <li ng-repeat="service in services.services" ng-class="{active: $index == 0}">
-              <a data-target="#service-tab-{{$index + 1}}" role="tab" data-toggle="tab">
+          <ul class="xub-nav hide-xs">
+            <li ng-repeat="service in services.services" ng-class="{active: $index == services.tab}">
+              <a href="#/services/{{$index}}">
                 <span class="tab-icon-{{$index + 1}}"></span>
                 <span class="service-name">{{service.title}}</span>
               </a>
             </li>
           </ul>
           <div class="tab-content">
-            <div ng-repeat="service in services.services" ng-class="{active: $index == 0}" class="tab-pane" id="service-tab-{{$index + 1}}">
+            <div>
               <div class="service service-1 clearfix">
-                <div class="subtitle"><h2>{{service.featuresTitle}}</h2></div>
+                <div class="subtitle"><h2>{{services.service.featuresTitle}}</h2></div>
                 <div class="service-text">
-                  <p>{{service.description}}</p>
+                  <p>{{services.service.description}}</p>
                 </div>
               </div>
               <div class="service-features">
                 <div class="service-features-container clearfix">
-                  <div ng-repeat="feature in service.features" class="service-feature">
+                  <div ng-repeat="feature in services.service.features" class="service-feature">
                     <img ng-src="public/images/service-{{$parent.$index + 1}}-feature-{{$index + 1}}.png" alt="">
                     <h4>{{feature.title}}</h4>
                     <p>{{feature.description}}</p>
@@ -38,7 +38,7 @@
                 </div>
               </div>
               <div class="second-description">
-                <div><p>{{service.secondDescription}}</p></div>
+                <div><p>{{services.service.secondDescription}}</p></div>
               </div>
             </div>
           </div>
@@ -73,6 +73,7 @@
   <div ng-repeat="item in serviceGallery.items | limitTo:12" class="modal fade" id="gallery-item-{{$index + 1}}"  tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="gallery-big">
+        <button type="button" class="close show-xs" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <img ng-src="public/images/gallery/big/{{$index + 1}}.jpg" alt="{{item.title}}">
       </div>
     </div>

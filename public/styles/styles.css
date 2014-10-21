@@ -869,6 +869,12 @@ Services Galleries Styles
   float: none;
 }
 
+.gallery-big .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 .gallery-big img {
   width: 100%;
 }
@@ -1850,6 +1856,7 @@ header.reduce .main-nav .xub-nav li.active a {
 
 #recent-work .item .example {
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 #recent-work .item .logo {

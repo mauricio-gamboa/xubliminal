@@ -7,8 +7,8 @@
 
     this.formData = {};
 
-    this.budgetText = 'Select your budget';
-    this.servicesText = 'Choose a service';
+    this.budgetText = 'Select an option';
+    this.servicesText = 'Select an option';
 
     this.submitGetQuote = angular.bind(this, function (isValid) {
       this.submitted = true;

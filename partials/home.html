@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div id="home-carousel" class="carousel slide" data-ride="carousel" data-interval="8000" home-carousel>
+        <div id="home-carousel" class="carousel" home-carousel>
           <ol class="carousel-indicators">
             <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#home-carousel" data-slide-to="1"></li>
@@ -18,35 +18,35 @@
               <div class="item-wrapper">
                 <img src="public/images/home-slider/1.png" alt="">
                 <h3>What others crave as perfect source of satisfaction</h3>
-                <a class="btn-5" href="">Get A Quote <i class="fa fa-angle-right"></i></a>
+                <a class="btn-5" href="#/get-quote">Get A Quote <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
             <div class="item">
               <div class="item-wrapper">
                 <img src="public/images/home-slider/2.png" alt="">
                 <h3>Uniqueness is what makes us tick</h3>
-                <a class="btn-5" href="">Design Creatives <i class="fa fa-angle-right"></i></a>
+                <a class="btn-5" href="#/services/2">Design Creatives <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
             <div class="item">
               <div class="item-wrapper">
                 <img src="public/images/home-slider/3.png" alt="">
                 <h3>We provide the sugar, you the spice</h3>
-                <a class="btn-5" href="">Web Design <i class="fa fa-angle-right"></i></a>
+                <a class="btn-5" href="#/services">Web Design <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
             <div class="item">
               <div class="item-wrapper">
                 <img src="public/images/home-slider/4.png" alt="">
                 <h3>Perfection is our key ingredient to shine!</h3>
-                <a class="btn-5" href="">Mobile App Design <i class="fa fa-angle-right"></i></a>
+                <a class="btn-5" href="#/services/1">Mobile App Design <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
             <div class="item">
               <div class="item-wrapper">
                 <img src="public/images/home-slider/5.png" alt="">
                 <h3>We mean more than just business</h3>
-                <a class="btn-5" href="">Mobile App Design <i class="fa fa-angle-right"></i></a>
+                <a class="btn-5" href="#/services/1">Mobile App Design <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
           </div>
@@ -76,23 +76,33 @@
     </div>
   </div>
 </section>
-<section id="recent-work" class="home-carousel sticky-cover" ng-controller="RecentWorkCtrl as recent">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h2>Recent Work</h2>
-        <div id="carousel-recent-work">
-          <div class="item" ng-repeat="item in recent.items" pagination="true" owl-carousel-repeat>
-            <img class="example" ng-src="public/images/recent-work/big/recent-{{$index + 1}}.png" alt="">
-            <h4>{{item.title}}</h4>
-            <p>{{item.description}}</p>
-            <img class="logo" ng-src="public/images/recent-work/logos/{{ $index + 1 }}.png" alt="">
+<div ng-controller="RecentWorkCtrl as recent">
+  <section id="recent-work" class="home-carousel sticky-cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2>Recent Work</h2>
+          <div id="carousel-recent-work">
+            <div class="item" ng-repeat="item in recent.items" pagination="true" owl-carousel-repeat>
+              <a data-target="#recent-item-{{$index + 1}}" data-toggle="modal"><img class="example" ng-src="public/images/recent-work/big/recent-{{$index + 1}}.png" alt=""></a>
+              <h4>{{item.title}}</h4>
+              <p>{{item.description}}</p>
+              <img class="logo" ng-src="public/images/recent-work/logos/{{ $index + 1 }}.png" alt="">
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </section>
+  <div ng-repeat="item in recent.items" class="modal fade" id="recent-item-{{$index + 1}}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="gallery-big">
+        <button type="button" class="close show-xs" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img ng-src="public/images/recent-work/modals/{{$index + 1}}.jpg" alt="{{item.title}}">
+      </div>
+    </div>
   </div>
-</section>
+</div>
 <section id="clients" class="home-carousel sticky-cover" ng-controller="TestimonialsCtrl as testimonials">
   <div class="container">
     <div class="row">
