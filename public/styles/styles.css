@@ -185,7 +185,13 @@ Bottons Styles
 
 .btn-2:hover {
   background-color: #e55b4a;
-  color: #FFFFFF;
+}
+
+.btn-2:link,
+.btn-2:visited,
+.btn-2:hover,
+.btn-2:active {
+  color: #FFFFFF !important;
 }
 
 .btn-2:disabled,
@@ -1066,7 +1072,20 @@ footer {
   font-size: 17px;
   height: 54px;
   line-height: 54px;
+  margin: 0 auto;
   width: 233px;
+}
+
+#tell-us-more .btn-2.internal {
+  display: none;
+}
+
+.get-quote-page #tell-us-more .btn-2.external {
+  display: none;
+}
+
+.get-quote-page #tell-us-more .btn-2.internal {
+  display: block;
 }
 
 #footer-social {

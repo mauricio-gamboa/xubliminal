@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('xubliminalApp', ['ngRoute', 'ngAnimate', 'xubliminalApp.controllers', 'xubliminalApp.directives', 'xubliminalApp.services'])
+  angular.module('xubliminalApp', ['ngRoute', 'ngAnimate', 'duScroll', 'xubliminalApp.controllers', 'xubliminalApp.directives', 'xubliminalApp.services'])
 
   .config(function ($routeProvider) {
     $routeProvider

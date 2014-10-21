@@ -270,8 +270,16 @@
           });
         });
 
-        if (! ('ontouchstart' in window) && ! ('onmsgesturechange' in window)) {
+        if (! ('ontouchstart' in window) && ! ('onmsgesturechange' in window) && ! bowser.msie) {
           var animating = false;
+
+          var delta = function(e) {
+            var evt = e.originalEvent;
+
+            var delta = evt.detail? evt.detail*(-120) : evt.wheelDelta;
+
+            return delta;
+          };
 
           $window.scroll(function (e) {
 
@@ -283,14 +291,32 @@
                 return;
               }
 
+              var deltas = [];
+
+              var isMagicMouseFunction = function(e) {
+                e.preventDefault();
+                e.returnValue = false;
+
+                var d = delta(e);
+
+                deltas.push(d);
+
+                return false;
+              };
+
               if (! toggleActive && previousScrollPosition === 0 && currentScrollPosition >= 0) {
+                $body.on('mousewheel', isMagicMouseFunction);
+                
                 $both.animate({
                   scrollTop: $content.offset().top - 75
                 }, {
                   duration: 800,
                   easing: 'linear',
                   complete: function() {
-                    animating = false;
+                    setTimeout(function() {
+                      animating = false;
+                      $body.off('mousewheel', isMagicMouseFunction);
+                    }, deltas.length > 10 ? 500 : 0);
                   }
                 });
               }
@@ -430,10 +456,13 @@
         try {
           $window.scroll(function() {
             if ($use) {
-              if ($use.scrollTop())
+              if ($use.scrollTop()) {
                 element.addClass('reduce');
-              else
+                $('#page-title').fadeOut();
+              } else {
                 element.removeClass('reduce');
+                $('#page-title').fadeIn();
+              }
             }
           });
         } catch (e) {
