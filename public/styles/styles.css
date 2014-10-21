@@ -1856,6 +1856,7 @@ header.reduce .main-nav .xub-nav li.active a {
 
 #recent-work .item .example {
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 #recent-work .item .logo {
