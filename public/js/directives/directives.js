@@ -189,6 +189,11 @@
       link: function(scope, element, attrs) {
         var current = 1;
         var footerBgContainer = $('.bgs');
+
+        element.carousel({
+          interval: 7000,
+          pause: false
+        });
         
         element.on('slide.bs.carousel', function (e) {
           setFooterBackground((current % 5) + 1);
