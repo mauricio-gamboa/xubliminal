@@ -1,9 +1,10 @@
 (function () {
   'use strict';
 
-  angular.module('xubliminalApp', ['ngRoute', 'ngAnimate', 'duScroll', 'xubliminalApp.controllers', 'xubliminalApp.directives', 'xubliminalApp.services'])
+  angular.module('xubliminalApp', ['ngRoute', 'ngAnimate', 'duScroll', 'angular-google-analytics', 'xubliminalApp.controllers', 'xubliminalApp.directives', 'xubliminalApp.services'])
 
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, AnalyticsProvider) {
+
     $routeProvider
 
     .when('/', {
@@ -37,6 +38,11 @@
     .otherwise({
       redirectTo: '/',
     });
+
+    AnalyticsProvider.setAccount('UA-41378737-1');
+    AnalyticsProvider.setDomainName('xubliminal.com');
+    AnalyticsProvider.ignoreFirstPageLoad(true);
+    AnalyticsProvider.setPageEvent('$routeChangeSuccess');
   });
 
   angular.module('xubliminalApp.controllers', []);
