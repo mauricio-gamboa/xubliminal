@@ -17,7 +17,8 @@ module.exports = function(grunt) {
         'bower_components/angular/angular.js',
         'bower_components/angular-route/angular-route.js',
         'bower_components/angular-animate/angular-animate.js',
-        'bower_components/angular-scroll/angular-scroll.js'
+        'bower_components/angular-scroll/angular-scroll.js',
+        'bower_components/angular-google-analytics/dist/angular-google-analytics.js'
         ],
         dest: 'public/js/libs.js'
       }
