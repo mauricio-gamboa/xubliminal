@@ -54,6 +54,46 @@ Key Frames
   100% {transform: translateY(0); } 
 }
 
+@-moz-keyframes animatedBackgroundRight {
+  to { background-position: 1398px 0; }
+}
+
+@-moz-keyframes animatedBackgroundLeft {
+  to { background-position: 0 0; }
+}
+
+@-webkit-keyframes animatedBackgroundRight {
+  to { background-position: 1398px 0; }
+}
+
+@-webkit-keyframes animatedBackgroundLeft {
+  to { background-position: 0 0; }
+}
+
+@-o-keyframes animatedBackgroundRight {
+  to { background-position: 1398px 0; }
+}
+
+@-o-keyframes animatedBackgroundLeft {
+  to { background-position: 0 0; }
+}
+
+@-ms-keyframes animatedBackgroundRight {
+  to { background-position: 1398px 0; }
+}
+
+@-ms-keyframes animatedBackgroundLeft {
+  to { background-position: 0 0; }
+}
+
+@keyframes animatedBackgroundRight {
+  to { background-position: 1398px 0; }
+}
+
+@keyframes animatedBackgroundLeft {
+  to { background-position: 0 0; }
+}
+
 /***************************
 ****************************
 General Styles
@@ -115,7 +155,7 @@ strong {
 }
 
 .shadow {
-  box-shadow: 0 6px 6px -6px #cfd1d3;
+  box-shadow: 0 6px 24px -12px #000000;
 }
 
 .ng-enter {
@@ -158,10 +198,6 @@ strong {
   animation-name: bounce; 
 }
 
-.pikes {
-  background: url("../images/pike.png") repeat-x 0 100%;
-}
-
 .modal-backdrop.in {
   opacity: 0.8;
 }
@@ -183,8 +219,16 @@ Bottons Styles
   text-transform: uppercase;
 }
 
+.btn-2.green {
+  background-color: #30d824;
+}
+
 .btn-2:hover {
   background-color: #e55b4a;
+}
+
+.btn-2.green:hover {
+  background-color: #2ac020;
 }
 
 .btn-2:link,
@@ -987,9 +1031,7 @@ What to expect Styles
 ***************************/
 
 #expect {
-  background: 
-  url("../images/pike.png") repeat-x 0 100%,
-  url("../images/pattern-2.jpg") repeat-x scroll 0 0 #FFFFFF;
+  background: url("../images/pattern-2.jpg") repeat-x scroll 0 0 #FFFFFF;
   padding: 60px 0;
   border-top: 1px solid #f1f1f1;
 }
@@ -1039,7 +1081,7 @@ Footer Styles
 ***************************/
 
 footer {
-  background-color: #373e42;
+  background: url("../images/footer-bg.png") repeat-x scroll 0 0 #373e42;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -1048,9 +1090,32 @@ footer {
   height: 444px;
 }
 
+.waves-1 {
+  background-image: url("../images/waves-1.png");
+  background-position: 0 0;
+  background-repeat: repeat-x;
+
+  -webkit-animation: animatedBackgroundRight 40s linear infinite;
+  -moz-animation: animatedBackgroundRight 40s linear infinite;
+  -ms-animation: animatedBackgroundRight 40s linear infinite;
+  -o-animation: animatedBackgroundRight 40s linear infinite;
+  animation: animatedBackgroundRight 40s linear infinite;
+}
+
+.waves-2 {
+  background-image: url("../images/waves-2.png");
+  background-position: 1398px 0;
+  background-repeat: repeat-x;
+  -webkit-animation: animatedBackgroundLeft 40s linear infinite;
+  -moz-animation: animatedBackgroundLeft 40s linear infinite;
+  -ms-animation: animatedBackgroundLeft 40s linear infinite;
+  -o-animation: animatedBackgroundLeft 40s linear infinite;
+  animation: animatedBackgroundLeft 40s linear infinite;
+}
+
 #tell-us-more {
   color: #47565f;
-  padding-top: 50px;
+  padding-top: 65px;
   text-align: center;
 }
 
@@ -1090,8 +1155,8 @@ footer {
 
 #footer-social {
   background: url("../images/curl.png") no-repeat scroll 50% 0 #373e42;
-  margin-top: 36px;
-  padding-top: 39px;
+  margin-top: 28px;
+  padding-top: 32px;
 }
 
 #footer-social ul {
@@ -1594,11 +1659,6 @@ Get Quote Styles
   height: 382px;
 }
 
-#map.pikes {
-  background: url("../images/pike.png") repeat-x 0 100% #FFFFFF;
-  padding-bottom: 6px;
-}
-
 #contact-links {
   background-color: #FFFFFF;
   padding: 34px 0;
@@ -1930,9 +1990,7 @@ header.reduce .main-nav .xub-nav li.active a {
 }
 
 #brands {
-  background: 
-  url("../images/pike.png") repeat-x 0 100%,
-  url("../images/pattern-2.jpg") repeat-x scroll 0 0 #FFFFFF;
+  background: url("../images/pattern-2.jpg") repeat-x scroll 0 0 #FFFFFF;
   border-top: 1px solid #f1f1f1;
 }
 
@@ -2221,6 +2279,10 @@ header.reduce .main-nav .xub-nav li.active a {
 
 #brands-bottom > .brand-bottom-4 > span {
   background-position: 0 -129px;
+}
+
+#home-top {
+  background-color: #FFFFFF;
 }
 
 #home-top .bgs {
