@@ -40,13 +40,14 @@ module.exports = function(grunt) {
           'bower_components/jQuery.mmenu/src/css/jquery.mmenu.all.css',
           'bower_components/OwlCarousel/owl-carousel/owl.carousel.css',
           'bower_components/OwlCarousel/owl-carousel/owl.theme.css',
-          'bower_components/font-awesome/css/font-awesome.min.css',
-          
-          'public/styles/styles.css',
-          'public/styles/large.css',
-          'public/styles/medium.css',
-          'public/styles/small.css',
-          'public/styles/xs.css'
+          'bower_components/font-awesome/css/font-awesome.min.css'
+          ],
+          'public/styles/custom.css': [
+            'public/styles/styles.css',
+            'public/styles/large.css',
+            'public/styles/medium.css',
+            'public/styles/small.css',
+            'public/styles/xs.css'
           ]
         }
       }
