@@ -22,4 +22,8 @@
   #services-gallery .gallery-item {
     width: 100%;
   }
+
+  .gallery-item .img-wrapper > img {
+    min-height: 200px;
+  }
 }

@@ -154,10 +154,6 @@ strong {
   border-bottom: 1px solid #efefef;
 }
 
-.shadow {
-  box-shadow: 0 6px 24px -12px #000000;
-}
-
 .ng-enter {
   -webkit-transition-property: all;
   -o-transition-property: all;
@@ -209,7 +205,7 @@ Bottons Styles
 ***************************/
 
 .btn-2 {
-  background-color: #f97261;
+  background-color: #30d824;
   border: medium none;
   border-radius: 50px;
   color: #ffffff;
@@ -219,15 +215,7 @@ Bottons Styles
   text-transform: uppercase;
 }
 
-.btn-2.green {
-  background-color: #30d824;
-}
-
 .btn-2:hover {
-  background-color: #e55b4a;
-}
-
-.btn-2.green:hover {
   background-color: #2ac020;
 }
 
@@ -240,7 +228,7 @@ Bottons Styles
 
 .btn-2:disabled,
 .btn-2:disabled:hover {
-  background-color: #f97261;
+  background-color: #30d824;
   opacity: 0.7;
 }
 
@@ -249,7 +237,7 @@ Bottons Styles
 }
 
 .btn-4 {
-  background-color: #f97261;
+  background-color: #30d824;
   border-radius: 25px;
   color: #ffffff;
   display: inline-block;
@@ -266,7 +254,7 @@ Bottons Styles
 }
 
 .btn-4:hover {
-  background-color: #e55b4a;
+  background-color: #2ac020;
   color: #FFFFFF;
 }
 
@@ -741,7 +729,7 @@ Services Tabs Styles
 #service-tabs .xub-nav li.active a {
   background-color: #FFFFFF;
   color: #303030;
-  border-bottom: 2px solid #fa6451;
+  border-bottom: 2px solid #30d824;
 }
 
 #service-tabs .xub-nav li a span:not(.service-name) {
@@ -962,12 +950,13 @@ Services Galleries Styles
 }
 
 .gallery-item:hover h5 {
-  color: #fa634f;
+  color: #30d824;
 }
 
 .gallery-item .img-wrapper > img {
   display: inline-block;
   width: 100%;
+  background: url("../images/loading.gif") no-repeat center center #F0F0F0;
 
   -webkit-transition-property: -webkit-transform;
   -o-transition-property: -o-transform;
@@ -1284,11 +1273,11 @@ Works Page Styles
 }
 
 #gallery-nav li a:hover {
-  color: #fa634f;
+  color: #30d824;
 }
 
 #gallery-nav li.active a {
-  background-color: #fa634f;
+  background-color: #30d824;
   color: #FFFFFF;
 }
 
@@ -1634,7 +1623,7 @@ Get Quote Styles
 }
 
 #quote-form .submitted .error label span {
-  color: #fa634f;
+  color: #30d824;
 }
 
 #quote-form div fieldset:nth-child(1),
@@ -1919,7 +1908,7 @@ header.reduce .main-nav .xub-nav li.active a {
 }
 
 .owl-pagination .owl-page.active span {
-  background-color: #fa634f;
+  background-color: #30d824;
   height: 14px;
   width: 14px;
 }

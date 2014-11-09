@@ -64,4 +64,8 @@
   #brands-bottom > div > span > span {
     font-size: 12px;
   }
+
+  .gallery-item .img-wrapper > img {
+    min-height: 151px;
+  }
 }
