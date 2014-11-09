@@ -284,4 +284,8 @@
   #home-carousel .item h3 {
     font-size: 13px;
   }
+
+  .gallery-item .img-wrapper > img {
+    min-height: 193px;
+  }
 }
