@@ -15,7 +15,7 @@
       templateUrl: 'partials/services.html'
     })
 
-    .when('/services/:tab', {
+    .when('/services/:service', {
       templateUrl: 'partials/services.html'
     })
 
