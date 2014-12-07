@@ -1,20 +1,29 @@
-<section class="page-phrase sticky-cover" change-menu>
+<section class="page-phrase sticky-cover hide-xs" change-menu>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h1 id="page-title">Mind-blowing handcraft services</h1>
+        <h1 class="page-title">Mind-blowing handcraft services</h1>
       </div>
     </div>
   </div>
 </section>
 <div ng-controller="ServicesCtrl as services">
+  <section class="page-phrase sticky-cover show-xs" change-menu>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1 class="page-title">{{services.service.title}}</h1>
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="service-tabs" class="sticky-cover">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <ul class="xub-nav hide-xs">
-            <li ng-repeat="service in services.services" ng-class="{active: $index == services.tab}">
-              <a href="#/services/{{$index}}">
+            <li ng-repeat="service in services.services" ng-class="{active: $index == services.serviceIndex}">
+              <a href="#/services/{{service.link}}">
                 <span class="tab-icon-{{$index + 1}}"></span>
                 <span class="service-name">{{service.title}}</span>
               </a>
@@ -31,7 +40,7 @@
               <div class="service-features">
                 <div class="service-features-container clearfix">
                   <div ng-repeat="feature in services.service.features" class="service-feature">
-                    <img ng-src="public/images/service-{{services.tab * 1 + 1}}-feature-{{$index + 1}}.png" alt="">
+                    <img ng-src="public/images/service-{{services.serviceIndex * 1 + 1}}-feature-{{$index + 1}}.png" alt="">
                     <h4>{{feature.title}}</h4>
                     <p>{{feature.description}}</p>
                   </div>
@@ -134,4 +143,23 @@
     </div>
   </div>
 </section>
+<div ng-controller="ServicesCtrl as bottomservices">
+  <section id="services-links-bottom" class="sticky-cover show-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2>Other Services</h2>
+          <ul class="xub-nav">
+            <li ng-repeat="service in bottomservices.services" ng-hide="$index == bottomservices.serviceIndex">
+              <a href="#/services/{{service.link}}">
+                <span class="tab-icon-{{$index + 1}}"></span>
+                <span class="service-name">{{service.title}}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 <footer class="ng-cloak" ng-include src="'partials/includes/footer.html'"></footer>

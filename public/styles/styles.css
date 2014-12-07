@@ -702,7 +702,18 @@ Services Tabs Styles
 ****************************
 ***************************/
 
-#service-tabs {
+#services-links-bottom {
+  border-top: 1px solid #F1F1F1;
+  padding: 25px 0;
+}
+
+#services-links-bottom h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#service-tabs,
+#services-links-bottom {
   background-color: #FFFFFF;
 }
 
@@ -710,7 +721,17 @@ Services Tabs Styles
   width: 33.33%;
 }
 
-#service-tabs .xub-nav li a {
+#services-links-bottom .xub-nav li {
+  width: 50%;
+  border-right: 1px solid #F1F1F1;
+}
+
+#services-links-bottom .xub-nav li:last-child {
+  border-right: none;
+}
+
+#service-tabs .xub-nav li a,
+#services-links-bottom .xub-nav li a {
   color: #8f9397;
   display: block;
   font-weight: 600;
@@ -722,73 +743,91 @@ Services Tabs Styles
   position: relative;
 }
 
-#service-tabs .xub-nav li a:hover {
+#services-links-bottom .xub-nav li a {
+  border-bottom: none;
+}
+
+#service-tabs .xub-nav li a:hover,
+#services-links-bottom .xub-nav li a:hover {
   color: #696d71;
 }
 
-#service-tabs .xub-nav li.active a {
+#service-tabs .xub-nav li.active a,
+#services-links-bottom .xub-nav li.active a {
   background-color: #FFFFFF;
   color: #303030;
   border-bottom: 2px solid #30d824;
 }
 
-#service-tabs .xub-nav li a span:not(.service-name) {
+#service-tabs .xub-nav li a span:not(.service-name),
+#services-links-bottom .xub-nav li a span:not(.service-name) {
   display: block;
   margin: 0 auto;
   position: relative;
 }
 
-#service-tabs .xub-nav li a span.tab-icon-1 {
+#service-tabs .xub-nav li a span.tab-icon-1,
+#services-links-bottom .xub-nav li a span.tab-icon-1 {
   background: url("../images/tab-icon-1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   height: 41px;
   width: 51px;
   top: 25px;
 }
 
-#service-tabs .xub-nav li a:hover span.tab-icon-1 {
+#service-tabs .xub-nav li a:hover span.tab-icon-1,
+#services-links-bottom .xub-nav li a:hover span.tab-icon-1 {
   background-position: 0 -82px;
 }
 
-#service-tabs .xub-nav li.active a span.tab-icon-1 {
+#service-tabs .xub-nav li.active a span.tab-icon-1,
+#services-links-bottom .xub-nav li.active a span.tab-icon-1 {
   background-position: 0 -41px;
 }
 
-#service-tabs .xub-nav li a span.tab-icon-2 {
+#service-tabs .xub-nav li a span.tab-icon-2,
+#services-links-bottom .xub-nav li a span.tab-icon-2 {
   background: url("../images/tab-icon-2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   height: 45px;
   width: 39px;
   top: 21px;
 }
 
-#service-tabs .xub-nav li a:hover span.tab-icon-2 {
+#service-tabs .xub-nav li a:hover span.tab-icon-2,
+#services-links-bottom .xub-nav li a:hover span.tab-icon-2 {
   background-position: 0 -90px;
 }
 
-#service-tabs .xub-nav li.active a span.tab-icon-2 {
+#service-tabs .xub-nav li.active a span.tab-icon-2,
+#services-links-bottom .xub-nav li.active a span.tab-icon-2 {
   background-position: 0 -45px;
 }
 
-#service-tabs .xub-nav li a span.tab-icon-3 {
+#service-tabs .xub-nav li a span.tab-icon-3,
+#services-links-bottom .xub-nav li a span.tab-icon-3 {
   background: url("../images/tab-icon-3.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   height: 35px;
   width: 35px;
   top: 31px;
 }
 
-#service-tabs .xub-nav li a:hover span.tab-icon-3 {
+#service-tabs .xub-nav li a:hover span.tab-icon-3,
+#services-links-bottom .xub-nav li a:hover span.tab-icon-3 {
   background-position: 0 -70px;
 }
 
-#service-tabs .xub-nav li.active a span.tab-icon-3 {
+#service-tabs .xub-nav li.active a span.tab-icon-3,
+#services-links-bottom .xub-nav li.active a span.tab-icon-3 {
   background-position: 0 -35px;
 }
 
-#service-tabs .xub-nav li a span.tab-icon-4 {
+#service-tabs .xub-nav li a span.tab-icon-4,
+#services-links-bottom .xub-nav li a span.tab-icon-4 {
   background: url("../images/tab-icon-4.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   height: 45px;
 }
 
-#service-tabs .xub-nav li a span.service-name {
+#service-tabs .xub-nav li a span.service-name,
+#services-links-bottom .xub-nav li a span.service-name {
   position: absolute;
   width: 100%;
   bottom: 20px;

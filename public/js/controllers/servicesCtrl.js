@@ -7,9 +7,18 @@
 
     this.servicesData = angular.bind(this, function (services) {
       if (!services.length) return;
+      
+      this.serviceIndex = 0;
+      
+      if ($routeParams.service == 'web-design')
+        this.serviceIndex = 0;
+      else if ($routeParams.service == 'mobile-app-design')
+        this.serviceIndex = 1;
+      else if ($routeParams.service == 'creative-designs')
+        this.serviceIndex = 2;
+      
       this.services = services;
-      this.tab = $routeParams.tab ? $routeParams.tab : 0;
-      this.service = this.services[this.tab];
+      this.service = this.services[this.serviceIndex];
     });
 
     this.errorServices = function (error) {
