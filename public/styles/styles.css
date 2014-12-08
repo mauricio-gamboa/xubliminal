@@ -1665,22 +1665,18 @@ Get Quote Styles
   color: #30d824;
 }
 
-#quote-form div fieldset:nth-child(1),
-#quote-form div fieldset:nth-child(2) {
-  float: left;
+#quote-form div fieldset > div {
+  margin-bottom: 10px;
   width: 50%;
+  float: left;
 }
 
-#quote-form div fieldset:nth-child(1) {
+#quote-form div fieldset > div:first-child {
   padding-right: 15px;
 }
 
-#quote-form div fieldset:nth-child(2) {
+#quote-form div fieldset > div:last-child {
   padding-left: 15px;
-}
-
-#quote-form div fieldset > div {
-  margin-bottom: 10px;
 }
 
 #map > div {

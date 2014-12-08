@@ -31,15 +31,27 @@
             ng-class="{ 'submitted': quote.submitted }" 
             novalidate>
             <div class="clearfix">
-              <fieldset>
+              <fieldset class="clearfix">
                 <div ng-class="{true: 'error'}[quote.submitted && getQuoteForm.name.$invalid]" >
                   <label for="name">¡Hola! My name is: <span>Required</span></label>
                   <input type="text" ng-model="quote.formData.name" name="name" id="name" tabindex="1" required>
                 </div>
+                <div ng-class="{true: 'error'}[quote.submitted && getQuoteForm.email.$invalid]" >
+                  <label for="email">My email address is: <span>Required</span></label>
+                  <input type="email" ng-model="quote.formData.email" tabindex="2" name="email" id="email" required>
+                </div>
+              </fieldset>
+              <fieldset class="clearfix">
                 <div>
                   <label for="phone">My phone number is:</label>
                   <input type="text" ng-model="quote.formData.phone" name="phone" id="phone" tabindex="3">
                 </div>
+                <div>
+                  <label for="company">I work at: </label>
+                  <input type="text" ng-model="quote.formData.company" name="company" id="company" tabindex="4"> 
+                </div>
+              </fieldset>
+              <fieldset class="clearfix">
                 <div>
                   <label for="">I'd like to talk about:</label>
                   <div class="dropdown">
@@ -52,16 +64,6 @@
                       <li><a href="" ng-click="quote.setService('My feelings')">My feelings</a></li>
                     </ul>
                   </div>
-                </div>
-              </fieldset>
-              <fieldset>
-                <div ng-class="{true: 'error'}[quote.submitted && getQuoteForm.email.$invalid]" >
-                  <label for="email">My email address is: <span>Required</span></label>
-                  <input type="email" ng-model="quote.formData.email" tabindex="2" name="email" id="email" required>
-                </div>
-                <div>
-                  <label for="company">I work at: </label>
-                  <input type="text" ng-model="quote.formData.company" name="company" id="company" tabindex="4"> 
                 </div>
                 <div>
                   <label for="">My budget is: </label>
