@@ -143,11 +143,10 @@
     width: 100%;
   }
 
-  #quote-form div fieldset:nth-child(1), 
-  #quote-form div fieldset:nth-child(2) {
-    float: none;
+  #quote-form div fieldset > div {
     width: 100%;
-    padding: 0;
+    float: none;
+    padding: 0 !important;
   }
 
   #contact-links ul {
