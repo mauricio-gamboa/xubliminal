@@ -259,26 +259,15 @@ Bottons Styles
 }
 
 .btn-5 {
+  background: url("../images/btn-5.png") no-repeat 0 0;
   display: block;
-  height: 54px;
-  line-height: 54px;
+  height: 64px;
+  width: 250px;
+  line-height: 60px;
   text-align: center;
-  width: 230px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 17px;
+  color: #373e42;
+  font-size: 15px;
   text-transform: uppercase;
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.btn-5 i {
-  font-size: 30px;
-  vertical-align: sub;
-  margin-left: 10px;
-}
-
-.btn-5:hover {
-  color: #ffffff;
 }
 
 /***************************
@@ -2436,7 +2425,7 @@ header.reduce .main-nav .xub-nav li.active a {
   position: absolute;
   bottom: 100px;
   left: 50%;
-  margin-left: -115px;
+  margin-left: -125px;
 }
 
 #home-carousel .carousel-indicators {

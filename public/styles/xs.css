@@ -281,7 +281,16 @@
   }
 
   #home-carousel .item h3 {
-    font-size: 13px;
+    font-size: 16px;
+  }
+
+  #home-carousel .item:nth-child(5) h3 {
+    margin-top: -35px;
+  }
+
+  #home-carousel .item img {
+    max-width: 287px;
+    margin-left: -143px !important;
   }
 
   .gallery-item .img-wrapper > img {
