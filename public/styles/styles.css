@@ -414,10 +414,6 @@ header .logo {
   transition-delay: 0s;
 }
 
-.reduce .mobile-trigger {
-  margin-top: 22px;
-}
-
 .mobile-trigger:hover {
   background-position: 0 -87px;
 }

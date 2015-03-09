@@ -280,6 +280,10 @@
     width: 100%;
   }
 
+  #home-carousel {
+    margin-top: 60px;
+  }
+
   #home-carousel .carousel-indicators {
     display: none !important;
   }
@@ -294,6 +298,11 @@
 
   #home-carousel .item img {
     max-width: 100%;
+    margin-top: 20px;
+  }
+
+  #home-carousel .item .btn-5 {
+    margin-top: 20px;
   }
 
   .gallery-item .img-wrapper > img {
