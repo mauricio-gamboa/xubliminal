@@ -2416,7 +2416,7 @@ Home Page Styles
 
 #home-top .scroll-down {
   position: absolute;
-  top: 570px;
+  bottom: 25px;
   height: auto;
   left: 0;
 }
