@@ -94,6 +94,48 @@ Key Frames
   to { background-position: 0 0; }
 }
 
+/*Animate Clouds*/
+
+@-moz-keyframes animatedCloudsRight {
+  to { background-position: 1400px 100%; }
+}
+
+@-moz-keyframes animatedCloudsLeft {
+  to { background-position: 0 100%; }
+}
+
+@-webkit-keyframes animatedCloudsRight {
+  to { background-position: 1400px 100%; }
+}
+
+@-webkit-keyframes animatedCloudsLeft {
+  to { background-position: 0 100%; }
+}
+
+@-o-keyframes animatedCloudsRight {
+  to { background-position: 1400px 100%; }
+}
+
+@-o-keyframes animatedCloudsLeft {
+  to { background-position: 0 100%; }
+}
+
+@-ms-keyframes animatedCloudsRight {
+  to { background-position: 1400px 100%; }
+}
+
+@-ms-keyframes animatedCloudsLeft {
+  to { background-position: 0 100%; }
+}
+
+@keyframes animatedCloudsRight {
+  to { background-position: 1400px 100%; }
+}
+
+@keyframes animatedCloudsLeft {
+  to { background-position: 0 100%; }
+}
+
 /***************************
 ****************************
 General Styles
@@ -261,13 +303,17 @@ Bottons Styles
 .btn-5 {
   background: url("../images/btn-5.png") no-repeat 0 0;
   display: block;
-  height: 64px;
+  height: 54px;
   width: 250px;
-  line-height: 60px;
+  line-height: 54px;
   text-align: center;
-  color: #373e42;
+  color: #FFFFFF;
   font-size: 15px;
   text-transform: uppercase;
+}
+
+.btn-5:hover {
+  color: #FFFFFF;
 }
 
 /***************************
@@ -277,13 +323,13 @@ Header Styles
 ***************************/
 
 header {
-  height: 86px;
+  height: 49px;
+  padding: 10px;
   left: 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   -webkit-transition-property: background-color, height;
   -o-transition-property: background-color, height;
@@ -304,7 +350,6 @@ header {
 
 header .logo {
   float: left;
-  margin-top: 25px;
 
   -webkit-transition-property: margin-top;
   -o-transition-property: margin-top;
@@ -351,7 +396,6 @@ header .logo {
   background: url("../images/mobile-trigger.png") no-repeat scroll 0 -58px / 29px auto rgba(0, 0, 0, 0);
   height: 29px;
   width: 29px;
-  margin-top: 27px;
 
   -webkit-transition-property: margin-top;
   -o-transition-property: margin-top;
@@ -420,9 +464,8 @@ header .logo {
 .main-nav .xub-nav li a {
   display: block;
   font-weight: 600;
-  height: 85px;
-  line-height: 81px;
-  border-bottom: 4px solid transparent;
+  height: 29px;
+  line-height: 29px;
 
   -webkit-transition-property: color, height, line-height;
   -o-transition-property: color, height, line-height;
@@ -443,7 +486,6 @@ header .logo {
 
 .main-nav .xub-nav li.active a {
   color: #FFFFFF;
-  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-nav .xub-nav li {
@@ -1800,7 +1842,7 @@ Home Page Styles
 ****************************
 ***************************/
 
-header.reduce {
+/*header.reduce {
   height: 75px;
 }
 
@@ -1821,7 +1863,7 @@ header.reduce .main-nav .xub-nav li.active a {
 .dark header.reduce .main-nav .xub-nav li.active a {
   height: 75px;
   line-height: 71px;
-}
+}*/
 
 .dark header {
   background-color: rgba(255, 255, 255, 0.9);
@@ -1837,18 +1879,15 @@ header.reduce .main-nav .xub-nav li.active a {
 .dark .main-nav li a {
   border-bottom: 4px solid transparent;
   color: #969fa4;
-  height: 86px;
-  line-height: 84px;
 }
 
 .dark .main-nav li.active a {
-  border-bottom: 4px solid #3dc0e6;
   color: #3dc0e6;
 }
 
 #home-services {
   background-color: #ffffff;
-  padding: 90px 0;
+  padding-bottom: 90px;
   text-align: center;
 }
 
@@ -2298,6 +2337,37 @@ header.reduce .main-nav .xub-nav li.active a {
   background-color: #FFFFFF;
 }
 
+#home-top .clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#home-top .clouds-1 {
+  background-image: url("../images/home/clouds-1.png");
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+
+  -webkit-animation: animatedCloudsRight 60s linear infinite;
+  -moz-animation: animatedCloudsRight 60s linear infinite;
+  -ms-animation: animatedCloudsRight 60s linear infinite;
+  -o-animation: animatedCloudsRight 60s linear infinite;
+  animation: animatedCloudsRight 60s linear infinite;
+}
+
+#home-top .clouds-2 {
+  background-image: url("../images/home/clouds-2.png");
+  background-position: 1400px 100%;
+  background-repeat: repeat-x;
+
+  -webkit-animation: animatedCloudsLeft 60s linear infinite;
+  -moz-animation: animatedCloudsLeft 60s linear infinite;
+  -ms-animation: animatedCloudsLeft 60s linear infinite;
+  -o-animation: animatedCloudsLeft 60s linear infinite;
+  animation: animatedCloudsLeft 60s linear infinite;
+}
+
 #home-top .bgs {
   height: auto;
 }
@@ -2351,10 +2421,10 @@ header.reduce .main-nav .xub-nav li.active a {
 }
 
 .scroll-down a {
-  background: url("../images/arrow-5.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url("../images/scroll-arrow.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   display: block;
-  height: 16px;
-  width: 26px;
+  height: 47px;
+  width: 47px;
   margin: 0 auto;
   
   -webkit-transition-property: scale;
@@ -2369,9 +2439,21 @@ header.reduce .main-nav .xub-nav li.active a {
 
 #home-top .scroll-down {
   position: absolute;
-  bottom: 30px;
+  top: 650px;
   height: auto;
   left: 0;
+}
+
+/*#home-carousel {
+  background: url("../images/home/circles.png") no-repeat 50% 130px;
+}*/
+
+#home-carousel {
+  margin-top: 130px;
+}
+
+#home-carousel .item {
+  text-align: center;
 }
 
 #home-carousel .item > div {
@@ -2383,7 +2465,7 @@ header.reduce .main-nav .xub-nav li.active a {
   height: 100%;
 }
 
-#home-carousel .item img {
+/*#home-carousel .item img {
   position: relative;
   top: 50%;
   left: 50%;
@@ -2408,24 +2490,10 @@ header.reduce .main-nav .xub-nav li.active a {
 
 #home-carousel .item:nth-child(5) img {
   margin-left: -160px;
-}
-
-#home-carousel .item h3 {
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 300;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 100%;
-  margin-top: -20px;
-}
+}*/
 
 #home-carousel .item .btn-5 {
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  margin-left: -125px;
+  margin: 60px auto 0 auto;
 }
 
 #home-carousel .carousel-indicators {
@@ -2435,7 +2503,7 @@ header.reduce .main-nav .xub-nav li.active a {
   width: auto;
   right: 0;
   top: 50%;
-  margin-top: -35px;
+  margin-top: -183px;
   width: 14px;
 }
 

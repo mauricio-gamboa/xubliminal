@@ -289,8 +289,7 @@
   }
 
   #home-carousel .item img {
-    max-width: 287px;
-    margin-left: -143px !important;
+    max-width: 100%;
   }
 
   .gallery-item .img-wrapper > img {
