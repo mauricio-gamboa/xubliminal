@@ -2341,6 +2341,18 @@ Home Page Styles
   animation: animatedCloudsLeft 60s linear infinite;
 }
 
+#home-top .clouds-3 {
+  background-image: url("../images/home/clouds-3.png");
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+
+  -webkit-animation: animatedCloudsRight 60s linear infinite;
+  -moz-animation: animatedCloudsRight 60s linear infinite;
+  -ms-animation: animatedCloudsRight 60s linear infinite;
+  -o-animation: animatedCloudsRight 60s linear infinite;
+  animation: animatedCloudsRight 60s linear infinite;
+}
+
 #home-top .bgs {
   height: auto;
 }
