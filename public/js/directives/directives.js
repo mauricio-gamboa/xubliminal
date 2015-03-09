@@ -43,7 +43,7 @@
               var marginBottom = element.css('margin-bottom').replace('px', '') * 1;
               var height = (element.outerHeight() - headerHeight) + marginBottom + marginTop;
               
-              if ($use.scrollTop() > height)
+              if ($use.scrollTop() > (height))
                 $body.addClass('dark');
               else
                 $body.removeClass('dark');
@@ -264,7 +264,7 @@
           toggleActive = true;
 
           $both.animate({
-            scrollTop: $content.offset().top - 75
+            scrollTop: $content.offset().top
           }, {
             duration: 800,
             easing: 'linear',
@@ -312,7 +312,7 @@
                 $body.on('mousewheel', isMagicMouseFunction);
                 
                 $both.animate({
-                  scrollTop: $content.offset().top - 75
+                  scrollTop: $content.offset().top
                 }, {
                   duration: 800,
                   easing: 'linear',
