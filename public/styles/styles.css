@@ -2346,11 +2346,11 @@ Home Page Styles
   background-position: 0 100%;
   background-repeat: repeat-x;
 
-  -webkit-animation: animatedCloudsRight 120s linear infinite;
-  -moz-animation: animatedCloudsRight 120s linear infinite;
-  -ms-animation: animatedCloudsRight 120s linear infinite;
-  -o-animation: animatedCloudsRight 120s linear infinite;
-  animation: animatedCloudsRight 120s linear infinite;
+  -webkit-animation: animatedCloudsRight 240s linear infinite;
+  -moz-animation: animatedCloudsRight 240s linear infinite;
+  -ms-animation: animatedCloudsRight 240s linear infinite;
+  -o-animation: animatedCloudsRight 240s linear infinite;
+  animation: animatedCloudsRight 240s linear infinite;
 }
 
 #home-top .bgs {
