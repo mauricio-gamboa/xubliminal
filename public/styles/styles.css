@@ -2322,11 +2322,11 @@ Home Page Styles
   background-position: 0 100%;
   background-repeat: repeat-x;
 
-  -webkit-animation: animatedCloudsRight 60s linear infinite;
-  -moz-animation: animatedCloudsRight 60s linear infinite;
-  -ms-animation: animatedCloudsRight 60s linear infinite;
-  -o-animation: animatedCloudsRight 60s linear infinite;
-  animation: animatedCloudsRight 60s linear infinite;
+  -webkit-animation: animatedCloudsRight 90s linear infinite;
+  -moz-animation: animatedCloudsRight 90s linear infinite;
+  -ms-animation: animatedCloudsRight 90s linear infinite;
+  -o-animation: animatedCloudsRight 90s linear infinite;
+  animation: animatedCloudsRight 90s linear infinite;
 }
 
 #home-top .clouds-2 {
@@ -2346,11 +2346,11 @@ Home Page Styles
   background-position: 0 100%;
   background-repeat: repeat-x;
 
-  -webkit-animation: animatedCloudsRight 60s linear infinite;
-  -moz-animation: animatedCloudsRight 60s linear infinite;
-  -ms-animation: animatedCloudsRight 60s linear infinite;
-  -o-animation: animatedCloudsRight 60s linear infinite;
-  animation: animatedCloudsRight 60s linear infinite;
+  -webkit-animation: animatedCloudsRight 120s linear infinite;
+  -moz-animation: animatedCloudsRight 120s linear infinite;
+  -ms-animation: animatedCloudsRight 120s linear infinite;
+  -o-animation: animatedCloudsRight 120s linear infinite;
+  animation: animatedCloudsRight 120s linear infinite;
 }
 
 #home-top .bgs {
