@@ -1842,29 +1842,6 @@ Home Page Styles
 ****************************
 ***************************/
 
-/*header.reduce {
-  height: 75px;
-}
-
-header.reduce .logo {
-  margin-top: 22px;
-}
-
-header.reduce .main-nav .xub-nav li a {
-  height: 74px;
-  line-height: 70px;
-}
-
-header.reduce .main-nav .xub-nav li.active a {
-  height: 74px;
-  line-height: 70px;
-}
-
-.dark header.reduce .main-nav .xub-nav li.active a {
-  height: 75px;
-  line-height: 71px;
-}*/
-
 .dark header {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 10px -6px #000000;
