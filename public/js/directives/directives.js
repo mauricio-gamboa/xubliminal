@@ -264,7 +264,7 @@
           toggleActive = true;
 
           $both.animate({
-            scrollTop: $content.offset().top - 60
+            scrollTop: $content.offset().top
           }, {
             duration: 800,
             easing: 'linear',
@@ -312,7 +312,7 @@
                 $body.on('mousewheel', isMagicMouseFunction);
                 
                 $both.animate({
-                  scrollTop: $content.offset().top - 60
+                  scrollTop: $content.offset().top
                 }, {
                   duration: 800,
                   easing: 'linear',

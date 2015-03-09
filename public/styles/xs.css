@@ -1,4 +1,8 @@
 @media (max-width: 767px) {
+  .circle {
+      background: url("../images/home/more-clouds.png") no-repeat 50% 220px;
+  }
+
   .hide-xs {
     display: none !important;
   }

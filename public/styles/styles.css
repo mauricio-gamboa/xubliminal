@@ -324,7 +324,7 @@ Header Styles
 
 header {
   height: 49px;
-  padding: 10px;
+  padding: 10px 0;
   left: 0;
   position: fixed;
   top: 0;
@@ -1887,7 +1887,7 @@ header.reduce .main-nav .xub-nav li.active a {
 
 #home-services {
   background-color: #ffffff;
-  padding-bottom: 90px;
+  padding: 90px 0;
   text-align: center;
 }
 
@@ -2439,17 +2439,24 @@ header.reduce .main-nav .xub-nav li.active a {
 
 #home-top .scroll-down {
   position: absolute;
-  top: 720px;
+  top: 670px;
   height: auto;
   left: 0;
 }
 
-#home-carousel {
-  background: url("../images/home/circles.png") no-repeat 50% 0;
+.circle {
+  background: 
+  url("../images/home/circles.png") no-repeat 50% 70px,
+  url("../images/home/more-clouds.png") no-repeat 50% 220px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 #home-carousel {
-  margin-top: 130px;
+  margin-top: 70px;
 }
 
 #home-carousel .item {
