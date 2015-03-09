@@ -2439,14 +2439,14 @@ header.reduce .main-nav .xub-nav li.active a {
 
 #home-top .scroll-down {
   position: absolute;
-  top: 650px;
+  top: 720px;
   height: auto;
   left: 0;
 }
 
-/*#home-carousel {
-  background: url("../images/home/circles.png") no-repeat 50% 130px;
-}*/
+#home-carousel {
+  background: url("../images/home/circles.png") no-repeat 50% 0;
+}
 
 #home-carousel {
   margin-top: 130px;
@@ -2463,6 +2463,10 @@ header.reduce .main-nav .xub-nav li.active a {
 #home-carousel .item .item-wrapper {
   position: relative;
   height: 100%;
+}
+
+#home-carousel .item img {
+  margin-top: 105px;
 }
 
 /*#home-carousel .item img {
