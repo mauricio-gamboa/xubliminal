@@ -34,13 +34,13 @@
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'cristian@xubliminal.com';
-    $mail->Password = 'caaj0789titi';
+    $mail->Username = "mauricio@xubliminal.com";
+    $mail->Password = "Qwerty1123581321";
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
     // Configure email
-    $mail->From = 'cristian@xubliminal.com';
+    $mail->From = 'hello@xubliminal.com';
     $mail->FromName = "Xubliminal Contact Form";
     $mail->addAddress('hello@xubliminal.com');
     $mail->Subject = "New Quote Request from Xubliminal";
