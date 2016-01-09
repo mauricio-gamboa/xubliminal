@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Project #1",
+    "client": "Clients name",
+    "description": "Description #1",
+    "categories": [
+      "Branding",
+      "Illustration",
+      "Motion Graphics"
+    ],
+    "assets": [
+      {
+        "type": "video",
+        "url": "url"
+      },
+      {
+        "type": "image",
+        "name": "name"
+      },
+      {
+        "type": "image",
+        "name": "name"
+      },
+      {
+        "type": "video",
+        "name": "name"
+      }
+    ]
+  },
+  {
+    "title": "Project #2",
+    "client": "Clients name",
+    "description": "Description #2",
+    "categories": [
+      "Branding",
+      "Illustration",
+      "Motion Graphics"
+    ],
+    "assets": [
+      {
+        "type": "video",
+        "url": "url"
+      },
+      {
+        "type": "image",
+        "name": "name"
+      }
+    ]
+  }
+]
