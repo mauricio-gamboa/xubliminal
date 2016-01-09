@@ -1,0 +1,41 @@
+<section class="page-phrase sticky-cover" change-menu>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h1 id="page-title">Our work speaks for itself</h1>
+			</div>
+		</div>
+	</div>
+</section>
+<div ng-controller="GalleryNewCtrl as gallery">
+	<section id="work-gallery" class="sticky-cover">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="gallery-row clearfix">
+						<div ng-repeat="item in gallery.items">
+							<h3>Title:</h3>
+							<p>{{item.title}}</p>
+							<h3>Description:</h3>
+							<p>{{item.description}}</p>
+							<h3>Categories:</h3>
+							<ul>
+								<li ng-repeat="category in item.categories">{{category}}</li>
+							</ul>
+							<h3>Assets:</h3>
+							<ul>
+								<li ng-repeat="asset in item.assets">
+									<h4>Type: {{asset.type}}</h4>
+									<p ng-if="asset.name">Name: {{asset.name}}</p>
+									<p ng-if="asset.url">URL: {{asset.url}}</p>
+								</li>
+							</ul>
+							<hr>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<footer class="ng-cloak" ng-include src="'partials/includes/footer.html'"></footer>

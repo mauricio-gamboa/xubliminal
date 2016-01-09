@@ -31,6 +31,19 @@
         });
       },
 
+      getGalleryNew: function(successCallback, errorCallback) {
+        $http({
+          method: 'GET',
+          url: 'public/data/gallery-new.json'
+        }).
+        success(function(data, status, headers, config) {
+          successCallback(data);
+        }).
+        error(function(data, status, headers, config) {
+          errorCallback(data);
+        });
+      },
+
       getTestimonials: function(successCallback, errorCallback) {
         $http({
           method: 'GET',
